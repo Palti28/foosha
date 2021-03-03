@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header class="authentication-header">
+    <div class="bg-accent">
+      <img src="../assets/images/bg_login_circle.svg" alt="">
+    </div>
+    <div class="container">
+
+      <div class="header-item-container d-flex justify-content-between">
+        <div class="brand-logo">
+          <img src="../assets/images/logogram_login.png" alt="">
+        </div>
+        <div class="ml-auto support-logo">
+          <img src="../assets/images/img_sapk_tipografi.jpg" alt="">
+          <img src="../assets/images/logo_bkn_r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <section class="row login-area">
+      <div class="col-12 col-md-6 login-form p-4">
+        <h2 class="mb-3">Login dengan Akun</h2>
+        <span>Masuk dengan akun Anda untuk mengakses aplikasi My SAPK BKN versi web</span>
+        <form action="">
+          <div class="mb-3">
+            <label for="NIP" class="form-label">NIP</label>
+            <input type="number" class="form-control" id="NIP" aria-describedby="NIP"
+              placeholder="Masukkan 16 digit NIP Anda">
+            <!-- <div id="NIP" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+          <label for="pw" class="form-label">Password</label>
+          <div class="input-group mb-3 password-field">
+            <input type="password" class="form-control" id="password" aria-describedby="pw">
+            <span class="input-group-text"><i class="bi bi-eye" id="togglePassword"></i></span>
+            <!-- <div id="NIP" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ingat Saya
+            </label>
+          </div>
+
+          <div class="d-flex flex-row align-items-center mt-4">
+            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loading-prompt" style="width: 150px;" >Login</button> -->
+            <button class="btn btn-primary" type="button" style="width: 150px;" onclick="window.location.href='dashboard/index.html'">Login</button>
+            <div class="ms-3">
+              <a href="">Lupa Password</a> <br>
+              Belum punya akun? <a href="">Daftar disini</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="border-start"></div> -->
+      <div class="col-12 col-md-6 login-qr p-4 border-start">
+        <h2 class="mb-3">Login dengan QR</h2>
+        <span>Atau login dengan kode QR jika sudah memilki aplikasi mobile mySAPK BKN versi Android atau iOS di ponsel
+          Anda</span>
+        <div class="d-flex mt-3">
+          <div class="qr-code-container">
+            <img src="../assets/images/qr-code-illustration.png" alt="">
+          </div>
+          <div>
+            <h6 class="qr-login-step-title">Cara Login</h6>
+            <div class="qr-login-step w-75">
+              <!-- <div class="qr-login-step-title">
+              <h6>Cara Login</h6>
+            </div> -->
+              <span>1</span>
+              <p>Buka aplikasi mySAPK BKN, pastikan sudah mengunduh versi terakhir</p>
+              <span>2</span>
+              <p>Buka menu mySAPK Web lalu pilih QR Login</p>
+              <span>3</span>
+              <p>Arahkan ponsel Anda ke Kode QR untuk login</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body d-flex ">
+            <i class="bi bi-question-circle me-2"></i>
+            <span>Mengalami kesulitan saat login?</span>
+            <a href="" class="ms-auto">Lihat bantuan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <div class="modal fade" id="loading-prompt" aria-labelledby="loading-prompt" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="../assets/images/logogram_login.png" alt=""> <br>
+          <span>Mohon Tunggu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../js/utility.js"></script>
+</body>
+
+</html>

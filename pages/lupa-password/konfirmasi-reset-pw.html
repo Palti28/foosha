@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0">
+  <title>Konfirmasi-reset-pw</title>
+
+  <link rel="stylesheet" href="../../../../css/main.css">
+</head>
+
+<body>
+  <header class="authentication-header">
+    <div class="bg-accent">
+      <img src="../../assets/images/bg_login_circle.svg" alt="">
+    </div>
+    <div class="container">
+
+      <div class="header-item-container d-flex justify-content-between">
+        <div class="brand-logo">
+          <img src="../../assets/images/logogram_login.png" alt="">
+        </div>
+        <div class="ml-auto support-logo">
+          <img src="../../assets/images/img_sapk_tipografi.jpg" alt="">
+          <img src="../../assets/images/logo_bkn_r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <section class="row">
+      <div class="col-12 col-md-6 p-4">
+        <h2 class="mb-3">Konfirmasi Reset Password</h2>
+        <span>Silahkan cek kotak masuk email Anda. 
+          Email reset password telah dikirimkan ke email yang terhubung dengan akun Anda di</span>
+        <form action="">
+          <div class="my-3">
+            <input type="email" class="form-control" id="email" aria-describedby="NIP"
+              placeholder="Masukkan 16 digit NIP Anda">
+            <!-- <div id="NIP" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+          <label for="">Klik tautan pada email tersebut untuk reset ulang password Anda</label>
+
+          <div class="d-flex flex-row align-items-center mt-4">
+            <button class="btn btn-secondary" type="button" style="width: 150px;" onclick="window.location.href='reset-password.html'">Bypass Reset Password</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+
+
+  <div class="modal fade" id="loading-prompt" aria-labelledby="loading-prompt" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="../../assets/images/logogram_login.png" alt=""> <br>
+          <span>Mohon Tunggu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../../js/utility.js"></script>
+</body>
+
+</html>

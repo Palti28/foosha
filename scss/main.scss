@@ -1,0 +1,158 @@
+
+$light: #ffffff42;
+
+
+
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/utilities";
+
+.mysapk-container {
+  @include make-container();
+  width: 1000px;
+}
+
+$light: #ffffff42;
+
+// custom color
+$primary: #3085ff;
+$black-body: #686b6d;
+$black-heading: #3a3e40;
+$placeholder-dark-input-search : #AFAFAF;
+$placeholder-light-input-search: #ffffff;
+
+$mysapk-colors: (
+  "primary": #3085ff,
+  "black-body": #686b6d,
+  "black-heading": #3a3e40,
+  "placeholder-dark-input-search" : #AFAFAF,
+  "placeholder-light-input-search": #ffffff,
+);
+
+$theme-colors: map-merge($theme-colors, $mysapk-colors);
+
+@import "../bootstrap/scss/bootstrap.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+@import "./components.scss";
+
+//===== GLOBAL  =====//
+body {
+  font-size: 1.4em;
+  color: $black-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3a3e40;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+//===== GLOBAL =====//
+
+
+
+
+
+//HEADER
+//login page
+.authentication-header {
+  background-color: white;
+
+  .bg-accent {
+    position: absolute;
+    left: 11.5rem;
+  }
+
+  .header-item-container {
+    padding: 24px 0 24px;
+
+
+    .brand-logo {
+      img {
+        height: 54px;
+        width: 54px;
+      }
+    }
+
+    .support-logo {
+      img {
+        height: 24px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.dashboard-header {
+  background-color: $primary;
+
+  .bg-accent {
+    position: absolute;
+    left: 11.5rem;
+  }
+
+  .header-item-container {
+    padding: 24px 0 24px;
+
+
+    .brand-logo {
+      img {
+        height: 54px;
+        width: 54px;
+      }
+    }
+
+    .support-logo {
+      img {
+        height: 24px;
+        width: auto;
+      }
+    }
+
+    .header-item {
+      padding: 8px;
+    }
+  }
+}
+
+//LoginPage
+.qr-code-container {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.qr-login-step {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  margin-left: 2rem;
+
+  span {
+    font-size: 10px;
+    line-height: 2.2;
+    background-color: $primary;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+  }
+}
+
+.qr-login-step-title {
+  margin-left: 2rem;
+}
