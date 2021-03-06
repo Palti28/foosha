@@ -1,4 +1,3 @@
-
 $light: #ffffff42;
 
 
@@ -22,9 +21,9 @@ $black-body: #686b6d;
 $black-heading: #3a3e40;
 $placeholder-dark-input-search : #AFAFAF;
 $placeholder-light-input-search: #ffffff;
+$background-color: #F4F7FB;
 
-$mysapk-colors: (
-  "primary": #3085ff,
+$mysapk-colors: ("primary": #3085ff,
   "black-body": #686b6d,
   "black-heading": #3a3e40,
   "placeholder-dark-input-search" : #AFAFAF,
@@ -36,11 +35,20 @@ $theme-colors: map-merge($theme-colors, $mysapk-colors);
 @import "../bootstrap/scss/bootstrap.scss";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 @import "./components.scss";
+@import "./typography.scss";
 
 //===== GLOBAL  =====//
+
+html {
+  font-family: 'proxima';
+
+}
+
 body {
-  font-size: 1.4em;
+  font-size: 0.875rem;
   color: $black-body;
+  font-family: 'proxima';
+  background-color: $background-color;
 }
 
 h1,
@@ -53,7 +61,7 @@ h6 {
 }
 
 h1,
-h2 {
+h2, h5, h6 {
   font-weight: 600;
 }
 
@@ -93,37 +101,7 @@ h2 {
   }
 }
 
-.dashboard-header {
-  background-color: $primary;
 
-  .bg-accent {
-    position: absolute;
-    left: 11.5rem;
-  }
-
-  .header-item-container {
-    padding: 24px 0 24px;
-
-
-    .brand-logo {
-      img {
-        height: 54px;
-        width: 54px;
-      }
-    }
-
-    .support-logo {
-      img {
-        height: 24px;
-        width: auto;
-      }
-    }
-
-    .header-item {
-      padding: 8px;
-    }
-  }
-}
 
 //LoginPage
 .qr-code-container {
@@ -155,4 +133,184 @@ h2 {
 
 .qr-login-step-title {
   margin-left: 2rem;
+}
+
+
+//Dashboard
+.dashboard-header {
+  background-color: transparent;
+  color: #ffffff;
+
+  &.header-light {
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+
+    .rounded-input-search {
+      input {
+        background-color: rgb(0 0 0 / 4%);
+      }
+
+      span {
+        background-color: rgb(0 0 0 / 4%);
+        color: #AFB3B4;
+      }
+
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #AFAFAF;
+      }
+
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #AFAFAF;
+      }
+
+      :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #AFAFAF;
+      }
+
+      :-moz-placeholder {
+        /* Firefox 18- */
+        color: #AFAFAF;
+      }
+    }
+
+    .btn-pill {
+      &.btn-pill--light {
+        color: $placeholder-dark-input-search;
+        background-color: rgb(0 0 0 / 4%);
+
+        &:hover {
+          background-color: rgb(0 0 0 / 16%);
+          color: rgb(0 0 0 / 44%);
+        }
+      }
+
+
+      &.btn--tp--light {
+        &:hover {
+          color: $placeholder-dark-input-search;
+        }
+
+        background: transparent;
+      }
+
+      &.btn-pill--dark {
+        color: $placeholder-dark-input-search;
+      }
+    }
+
+    .profile-dropdown{
+      .profile-name{
+        color:$black-heading;
+      }
+    }
+  }
+
+
+  .bg-accent {
+    position: absolute;
+    left: 11.5rem;
+  }
+
+  .header-item-container {
+    padding: 8px 0 8px;
+
+
+    .brand-logo {
+      img {
+        height: 54px;
+        width: 54px;
+      }
+    }
+
+    .support-logo {
+      img {
+        height: 24px;
+        width: auto;
+      }
+    }
+
+    .header-item {
+      padding: 8px;
+    }
+  }
+}
+
+.content-wrapper{
+  margin-top: 8rem;
+}
+
+.profile-box{
+  color: #fff;
+  position: fixed;
+  flex-direction: column;
+  
+
+  .avatar{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .action{
+    margin-top: 1rem;
+  }
+
+  .btn.btn-link{
+    color: #fff;
+  }
+
+  &.profile-box--small{
+    color: $black-body;
+    flex-direction: row;
+
+    #department{
+      display: none;
+    }
+
+    #NIK{
+      display: none;
+    }
+
+    .avatar{
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    .action{
+      margin-top: 0;
+    }
+
+    .btn{
+      background-color: transparent;
+      color: $primary;
+      font-weight: 600;
+      padding: 0;
+    }
+  }
+}
+
+.dashboard-card{
+  border-radius: 16px;
+}
+
+#accent-background {
+  background-color: $primary;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  transition:height 0.2s ease-out;
+  height: 0;
+
+
+  &.active{
+    height: 350px;
+    transition:height 0.2s ease-out;
+  }
+
 }
