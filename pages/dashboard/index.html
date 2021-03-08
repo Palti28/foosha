@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0">
   <title>Dashboard</title>
-
   <link rel="stylesheet" href="../../css/main.css">
 </head>
 
@@ -114,106 +113,371 @@
   <section id="accent-background" class="active"></section>
   <section class="container content-wrapper">
     <div class="row">
-      <div class="col-4 aside">
-        <div id="profile-box-container" class="profile-box d-flex">
-          <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
-          <div>
-            <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
-            <div id="NIK">NIK 12345678987654</div>
-            <small id="department">Departemen Ketenagakerjaan</small>
-            <div class="d-flex align-items-center action">
-              <!-- <button class="btn me-3">Lihat Profil</button> -->
-              <a href="" class="btn btn-white me-3">Lihat Profil Anda</a>
-              <a href="" class="btn btn-link">Edit Profil</a>
+      <div class="col-3">
+        <div class="aside">
+          <div id="profile-box-container" class="profile-box d-flex">
+            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+            <div>
+              <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
+              <div id="NIK">NIK 12345678987654</div>
+              <small id="department">Departemen Ketenagakerjaan</small>
+              <div class="d-flex align-items-center action">
+                <!-- <button class="btn me-3">Lihat Profil</button> -->
+                <a href="" class="btn btn-white me-3">Lihat Profil Anda</a>
+                <a href="" class="btn btn-link">Edit Profil</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-8 content">
-        <div class="row p-0">
-          <div class="card dashboard-card border-0" style="background-color: #2477EF;">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-4">
-                  <h5 style="color: #fff">Persetujuan Dokumen</h5>
-                  <small class="text-light">Lihat permintaan untuk persetujuan dokumen</small> <br>
-                  <button class="btn btn-white mt-2">Lihat detail</button>
+
+
+          <div id="asideNavigation" class="aside-navigation">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingOne">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                    MENU UTAMA
                 </div>
-                <div class="col-8 d-flex flex-column">
-                  <a class="nav-link dropdown-toggle d-inline-block ms-auto text-light" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    7 hari terakhir
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                  <div class="d-flex justify-content-between">
-                    <div class="widget widget-light">
-                      <div class="widget-body">
-                        <div class="widget-title">Menunggu Paraf</div>
-                        <h3 style="color: inherit;">1</h3>
-                      </div>
-                      <div class="widget-indicator widget-indicator--danger"></div>
-                    </div>
-                    <div class="widget widget-light">
-                      <div class="widget-body">
-                        <div class="widget-title">Menunggu Persetujuan</div>
-                        <h3 style="color: inherit;">20</h3>
-                      </div>
-                      <div class="widget-indicator widget-indicator--warning"></div>
-                    </div>
-                    <div class="widget widget-light">
-                      <div class="widget-body">
-                        <div class="widget-title">Disetujui</div>
-                        <h3 style="color: inherit;">999</h3>
-                      </div>
-                      <div class="widget-indicator widget-indicator--success"></div>
-                    </div>
-                    <div class="widget widget-light">
-                      <div class="widget-body">
-                        <div class="widget-title">Ditolak</div>
-                        <h3 style="color: inherit;">0</h3>
-                      </div>
-                      <div class="widget-indicator"></div>
-                    </div>
-                    
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dashboard
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Update Data Mandiri
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Persetujuan Dokumen
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingTwo">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="treu" aria-controls="flush-collapseTwo">
+                    LAYANAN LAINNYA
+                </div>
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dokumen Saya
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Perfoma
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Otentikasi SL
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Cari Pegawai
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Kompetensi
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      MyKPE
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      e-Lapkin
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div style="height: 1000px;"></div>
+
+      </div>
+      <div class="col-9 content">
+        <div class="row p-0">
+          <div class="col-12">
+            <div class="card dashboard-card border-0" style="background-color: #2477EF;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-4">
+                    <h5 style="color: #fff">Persetujuan Dokumen</h5>
+                    <small class="text-light">Lihat permintaan untuk persetujuan dokumen</small> <br>
+                    <button class="btn btn-white mt-2">Lihat detail</button>
+                  </div>
+                  <div class="col-8 d-flex flex-column">
+                    <a class="nav-link dropdown-toggle d-inline-block ms-auto text-light" href="#"
+                      id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      7 hari terakhir
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <div class="d-flex flex-gap justify-content-between">
+                      <div class="widget widget-dark">
+                        <div class="widget-body py-2 px-3">
+                          <div class="widget-title">Menunggu Paraf</div>
+                          <h3 style="color: inherit;">1</h3>
+                        </div>
+                        <div class="widget-indicator widget-indicator--danger"></div>
+                      </div>
+                      <div class="widget widget-dark">
+                        <div class="widget-body py-2 px-3">
+                          <div class="widget-title">Menunggu Persetujuan</div>
+                          <h3 style="color: inherit;">20</h3>
+                        </div>
+                        <div class="widget-indicator widget-indicator--warning"></div>
+                      </div>
+                      <div class="widget widget-dark">
+                        <div class="widget-body py-2 px-3">
+                          <div class="widget-title">Disetujui</div>
+                          <h3 style="color: inherit;">999</h3>
+                        </div>
+                        <div class="widget-indicator widget-indicator--success"></div>
+                      </div>
+                      <div class="widget widget-dark">
+                        <div class="widget-body py-2 px-3">
+                          <div class="widget-title">Ditolak</div>
+                          <h3 style="color: inherit;">0</h3>
+                        </div>
+                        <div class="widget-indicator"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-0 mt-3">
+          <div class="col-12">
+            <div class="card dashboard-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="mb-2">
+                    <h5 class="mb-0">Update Data Mandiri</h5>
+                    <span>Lihat dan update kategori riwayat data secara mandiri</span>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Riwayat Pengajuan</button>
+                  </div>
+                </div>
+                <div class="d-grid grid-gap">
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat Golongan</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat Keluarga</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat Peninjauan Masa Kerja</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat CPNS/PNS</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat Angka Kredit</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat Organisasi</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat Kepanitiaan</div>
+                    </div>
+                  </div>
+                  <div class="widget widget-light">
+                    <div class="widget-body">
+                      <div class="widget-icon">
+                        <i class="bi bi-archive"></i>
+                      </div>
+                      <div class="pb-3">Riwayat LKHPN</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-center mt-3">
+                  <a href="" class="btn btn-link fw-bolder">LIHAT SEMUA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row p-0 mt-3">
+          <div class="col-12 col-md-6">
+            <div class="card dashboard-card">
+              <div class="card-body d-flex flex-row p-4">
+                <div class="rc">
+                  <h5 class="mb-0">Statistik Umum</h5>
+                  <small>Lihat statistik Umum</small> <br>
+                  <button class="btn btn-primary mt-5">Lihat Detail</button>
+                </div>
+                <div class="lc justify-end-center">
+                  <img src="../../assets/images/pie-slice.svg" alt="">
+                </div>
+                <!-- <div class="cirlce-accent"></div> -->
+                <!-- text-muted  -->
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card dashboard-card">
+              <div class="card-body d-flex flex-row p-4">
+                <div class="rc">
+                  <h5 class="mb-0">Statistik JPT</h5>
+                  <small>Lihat statistik jabatan pimpinan tinggi</small> <br>
+                  <button class="btn btn-primary mt-5">Lihat Detail</button>
+                </div>
+                <div class="lc justify-end-center">
+                  <img src="../../assets/images/pie-slice-star.svg" alt="">
+                </div>
+              </div>
+              <!-- <div class="cirlce-accent"></div> -->
+              <!-- text-muted  -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-0 mt-3">
+          <div class="col-12 col-md-6">
+            <div class="card dashboard-card">
+              <div class="card-body p-4">
+                <h5 class="mb-4">Berita Terbaru</h5>
+                <div class="news">
+                  <div class="news-tag">INSTANSI</div>
+                  <div class="news-title">Puspenkom ASN BKN Luncurkan Tata Cara Penilaian Kompetensi JPT Secara Daring
+                  </div>
+                  <div class="news-date">13 Agustus 2019</div>
+                </div>
+                <div class="news">
+                  <div class="news-tag">INSTANSI</div>
+                  <div class="news-title">Puspenkom ASN BKN Luncurkan Tata Cara Penilaian Kompetensi JPT Secara Daring
+                  </div>
+                  <div class="news-date">13 Agustus 2019</div>
+                </div>
+                <div class="news">
+                  <div class="news-tag">INSTANSI</div>
+                  <div class="news-title">Puspenkom ASN BKN Luncurkan Tata Cara Penilaian Kompetensi JPT Secara Daring
+                  </div>
+                  <div class="news-date">13 Agustus 2019</div>
+                </div>
+                <div class="text-center mt-3">
+                  <a href="" class="btn btn-link fw-bolder">LIHAT SEMUA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card dashboard-card h-100">
+              <div class="card-body d-flex flex-column p-4">
+                <h5 class="mb-3">Data Penunjang Lainnya</h5>
+                <div class="d-flex" style="flex: 1">
+                  <div class="d-grid grid-2 grid-gap w-100">
+                    <div class="widget widget-light">
+                      <div class="widget-body d-flex flex-column justify-content-center">
+                        <div class="widget-icon">
+                          <img src="../../assets/images/icon/ico_bpjs.svg" alt="">
+                        </div>
+                        <div class="pb-3">BPJS Ketenagakerjaan</div>
+                      </div>
+                    </div>
+                    <div class="widget widget-light">
+                      <div class="widget-body d-flex flex-column justify-content-center">
+                        <div class="widget-icon">
+                          <img src="../../assets/images/icon/ico_bpjs-kes.svg" alt="">
+                        </div>
+                        <div class="pb-3">BPJS Kesehatan</div>
+                      </div>
+                    </div>
+                    <div class="widget widget-light">
+                      <div class="widget-body d-flex flex-column justify-content-center">
+                        <div class="widget-icon">
+                          <img src="../../assets/images/icon/ico_ktp.svg" alt="">
+                        </div>
+                        <div class="pb-3">Data KTP</div>
+                      </div>
+                    </div>
+                    <div class="widget widget-light">
+                      <div class="widget-body d-flex flex-column justify-content-center">
+                        <div class="widget-icon">
+                          <img src="../../assets/images/icon/ico_taspen.svg" alt="">
+                        </div>
+                        <div class="pb-3">Taspen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center mt-3">
+                  <a href="" class="btn btn-link fw-bolder">LIHAT SEMUA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div style="height: 1000px;"></div> -->
+      </div>
     </div>
   </section>
-  <script>
-    window.onscroll = function () {
-      scrollFunction()
-    };
-  </script>
-  <script>
-    const accentBackground = document.getElementById("accent-background");
-    const profileBox = document.getElementById("profile-box-container");
-    const header = document.getElementById("header");
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        accentBackground.classList.remove("active");
-        profileBox.classList.add("profile-box--small");
-        header.classList.add("header-light");
-      } else {
-        accentBackground.classList.add("active");
-        profileBox.classList.remove("profile-box--small");
-        header.classList.remove("header-light");
-
-      }
-    }
-  </script>
-
+  <script src="../../js/utility.js" type="text/javascript"></script>
   <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="../../js/utility.js"></script>
 </body>
 
 </html>

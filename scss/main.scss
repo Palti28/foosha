@@ -14,6 +14,7 @@ $light: #ffffff42;
 }
 
 $light: #ffffff42;
+$text-muted: #AFAFAF;
 
 // custom color
 $primary: #3085ff;
@@ -61,10 +62,34 @@ h6 {
 }
 
 h1,
-h2, h5, h6 {
+h2,
+h5,
+h6 {
   font-weight: 600;
 }
 
+.flex-gap {
+  gap: 2% 2%;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-2{
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-gap {
+  gap: 16px;
+}
+
+.justify-end-center{
+  margin: auto 0 auto auto;
+}
 //===== GLOBAL =====//
 
 
@@ -202,9 +227,9 @@ h2, h5, h6 {
       }
     }
 
-    .profile-dropdown{
-      .profile-name{
-        color:$black-heading;
+    .profile-dropdown {
+      .profile-name {
+        color: $black-heading;
       }
     }
   }
@@ -239,53 +264,53 @@ h2, h5, h6 {
   }
 }
 
-.content-wrapper{
+.content-wrapper {
   margin-top: 8rem;
 }
 
-.profile-box{
+.profile-box {
   color: #fff;
-  position: fixed;
+  // position: fixed;
   flex-direction: column;
-  
 
-  .avatar{
+
+  .avatar {
     border-radius: 50%;
     height: 50px;
     width: 50px;
     margin-bottom: 1rem;
   }
 
-  .action{
+  .action {
     margin-top: 1rem;
   }
 
-  .btn.btn-link{
+  .btn.btn-link {
     color: #fff;
   }
 
-  &.profile-box--small{
+  &.profile-box--small {
     color: $black-body;
     flex-direction: row;
 
-    #department{
+    #department {
       display: none;
     }
 
-    #NIK{
+    #NIK {
       display: none;
     }
 
-    .avatar{
+    .avatar {
       display: inline-block;
       margin-right: 1rem;
     }
 
-    .action{
+    .action {
       margin-top: 0;
     }
 
-    .btn{
+    .btn {
       background-color: transparent;
       color: $primary;
       font-weight: 600;
@@ -294,8 +319,10 @@ h2, h5, h6 {
   }
 }
 
-.dashboard-card{
+.dashboard-card {
   border-radius: 16px;
+  border: 0;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.04);
 }
 
 #accent-background {
@@ -304,13 +331,13 @@ h2, h5, h6 {
   top: 0;
   width: 100%;
   z-index: -1;
-  transition:height 0.2s ease-out;
+  transition: height 0.2s ease-out;
   height: 0;
 
 
-  &.active{
+  &.active {
     height: 350px;
-    transition:height 0.2s ease-out;
+    transition: height 0.2s ease-out;
   }
 
 }
