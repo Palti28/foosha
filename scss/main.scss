@@ -112,8 +112,8 @@ h6 {
 
     .brand-logo {
       img {
-        height: 54px;
-        width: 54px;
+        height: 50px;
+        width: 50px;
       }
     }
 
@@ -241,13 +241,18 @@ h6 {
   }
 
   .header-item-container {
-    padding: 8px 0 8px;
+    padding: 4px 0 4px;
 
 
     .brand-logo {
+      display: flex;
+      align-items: center;
       img {
-        height: 54px;
-        width: 54px;
+        height: 36px;
+        width: 36px;
+        margin-right: 1rem;
+        border-radius: 50%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.0963542);
       }
     }
 
@@ -331,13 +336,13 @@ h6 {
   top: 0;
   width: 100%;
   z-index: -1;
-  transition: height 0.2s ease-out;
+  transition: height 0.1s ease-out;
   height: 0;
 
 
   &.active {
     height: 350px;
-    transition: height 0.2s ease-out;
+    transition: height 0.1s ease-out;
   }
 
 }

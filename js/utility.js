@@ -19,6 +19,7 @@ if(document.body.contains(togglePassword && password)){
 
 const accentBackground = document.getElementById("accent-background");
 const profileBox = document.getElementById("profile-box-container");
+const asideNavigation = document.getElementById("asideNavigation");
 const header = document.getElementById("header");
 if(document.body.contains(accentBackground && header)){
   window.onload = function(){
@@ -29,10 +30,12 @@ if(document.body.contains(accentBackground && header)){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       accentBackground.classList.remove("active");
       profileBox.classList.add("profile-box--small");
+      asideNavigation.style.marginTop = "1rem"
       header.classList.add("header-light");
     } else {
       accentBackground.classList.add("active");
       profileBox.classList.remove("profile-box--small");
+      asideNavigation.style.marginTop = "3.5rem"
       header.classList.remove("header-light");
   
     }

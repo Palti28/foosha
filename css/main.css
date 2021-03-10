@@ -11317,10 +11317,12 @@ textarea.form-control-lg {
   position: fixed;
   display: flex;
   flex-direction: column;
+  top: 8rem;
+  bottom: 0;
 }
 
 .aside-navigation {
-  margin-top: 3.5rem;
+  overflow-y: auto;
 }
 .aside-navigation .accordion-button {
   padding-left: 0;
@@ -11468,8 +11470,8 @@ h6,
   padding: 24px 0 24px;
 }
 .authentication-header .header-item-container .brand-logo img {
-  height: 54px;
-  width: 54px;
+  height: 50px;
+  width: 50px;
 }
 .authentication-header .header-item-container .support-logo img {
   height: 24px;
@@ -11561,11 +11563,18 @@ h6,
   left: 11.5rem;
 }
 .dashboard-header .header-item-container {
-  padding: 8px 0 8px;
+  padding: 4px 0 4px;
+}
+.dashboard-header .header-item-container .brand-logo {
+  display: flex;
+  align-items: center;
 }
 .dashboard-header .header-item-container .brand-logo img {
-  height: 54px;
-  width: 54px;
+  height: 36px;
+  width: 36px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.0963542);
 }
 .dashboard-header .header-item-container .support-logo img {
   height: 24px;
@@ -11631,12 +11640,12 @@ h6,
   top: 0;
   width: 100%;
   z-index: -1;
-  transition: height 0.2s ease-out;
+  transition: height 0.1s ease-out;
   height: 0;
 }
 #accent-background.active {
   height: 350px;
-  transition: height 0.2s ease-out;
+  transition: height 0.1s ease-out;
 }
 
 /*# sourceMappingURL=main.css.map */
