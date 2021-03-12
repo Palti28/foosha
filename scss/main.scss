@@ -38,6 +38,12 @@ $theme-colors: map-merge($theme-colors, $mysapk-colors);
 @import "./components.scss";
 @import "./typography.scss";
 
+//TYPOGRAPHY//
+.page-title{
+  color: #fff;
+}
+
+
 //===== GLOBAL  =====//
 
 html {

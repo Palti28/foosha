@@ -11018,6 +11018,9 @@ textarea.form-control-lg {
 .btn.btn-primary {
   color: white;
 }
+.btn .btn-icon {
+  border-radius: 50%;
+}
 .btn .notify-badge {
   position: absolute;
   border-radius: 50%;
@@ -11031,10 +11034,13 @@ textarea.form-control-lg {
   height: 40px;
   width: auto;
   border-radius: 22px;
+  border: 1px solid #EEEEEE;
 }
 .btn.btn-pill.btn-pill--light {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.26);
+  border: 0;
+  padding-top: 9px;
 }
 .btn.btn-pill.btn-pill--light:hover {
   background-color: rgba(0, 0, 0, 0.09);
@@ -11048,6 +11054,8 @@ textarea.form-control-lg {
 }
 .btn.btn-pill.btn-pill--dark {
   color: #AFAFAF;
+  border: 0;
+  padding-top: 9px;
 }
 .btn.btn-white {
   background-color: #fff;
@@ -11062,15 +11070,18 @@ textarea.form-control-lg {
 
 .rounded-input-search input {
   padding: 8px 16px 8px 16px;
-  border: 0;
+  border: 1px solid #EEEEEE;
+  border-right: 0;
+  color: inherit;
   background-color: #fff;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   background-color: rgba(255, 255, 255, 0.26);
+  color: #686b6d;
 }
 .rounded-input-search .form-control:focus {
   background-color: rgba(0, 0, 0, 0.09);
-  color: #ffffff;
+  color: #686b6d;
 }
 .rounded-input-search span {
   border-left: 0;
@@ -11078,12 +11089,40 @@ textarea.form-control-lg {
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
   background-color: rgba(255, 255, 255, 0.26);
-  color: white;
-  border: 0;
+  color: #AFB3B4;
+  border: 1px solid #EEEEEE;
+  border-left: 0;
   margin-left: 0;
+}
+.rounded-input-search ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: inherit;
+}
+.rounded-input-search ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: inherit;
+}
+.rounded-input-search :-ms-input-placeholder {
+  /* IE 10+ */
+  color: inherit;
+}
+.rounded-input-search :-moz-placeholder {
+  /* Firefox 18- */
+  color: inherit;
 }
 .rounded-input-search .input-group-text {
   margin-left: 0 !important;
+}
+.rounded-input-search.input-search-light input {
+  border: 0;
+}
+.rounded-input-search.input-search-light span {
+  border: 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+.rounded-input-search.input-search-light .form-control:focus {
+  background-color: rgba(0, 0, 0, 0.09);
+  color: #ffffff;
 }
 .rounded-input-search.input-search-light ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -11118,12 +11157,20 @@ textarea.form-control-lg {
   color: #AFAFAF;
 }
 
-.profile-dropdown .dropdown-menu {
+.dropdown .btn {
+  color: #686b6d;
+}
+
+.dropdown-menu {
   border-radius: 8px;
   border: 0;
   box-shadow: 0px 15px 18px rgba(0, 0, 0, 0.2);
   margin-top: 7px !important;
 }
+.dropdown-menu .dropdown-item {
+  padding: 8px 20px;
+}
+
 .profile-dropdown .dropdown-menu.show + .dropdown-menu-charet {
   display: block;
 }
@@ -11149,12 +11196,6 @@ textarea.form-control-lg {
 
 .notification-dropdown .dropdown-toggle::after {
   display: none;
-}
-.notification-dropdown .dropdown-menu {
-  border-radius: 8px;
-  border: 0;
-  box-shadow: 0px 15px 18px rgba(0, 0, 0, 0.2);
-  margin-top: 7px !important;
 }
 .notification-dropdown .dropdown-menu li:last-child {
   margin-top: 10px;
@@ -11383,6 +11424,66 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 
+.breadcrumb {
+  margin-bottom: 0;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #fff;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.67);
+}
+.breadcrumb ol {
+  margin-bottom: 0;
+  margin-block-end: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #fff;
+}
+
+.nav-pills .nav-link {
+  border-radius: 8px;
+}
+
+input[type=radio].btn-check.btn-check--light + label.btn {
+  background-color: transparent;
+  color: #afb3b4;
+}
+input[type=radio].btn-check.btn-check--light:checked + label.btn {
+  background: #f8f8f8;
+  color: #3A3E40;
+}
+
+.list-group .list-item {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.list-group .list-item:hover {
+  background-color: #F8F8F8;
+  cursor: pointer;
+}
+
+.form-select {
+  min-width: 190px;
+  border-radius: 35px;
+  color: #686b6d;
+}
+
+.filter-group .dropdown {
+  width: 180px;
+}
+.filter-group .dropdown .btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @font-face {
   font-family: "proxima";
   src: url("../fonts/ProximaNova-Regular.otf");
@@ -11401,6 +11502,10 @@ textarea.form-control-lg {
   font-weight: 300;
   font-style: normal;
 }
+.page-title {
+  color: #fff;
+}
+
 html {
   font-family: "proxima";
 }

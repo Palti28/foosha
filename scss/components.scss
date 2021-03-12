@@ -53,6 +53,10 @@
     color: white;
   }
 
+  .btn-icon {
+    border-radius: 50%;
+  }
+
   .notify-badge {
     position: absolute;
     border-radius: 50%;
@@ -64,15 +68,20 @@
   }
 
 
+
   &.btn-pill {
     height: 40px;
     width: auto;
     // background-color: rgb(255 255 255 / 26%);
     border-radius: 22px;
+    border: 1px solid #EEEEEE;
+
 
     &.btn-pill--light {
       color: $placeholder-light-input-search;
       background-color: rgb(255 255 255 / 26%);
+      border: 0;
+      padding-top: 9px;
 
       &:hover {
         background-color: rgb(0 0 0 / 9%);
@@ -91,6 +100,9 @@
 
     &.btn-pill--dark {
       color: $placeholder-dark-input-search;
+      border: 0;
+      padding-top: 9px;
+
     }
   }
 
@@ -112,18 +124,22 @@
 .rounded-input-search {
   input {
     padding: 8px 16px 8px 16px;
-    border: 0;
+    border: 1px solid #EEEEEE;
+    border-right: 0;
+    color: inherit;
     background-color: #fff;
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
     background-color: rgb(255 255 255 / 26%);
+    color: $black-body;
     // border-color: rgb(255 255 255 / 26%);
   }
 
   .form-control {
     &:focus {
       background-color: rgb(0 0 0 / 9%);
-      color: $placeholder-light-input-search;
+      color: $black-body;
+
     }
   }
 
@@ -134,9 +150,32 @@
     border-bottom-right-radius: 22px;
     background-color: rgb(255 255 255 / 26%);
     // border-color: rgb(255 255 255 / 26%);
-    color: white;
-    border: 0;
+    color: #AFB3B4;
+    border: 1px solid #EEEEEE;
+    border-left: 0;
     margin-left: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: inherit;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: inherit;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: inherit;
+
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: inherit;
+
   }
 
   .input-group-text {
@@ -144,6 +183,22 @@
   }
 
   &.input-search-light {
+    input {
+      border: 0;
+    }
+
+    span {
+      border: 0;
+      color: rgb(255 255 255 / 40%);
+    }
+
+    .form-control {
+      &:focus {
+        background-color: rgb(0 0 0 / 9%);
+        color: $placeholder-light-input-search;
+      }
+    }
+
     ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: rgb(255 255 255 / 40%);
@@ -188,14 +243,26 @@
   }
 }
 
+// DROPDOWN //
+.dropdown .btn{
+  color: $black-body;
+}
+
 // ------- dropdown profile -------  //
+.dropdown-menu{
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0px 15px 18px rgb(0 0 0 / 20%);
+  margin-top: 7px !important;
+
+
+  .dropdown-item{
+    padding: 8px 20px;
+  }
+}
+
 .profile-dropdown {
   .dropdown-menu {
-    border-radius: 8px;
-    border: 0;
-    box-shadow: 0px 15px 18px rgb(0 0 0 / 20%);
-    margin-top: 7px !important;
-
     &.show {
       +.dropdown-menu-charet {
         display: block;
@@ -240,11 +307,6 @@
 
 
   .dropdown-menu {
-    border-radius: 8px;
-    border: 0;
-    box-shadow: 0px 15px 18px rgb(0 0 0 / 20%);
-    margin-top: 7px !important;
-
     li:last-child {
       margin-top: 10px;
       margin-bottom: 3px;
@@ -489,17 +551,17 @@
       border: 0;
     }
 
-    .accordion-button{
+    .accordion-button {
       font-size: 12px;
       color: #AAAFB2;
       background-color: transparent;
       padding-bottom: 8px;
-    border-bottom: 1px solid #E3E9EC;
+      border-bottom: 1px solid #E3E9EC;
 
-      &::after{
+      &::after {
         height: 0.8rem;
-          width: 0.8rem;
-          background-size: auto;
+        width: 0.8rem;
+        background-size: auto;
       }
 
       &:not(.collapsed) {
@@ -507,7 +569,7 @@
         color: #AAAFB2;
         background-color: transparent;
 
-        &::after{
+        &::after {
           height: 0.8rem;
           width: 0.8rem;
           background-size: auto;
@@ -542,3 +604,88 @@
     }
   }
 }
+
+// BREADCRDUMB //
+.breadcrumb {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .breadcrumb-item.active {
+    color: rgb(255 255 255 / 67%);
+  }
+
+  margin-bottom: 0;
+
+  ol {
+    margin-bottom: 0;
+    margin-block-end: 0;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "\003E";
+  color: #fff;
+}
+
+// TAB - PILL //
+.nav-pills .nav-link {
+  border-radius: 8px;
+}
+
+
+//  BUTTON CHECK
+input[type="radio"].btn-check {
+  &.btn-check--light {
+    &+label.btn {
+      background-color: transparent;
+      // color:rgba(175, 179, 180, 1);
+      color: rgba(175, 179, 180, 1);
+    }
+
+    &:checked {
+      &+label.btn {
+        background: rgba(248, 248, 248, 1);
+        color: #3A3E40;
+      }
+    }
+  }
+}
+
+// LIST GROUP
+.list-group{
+  .list-item{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid #EEEEEE;
+    &:hover{
+      background-color: #F8F8F8;
+      cursor: pointer;
+    }
+  }
+}
+
+
+//FORM - SELECT
+.form-select{
+  min-width: 190px;
+  border-radius: 35px;
+  color: $black-body;
+}
+
+
+// FILTER-GROUP //
+.filter-group{
+  .dropdown{
+    width: 180px;
+    .btn{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+// FILTER-GROUP //
