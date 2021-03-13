@@ -49,8 +49,23 @@
   position: relative;
   font-size: 14px;
 
+  &.btn-primary.btn-overlay {
+    background-color: #DDEBFF;
+    color: $primary;
+    border: 0;
+
+    &:hover {
+      background-color: #C5DCFD;
+
+    }
+  }
+
   &.btn-primary {
     color: white;
+  }
+
+  &.btn-gray {
+    background-color: #F8F8F8;
   }
 
   .btn-icon {
@@ -244,19 +259,25 @@
 }
 
 // DROPDOWN //
-.dropdown .btn{
+.dropdown .btn {
   color: $black-body;
 }
 
+.dropdown-toggle.no-charet::after {
+  display: none;
+}
+
+
+
 // ------- dropdown profile -------  //
-.dropdown-menu{
+.dropdown-menu {
   border-radius: 8px;
   border: 0;
   box-shadow: 0px 15px 18px rgb(0 0 0 / 20%);
   margin-top: 7px !important;
 
 
-  .dropdown-item{
+  .dropdown-item {
     padding: 8px 20px;
   }
 }
@@ -654,13 +675,24 @@ input[type="radio"].btn-check {
 }
 
 // LIST GROUP
-.list-group{
-  .list-item{
+.list-group {
+
+  a.list-item,
+  .list-item {
+    color: inherit;
+    text-decoration: none;
     display: flex;
+    flex-direction: row;
     width: 100%;
-    padding: 16px;
+    padding: 16px 0 16px 16px;
     border-bottom: 1px solid #EEEEEE;
-    &:hover{
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover {
       background-color: #F8F8F8;
       cursor: pointer;
     }
@@ -669,18 +701,22 @@ input[type="radio"].btn-check {
 
 
 //FORM - SELECT
-.form-select{
-  min-width: 190px;
-  border-radius: 35px;
+.form-select {
   color: $black-body;
+
+  &.form-select-rounded {
+    min-width: 190px;
+    border-radius: 35px;
+  }
 }
 
 
 // FILTER-GROUP //
-.filter-group{
-  .dropdown{
+.filter-group {
+  .dropdown {
     width: 180px;
-    .btn{
+
+    .btn {
       display: flex;
       width: 100%;
       justify-content: space-around;
@@ -688,4 +724,240 @@ input[type="radio"].btn-check {
     }
   }
 }
+
 // FILTER-GROUP //
+
+
+// MODAL //
+.modal {
+  .modal-content {
+    border-radius: 16px;
+  }
+}
+
+// MODAL //
+
+
+// CARD //
+// CARD FORM //
+.card-form {
+  .card-form-left {
+    background-color: #F8F8F8;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 32px 16px;
+  }
+
+  .card-form-right {
+    padding: 32px 24px 32px 16px;
+  }
+}
+
+// CARD FORM //
+
+// CARD INFO
+.card-info {
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+
+  i {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  &.bg-yellow {
+    background-color: #FFFAE0;
+  }
+}
+
+// CARD INFO
+// CARD
+
+// FORM- STEP//
+ul.form-step {
+  counter-reset: my-counter;
+  list-style-type: none;
+
+  li {
+    counter-increment: my-counter;
+    position: relative;
+    margin-bottom: 32px;
+
+    &::before {
+      content: counter(my-counter);
+      color: #fff;
+      font-size: 12px;
+      position: absolute;
+      --size: 21px;
+      left: calc(-1 * var(--size) - 10px);
+      line-height: var(--size);
+      width: var(--size);
+      height: var(--size);
+      top: 1px;
+      background: #AFAFAF;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    .form-step-title {
+      font-size: 16px;
+      color: #AFAFAF;
+      font-weight: bolder;
+      margin-bottom: 6px;
+    }
+
+    .form-step-title,
+    .form-step-dec {
+      color: #AFAFAF;
+    }
+
+    &.active {
+      &::before {
+        background: $primary;
+      }
+
+      .form-step-title {
+        color: #3A3E40;
+      }
+
+      .form-step-dec {
+        color: $black-heading;
+      }
+    }
+
+    &.done {
+      &::before {
+        background: #A1D050;
+      }
+
+      .form-step-title,
+      .form-step-dec {
+        color: #AFAFAF;
+      }
+    }
+  }
+}
+
+// FORM- STEP//
+
+
+// INPUT //
+.form-control {
+  border-radius: 8px;
+}
+
+.form-select {
+  border-radius: 8px;
+}
+
+// INPUT-ICON
+.input-icon {
+  position: relative;
+
+  .form-control {
+    padding: 0.375rem 2.75rem 0.375rem 0.75rem;
+  }
+
+  i {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+  }
+}
+
+// INPUT-ICON
+
+
+//FILE UPLOAD//
+.custom-file-upload {
+  input[type="file"] {
+    display: none;
+  }
+}
+
+label {
+  margin: 0;
+}
+
+.custom-file-upload {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 3rem 10px 10px;
+  border: 1px solid #EBEEF1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+  .title {
+    font-weight: bold;
+  }
+
+  &.border-dashed {
+    border: 1px dashed $primary;
+    box-shadow: none;
+  }
+
+  &.btn-outline-primary {
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.invalid {
+    background: #FFF3F3;
+    border: 1px solid #ED2525;
+    .title {
+      color: #ED2525;
+    }
+    &::after {
+      content: "";
+      height: 38px;
+      width: 38px;
+      position: absolute;
+      right: 0;
+      display: block;
+      background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14' cy='14' r='14' fill='%23ED2525'/%3E%3Cpath d='M14.68 16.66L15.08 7.66H12.02L12.44 16.66H14.68ZM13.56 21.2C14.44 21.2 15.18 20.46 15.18 19.6C15.18 18.72 14.44 17.98 13.56 17.98C12.68 17.98 11.96 18.72 11.96 19.6C11.96 20.46 12.68 21.2 13.56 21.2Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: right calc(.375em + .1875rem) center;
+    }
+  }
+
+  &.valid{
+    &::after {
+      content: "";
+      height: 38px;
+      width: 38px;
+      position: absolute;
+      right: 0;
+      display: block;
+      background-image: url("data:image/svg+xml,%3Csvg width='28' height='27' viewBox='0 0 84 84' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='42' cy='42' r='42' fill='%23A8DF3B'/%3E%3Crect x='26.3772' y='40.1046' width='3.57447' height='14.2979' rx='1.2' transform='rotate(-40 26.3772 40.1046)' fill='white'/%3E%3Crect x='34.4189' y='49.6882' width='28.5958' height='3.57447' rx='1.2' transform='rotate(-40 34.4189 49.6882)' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: right calc(.375em + .1875rem) center;
+    }
+  }
+}
+
+//FILE UPLOAD//
+// INPUT //
+
+// TABLE //
+.table-list {
+  th {
+    font-weight: normal;
+    padding-left: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  td {
+    font-weight: bolder;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+// TABLE //

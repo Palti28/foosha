@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
   <title>Dashboard</title>
-  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../../css/main.css">
 </head>
 
 <body>
   <header id="header" class="dashboard-header fixed-top">
     <div class="bg-accent">
-      <img src="../../assets/images/bg_login_circle.svg" alt="">
+      <img src="../../../assets/images/bg_login_circle.svg" alt="">
     </div>
     <div class="container">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
-          <img src="../../assets/images/logogram_login.svg" alt="">
+          <img src="../../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
         <div class="ms-auto d-flex ">
@@ -38,6 +38,13 @@
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuNotification">
                 <li class="dropdown-item dropdown-item--title">
                   <h6>Notifikasi</h6>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Permintaan hapus data untuk riwayat jabatan telah disetujui</div>
+                    <div class="text-muted">Minggu, 27 Maret 2019 - 12:02:03</div>
+                  </a>
                 </li>
                 <li class="dropdown-item new">
                   <a href="">
@@ -71,7 +78,7 @@
                 <li class="mb-2">
                   <a href="" class="dropdown-item ">
                     <div class="d-flex">
-                      <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+                      <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
                       <div>
                         <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
                         <small class="text-muted">Lihat profil Anda</small>
@@ -81,22 +88,22 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../assets/images/dropdown-profile/edit-profile.svg" alt="">
+                    <img src="../../../assets/images/dropdown-profile/edit-profile.svg" alt="">
                     Ubah Profile</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../assets/images/dropdown-profile/change-pw.svg" alt="">
+                    <img src="../../../assets/images/dropdown-profile/change-pw.svg" alt="">
                     Ubah Password</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../assets/images/dropdown-profile/about.svg" alt="">
+                    <img src="../../../assets/images/dropdown-profile/about.svg" alt="">
                     Tentang Aplikasi</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../assets/images/dropdown-profile/logout.svg" alt="">
+                    <img src="../../../assets/images/dropdown-profile/logout.svg" alt="">
                     Keluar</a>
                 </li>
               </ul>
@@ -115,7 +122,7 @@
         <div class="aside">
           <!-- PROFILE CONTAINER -->
           <div id="profile-box-container" class="profile-box d-flex">
-            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+            <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
             <div>
               <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
               <div id="NIK">NIK 12345678987654</div>
@@ -218,100 +225,140 @@
 
         <div class="row p-0 mt-3">
           <div class="col-12">
-            <h2 class="page-title">Update Data Mandiri</h2>
+            <h2 class="page-title">Riwayat Jabatan</h2>
             <div class="d-flex justify-content-between align-items-center mb-4">
               <nav aria-label="breadcrumb" class="d-inline-block">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  <li class="breadcrumb-item"><a href="#">Update Data Mandiri</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Riwayat Jabatan</li>
                 </ol>
               </nav>
               <div class="d-inline-block ms-auto">
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link text-white " aria-current="page" href="./all-kategori-list.html">Kategori</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" href="./history-pengajuan.html">History Pengajuan</a>
-                  </li>
-                </ul>
+                <div class="dropdown">
+                  <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuUDMCategory"
+                    aria-expanded="false" class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                    <div class="profile-name text-ellipsis">
+                      Kategori
+                      <h6 class="d-inline-block text-white">Jabatan</h6>
+                    </div>
+                  </div>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuUDMCategory">
+                    <li><a class="dropdown-item" href="#">Riwayat Golongan</a></li>
+                    <li><a class="dropdown-item" href="#">Riwayat Keluarga</a></li>
+                    <li><a class="dropdown-item" href="#">Riwayat Peninjauan Masa Kerja</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <div class="card dashboard-card">
               <div class="card-body p-4">
-                <div class="d-flex justify-content-between mb-3">
-                  <div class="mb-2">
-                    <select class="form-select form-select-rounded" aria-label="Default select example">
-                      <option selected>Pilih Kategori</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="">
+                    <span>Menampilkan 4 data untuk Riwayat Jabatan</span>
                   </div>
                   <div class="filter-group">
-                    <div class="dropdown d-inline-block me-3">
-                      <button class="btn btn-pill dropdown-toggle" type="button" id="dropdownMenuDate" data-bs-toggle="dropdown" aria-expanded="false" disabled>
-                        Pilih Tanggal
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuDate">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
+                    <a href="add-riwayat-jabatan.html" class="btn btn-primary">
+                      <i class="bi bi-plus"></i>
+                      Tambah Baru
+                    </a>
+                  </div>
+                </div>
+                <div class="list-group">
+                  <div class="list-item">
+                    <a href="">
+                      <h6 class="mb-2">Kepala Subdirektorat Perencanaan dan Evaluasi Sistem Informasi Aparatur Sipil
+                        Negara</h6>
+                      <span class="text-muted">Struktural</span>
+                    </a>
+                    <div class="ms-auto">
+                      <div class="badge bg-primary">Disetujui</div>
                     </div>
-                    <div class="dropdown d-inline-block">
-                      <button class="btn btn-pill dropdown-toggle" type="button" id="dropdownMenuStatus" data-bs-toggle="dropdown" aria-expanded="false">
-                        Pilih Status
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuStatus">
-                        <li><a class="dropdown-item" href="#">Menunggu</a></li>
-                        <li><a class="dropdown-item" href="#">Disetujui</a></li>
-                        <li><a class="dropdown-item" href="#">Ditolak</a></li>
-                      </ul>
+                    <div class="ms-2">
+                      <div class="dropdown">
+                        <button class="dropdown-toggle btn btn-sm py-0 btn-pill--dark dropdown-toggle no-charet"
+                          type="button" id="dropdownMenuLinkss" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkss">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i> Ubah Data</a></li>
+                          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><i
+                                class="bi bi-trash me-2"></i> Hapus Data</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <a href="">
+                      <h6 class="mb-2">Kepala Subdirektorat Perencanaan </h6>
+                      <span class="text-muted">Struktural</span>
+                    </a>
+                    <div class="ms-auto">
+                      <div class="badge bg-warning">Menunggu</div>
+                    </div>
+                    <div class="ms-2">
+                      <div class="dropdown">
+                        <button class="dropdown-toggle btn btn-sm py-0 btn-pill--dark dropdown-toggle no-charet"
+                          type="button" id="dropdownMenuLinkss" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkss">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i> Ubah Data</a></li>
+                          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><i
+                                class="bi bi-trash me-2"></i> Hapus Data</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="list-group">
-                  <div class="list-item">
-                    <div class="me-4">
-                      <i class="bi bi-grid-3x3-gap-fill"></i>
-                    </div>
-                    <div>
-                      <h6 class="">Mengusulkan perubahaan riwayat keluarga (anak, istri)</h6>
-                      <span class="text-muted">Minggu, 17 Maret 2019 - 12:02:02</span>
-                    </div>
-                    <div class="ms-auto"><div class="badge bg-primary">Menuggu - Edit data</div></div>
-                    <div class="ms-2"><i class="bi bi-three-dots-vertical"></i></div>
-
-                  </div> 
-                  <div class="list-item">
-                    <div class="me-4">
-                      <i class="bi bi-grid-3x3-gap-fill"></i>
-                    </div>
-                    <div>
-                      <h6 class="fw-bolder mb-2">Mengusulkan perubahaan riwayat keluarga (anak, istri)</h6>
-                      <span class="text-muted">Minggu, 17 Maret 2019 - 12:02:02</span>
-                    </div>
-                    <div class="ms-auto"><div class="badge bg-primary">Menuggu - Edit data</div></div>
-                    <div class="ms-2"><i class="bi bi-three-dots-vertical"></i></div>
-                  </div> 
-                </div>
-
-                <div style="height: 1000px;"></div>
               </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- // MAIN CONTENT // -->
+    </div>
+    <!-- // MAIN CONTENT // -->
+
+    <!-- MODAL -->
+    <!-- delete data modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <h5>Apakah Anda yakin akan menghapus data ini?</h5>
+            <p>Pengajuan hapus data akan dikirim ke server.
+              Jika data ini dibutuhkan kembali, Anda dapat menginputkan ulang di sistem kami</p>
+            <button class="btn btn-primary" data-bs-dismiss="modal">Tidak</button> <br>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#deleteModalSubmited">Ya, Hapus
+              Data</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- confirm delete data modal #deleteModalSubmited-->
+    <div class="modal fade" id="deleteModalSubmited" tabindex="-1" aria-labelledby="deleteModalSubmited"
+      aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="../../../assets/images/icon/ico_modal_success.svg" class="mb-3" style="height: 84px; width: 84px;"
+              alt="">
+            <h5>Permintaan <span class="text-danger">hapus data</span> berhasil diajukan</h5>
+            <p>Permintaan hapus data telah dikirim.
+              Anda dapat mengecek status permintaan hapus data di masing-masing kategori</p>
+            <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     </div>
   </section>
-  <script src="../../js/utility.js" type="text/javascript"></script>
-  <script src="../../js/sample-list.js" type="text/javascript"></script>
-  <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../../../js/utility.js" type="text/javascript"></script>
+  <script src="../../../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

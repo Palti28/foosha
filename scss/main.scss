@@ -43,6 +43,9 @@ $theme-colors: map-merge($theme-colors, $mysapk-colors);
   color: #fff;
 }
 
+.fs-12{
+  font-size: 12;
+}
 
 //===== GLOBAL  =====//
 
@@ -91,6 +94,10 @@ h6 {
 
 .grid-gap {
   gap: 16px;
+}
+
+.d-content{
+  display: contents;
 }
 
 .justify-end-center{
@@ -333,7 +340,8 @@ h6 {
 .dashboard-card {
   border-radius: 16px;
   border: 0;
-  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.04);
+  // box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 11px 71px -18px rgba(0, 0, 0, 0.111041);
 }
 
 #accent-background {

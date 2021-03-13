@@ -229,10 +229,11 @@
               <div class="d-inline-block ms-auto">
                 <ul class="nav nav-pills">
                   <li class="nav-item">
-                    <a class="nav-link text-white " aria-current="page" href="./all-kategori-list.html">Kategori</a>
+                    <a class="nav-link text-white active" aria-current="page"
+                      href="./all-kategori-list.html">Kategori</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-white" href="./history-pengajuan.html">History Pengajuan</a>
+                    <a class="nav-link text-white" href="./history-pengajuan.html">History Pengajuan</a>
                   </li>
                 </ul>
               </div>
@@ -240,66 +241,30 @@
 
             <div class="card dashboard-card">
               <div class="card-body p-4">
-                <div class="d-flex justify-content-between mb-3">
-                  <div class="mb-2">
-                    <select class="form-select form-select-rounded" aria-label="Default select example">
-                      <option selected>Pilih Kategori</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div class="">
+                    <span>Menampilkan semua kategori update data mandiri</span>
                   </div>
-                  <div class="filter-group">
-                    <div class="dropdown d-inline-block me-3">
-                      <button class="btn btn-pill dropdown-toggle" type="button" id="dropdownMenuDate" data-bs-toggle="dropdown" aria-expanded="false" disabled>
-                        Pilih Tanggal
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuDate">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                    <div class="dropdown d-inline-block">
-                      <button class="btn btn-pill dropdown-toggle" type="button" id="dropdownMenuStatus" data-bs-toggle="dropdown" aria-expanded="false">
-                        Pilih Status
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuStatus">
-                        <li><a class="dropdown-item" href="#">Menunggu</a></li>
-                        <li><a class="dropdown-item" href="#">Disetujui</a></li>
-                        <li><a class="dropdown-item" href="#">Ditolak</a></li>
-                      </ul>
+                  <div>
+                    <input type="radio" class="btn-check btn-check--light" name="options" id="option1"
+                      autocomplete="off">
+                    <label class="btn btn-icon btn--check-light" for="option1"><i
+                        class="bi bi-grid-3x3-gap-fill"></i></label>
+                    <input type="radio" class="btn-check btn-check--light" name="options" id="option2"
+                      autocomplete="off" checked>
+                    <label class="btn btn-icon btn--check-light" for="option2"><i class="bi bi-list-ul"></i></label>
+                    <div class="d-inline-block">
+                      <div class="input-group rounded-input-search">
+                        <input type="text" class="form-control" placeholder="Recipient's username"
+                          aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="list-group">
-                  <div class="list-item">
-                    <div class="me-4">
-                      <i class="bi bi-grid-3x3-gap-fill"></i>
-                    </div>
-                    <div>
-                      <h6 class="">Mengusulkan perubahaan riwayat keluarga (anak, istri)</h6>
-                      <span class="text-muted">Minggu, 17 Maret 2019 - 12:02:02</span>
-                    </div>
-                    <div class="ms-auto"><div class="badge bg-primary">Menuggu - Edit data</div></div>
-                    <div class="ms-2"><i class="bi bi-three-dots-vertical"></i></div>
+                <div class="d-grid grid-gap" id="loopGridHere"></div>
 
-                  </div> 
-                  <div class="list-item">
-                    <div class="me-4">
-                      <i class="bi bi-grid-3x3-gap-fill"></i>
-                    </div>
-                    <div>
-                      <h6 class="fw-bolder mb-2">Mengusulkan perubahaan riwayat keluarga (anak, istri)</h6>
-                      <span class="text-muted">Minggu, 17 Maret 2019 - 12:02:02</span>
-                    </div>
-                    <div class="ms-auto"><div class="badge bg-primary">Menuggu - Edit data</div></div>
-                    <div class="ms-2"><i class="bi bi-three-dots-vertical"></i></div>
-                  </div> 
-                </div>
-
-                <div style="height: 1000px;"></div>
               </div>
             </div>
           </div>
