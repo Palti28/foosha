@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../../../css/main.css">
+</head>
+
+<body>
+  <header id="header" class="dashboard-header fixed-top">
+    <div class="bg-accent">
+      <img src="../../../assets/images/bg_login_circle.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="header-item-container d-flex justify-content-between">
+        <div class="brand-logo">
+          <img src="../../../assets/images/logogram_login.svg" alt="">
+          <span>MySAPK BKN</span>
+        </div>
+        <div class="ms-auto d-flex ">
+          <div class="header-item">
+            <div class="input-group rounded-input-search input-search-light">
+              <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+            </div>
+          </div>
+          <div class="header-item">
+            <div class="dropdown notification-dropdown">
+              <div class="btn btn-pill btn-pill--light dropdown-toggle" type="button" id="dropdownMenuNotification"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="notify-badge"></div>
+                <i class="bi bi-bell-fill"></i>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuNotification">
+                <li class="dropdown-item dropdown-item--title">
+                  <h6>Notifikasi</h6>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Permintaan hapus data untuk riwayat jabatan telah disetujui</div>
+                    <div class="text-muted">Minggu, 27 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Selamat Ulang tahun uang ke-30 Agus Surachman</div>
+                    <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Selamat Ulang tahun uang ke-30 Agus Surachman</div>
+                    <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="text-center"><a class="text-center" href="#">LIHAT SEMUA</a></li>
+              </ul>
+              <div class="dropdown-menu-charet"></div>
+            </div>
+          </div>
+          <div class="header-item">
+            <div class="btn btn-pill btn-pill--light"><i class="bi bi-question-circle-fill"></i></div>
+          </div>
+          <div class="header-item">
+            <div class="dropdown profile-dropdown">
+              <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuProfile" aria-expanded="false"
+                class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                <div class="profile-name text-ellipsis">Muhammadd asd jlkj</div>
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                <li class="mb-2">
+                  <a href="" class="dropdown-item ">
+                    <div class="d-flex">
+                      <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
+                      <div>
+                        <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
+                        <small class="text-muted">Lihat profil Anda</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../../assets/images/dropdown-profile/edit-profile.svg" alt="">
+                    Ubah Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../../assets/images/dropdown-profile/change-pw.svg" alt="">
+                    Ubah Password</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../../assets/images/dropdown-profile/about.svg" alt="">
+                    Tentang Aplikasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../../assets/images/dropdown-profile/logout.svg" alt="">
+                    Keluar</a>
+                </li>
+              </ul>
+              <div class="dropdown-menu-charet"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="accent-background" class="active"></section>
+  <section class="container content-wrapper pb-5">
+    <div class="row">
+      <!-- ASIDE -->
+      <div class="col-3">
+        <div class="aside">
+          <!-- PROFILE CONTAINER -->
+          <div id="profile-box-container" class="profile-box d-flex">
+            <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
+            <div>
+              <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
+              <div id="NIK">NIK 12345678987654</div>
+              <small id="department">Departemen Ketenagakerjaan</small>
+              <div class="d-flex align-items-center action">
+                <!-- <button class="btn me-3">Lihat Profil</button> -->
+                <a href="" class="btn btn-white me-3">Lihat Profil Anda</a>
+                <a href="" class="btn btn-link">Edit Profil</a>
+              </div>
+            </div>
+          </div>
+          <!-- // PROFILE CONTAINER // -->
+
+          <!-- ASIDE NAVIGATION -->
+          <div id="asideNavigation" class="aside-navigation" style="margin-top: 3.5rem;">
+            <div class="" id="">
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingOne">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                    MENU UTAMA
+                  </div>
+                </div>
+                <div id="flush-collapseOne" class="collapse collapse show" aria-labelledby="flush-headingOne">
+                  <div class="accordion-body">
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dashboard
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Update Data Mandiri
+                    </a>
+                    <a class="nav-item active">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Persetujuan Dokumen
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingTwo">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                    LAYANAN LAINNYA
+                  </div>
+                </div>
+                <div id="flush-collapseTwo" class="collapse collapse show" aria-labelledby="flush-headingTwo">
+                  <div class="accordion-body">
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dokumen Saya
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Perfoma
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Otentikasi SL
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Cari Pegawai
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Kompetensi
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      MyKPE
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      e-Lapkin
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // ASIDE NAVIGATION // -->
+        </div>
+      </div>
+      <!-- // ASIDE // -->
+
+      <!-- MAIN CONTENT -->
+      <div class="col-9 content">
+
+        <div class="row p-0 mt-3">
+          <div class="col-12">
+            <h2 class="page-title">Persetujuan Dokumen</h2>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb" class="d-inline-block">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Persetujuan Dokumen</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="card dashboard-card">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-5">
+                  <div class="w-100 d-flex justify-content-between">
+                    <a href="./list-persetujuan-dokumen.html" class="btn btn-link ps-0">
+                      <i class="bi bi-chevron-left me-2"></i>
+                      Kembali ke list
+                    </a>
+                    <div>
+                      <button class="btn btn-pill btn-pill--dark" type="button" id="downloadSuccess">
+                        <i class="bi bi-download"></i>
+                      </button>
+                      <a href="./detail-fs-persetujuan-dokumen.html" class="btn btn-pill btn-pill--dark">
+                        <i class="bi bi-fullscreen"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" style="height: 100%;">
+                  <div class="col-4">
+                    <div class="text-muted mb-2">Minggu, 17 Maret - 12:02:21</div>
+                    <h6>Pengadaan mobile app kerjasama dengan digital agency</h6>
+                    <span>Oleh <b>Bagus Setiadi</b></span> <br>
+                    <div class=" badge bg-secondary mt-3">Ditolak</div>
+
+                    <div class="mt-4">
+                      <h6 class="text-primary mb-3">HISTORI DOKUMEN</h6>
+                      <div class="timeline timeline-vertical timeline-primary">
+                        <ul>
+                          <li>
+                            <div class="description">
+                              <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div>
+                              <div class="desc_title"> <b>Bagus Setiadi</b> mengajukan dokumen</div>
+                            </div>
+                          </li>
+                          <!-- PARAF DITOLAK -->
+                          <li>
+                            <div class="description">
+                              <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div>
+                              <div class="desc_title"> <b>Anda</b> telah menolak paraf dokumen</div>
+                            </div>
+                          </li>
+                          <!-- PARAF DITOLAK -->
+                          <!-- PENGAJUAN DITOLAK -->
+                          <li>
+                            <div class="description">
+                              <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div>
+                              <div class="desc_title"> <b> Kholid Nur Wahid </b> memberikan paraf pada dokumen</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="description">
+                              <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div>
+                              <div class="desc_title"> <b> Anda </b>telah menolak persetujuan dokumen</div>
+                            </div>
+                          </li>
+                          <!-- PENGAJUAN DITOLAK -->
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <h6 class="text-primary mb-3">ALASAN PENOLAKAN</h6>
+                      <textarea class="form-control" id="" rows="3" disabled>Tanggal dan budget salah, mohon direvisi</textarea>
+                    </div>
+                  </div>
+                  <div class="col-8 content">
+                    <div id="my-pdf-container"></div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // MAIN CONTENT // -->
+
+    <!-- TOAST -->
+    <div class="toast toast--success toast--top--right" style="z-index: 5">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body d-flex align-items-center">
+          <div class="icon">
+            <img src="../../../assets/images/icon/ico_modal_success.svg" alt="">
+          </div>
+          <div class="">
+            <h6>Dokumen berhasil diunduh</h6>
+            <span>Silahkan cek folder download di komputer Anda</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="toast toast--danger toast--top--right" style="z-index: 5">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body d-flex align-items-center">
+          <div class="icon">
+            <img src="../../../assets/images/icon/ico_modal_failed.svg" alt="">
+          </div>
+          <div class="">
+            <h6>Dokumen gagal diunduh</h6>
+            <span>Terjadi kesalahan, silahkan coba unduh kembali</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div> -->
+    <!-- TOAST -->
+
+
+    </div>
+  </section>
+  <script src="../../../js/utility.js" type="text/javascript"></script>
+  <script src="../../../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js'></script>
+
+  <script>
+    PDFObject.embed("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "#my-pdf-container");
+  </script>
+
+  <script>
+    document.getElementById("downloadSuccess").onclick = function(){
+
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl, {autohide: false})
+      })
+      toastList.forEach(toast => toast.show());
+      console.log(toastList);
+    }
+  </script>
+</body>
+
+</html>

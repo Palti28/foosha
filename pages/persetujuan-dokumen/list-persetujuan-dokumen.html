@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+  <header id="header" class="dashboard-header fixed-top">
+    <div class="bg-accent">
+      <img src="../../assets/images/bg_login_circle.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="header-item-container d-flex justify-content-between">
+        <div class="brand-logo">
+          <img src="../../assets/images/logogram_login.svg" alt="">
+          <span>MySAPK BKN</span>
+        </div>
+        <div class="ms-auto d-flex ">
+          <div class="header-item">
+            <div class="input-group rounded-input-search input-search-light">
+              <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+            </div>
+          </div>
+          <div class="header-item">
+            <div class="dropdown notification-dropdown">
+              <div class="btn btn-pill btn-pill--light dropdown-toggle" type="button" id="dropdownMenuNotification"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="notify-badge"></div>
+                <i class="bi bi-bell-fill"></i>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuNotification">
+                <li class="dropdown-item dropdown-item--title">
+                  <h6>Notifikasi</h6>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Permintaan hapus data untuk riwayat jabatan telah disetujui</div>
+                    <div class="text-muted">Minggu, 27 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Selamat Ulang tahun uang ke-30 Agus Surachman</div>
+                    <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Selamat Ulang tahun uang ke-30 Agus Surachman</div>
+                    <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="text-center"><a class="text-center" href="#">LIHAT SEMUA</a></li>
+              </ul>
+              <div class="dropdown-menu-charet"></div>
+            </div>
+          </div>
+          <div class="header-item">
+            <div class="btn btn-pill btn-pill--light"><i class="bi bi-question-circle-fill"></i></div>
+          </div>
+          <div class="header-item">
+            <div class="dropdown profile-dropdown">
+              <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuProfile" aria-expanded="false"
+                class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                <div class="profile-name text-ellipsis">Muhammadd asd jlkj</div>
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                <li class="mb-2">
+                  <a href="" class="dropdown-item ">
+                    <div class="d-flex">
+                      <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+                      <div>
+                        <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
+                        <small class="text-muted">Lihat profil Anda</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/edit-profile.svg" alt="">
+                    Ubah Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/change-pw.svg" alt="">
+                    Ubah Password</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/about.svg" alt="">
+                    Tentang Aplikasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/logout.svg" alt="">
+                    Keluar</a>
+                </li>
+              </ul>
+              <div class="dropdown-menu-charet"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="accent-background" class="active"></section>
+  <section class="container content-wrapper pb-5">
+    <div class="row">
+      <!-- ASIDE -->
+      <div class="col-3">
+        <div class="aside">
+          <!-- PROFILE CONTAINER -->
+          <div id="profile-box-container" class="profile-box d-flex">
+            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+            <div>
+              <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
+              <div id="NIK">NIK 12345678987654</div>
+              <small id="department">Departemen Ketenagakerjaan</small>
+              <div class="d-flex align-items-center action">
+                <!-- <button class="btn me-3">Lihat Profil</button> -->
+                <a href="" class="btn btn-white me-3">Lihat Profil Anda</a>
+                <a href="" class="btn btn-link">Edit Profil</a>
+              </div>
+            </div>
+          </div>
+          <!-- // PROFILE CONTAINER // -->
+
+          <!-- ASIDE NAVIGATION -->
+          <div id="asideNavigation" class="aside-navigation" style="margin-top: 3.5rem;">
+            <div class="" id="">
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingOne">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                    MENU UTAMA
+                  </div>
+                </div>
+                <div id="flush-collapseOne" class="collapse collapse show" aria-labelledby="flush-headingOne">
+                  <div class="accordion-body">
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dashboard
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Update Data Mandiri
+                    </a>
+                    <a class="nav-item active">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Persetujuan Dokumen
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingTwo">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                    LAYANAN LAINNYA
+                  </div>
+                </div>
+                <div id="flush-collapseTwo" class="collapse collapse show" aria-labelledby="flush-headingTwo">
+                  <div class="accordion-body">
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dokumen Saya
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Perfoma
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Otentikasi SL
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Cari Pegawai
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Kompetensi
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      MyKPE
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      e-Lapkin
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // ASIDE NAVIGATION // -->
+        </div>
+      </div>
+      <!-- // ASIDE // -->
+
+      <!-- MAIN CONTENT -->
+      <div class="col-9 content">
+
+        <div class="row p-0 mt-3">
+          <div class="col-12">
+            <h2 class="page-title">Persetujuan Dokumen</h2>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <nav aria-label="breadcrumb" class="d-inline-block">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Persetujuan Dokumen</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="d-flex flex-gap justify-content-between mb-4">
+              <div class="widget widget-dark">
+                <div class="widget-body d-flex py-2 px-3">
+                  <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                    <div class="widget-title w-25">Menunggu Paraf</div>
+                    <h3 style="color: inherit;">20</h3>
+                  </div>
+                </div>
+                <div class="widget-indicator widget-indicator--danger"></div>
+              </div>
+              <div class="widget widget-dark">
+                <div class="widget-body d-flex py-2 px-3">
+                  <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                    <div class="widget-title w-25">Menunggu Persetujuan</div>
+                    <h3 style="color: inherit;">20</h3>
+                  </div>
+                </div>
+                <div class="widget-indicator widget-indicator--warning"></div>
+              </div>
+              <div class="widget widget-dark">
+                <div class="widget-body d-flex py-2 px-3">
+                  <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                    <div class="widget-title w-25">Disetujui</div>
+                    <h3 style="color: inherit;">20</h3>
+                  </div>
+                </div>
+                <div class="widget-indicator widget-indicator--success"></div>
+              </div>
+              <div class="widget widget-dark">
+                <div class="widget-body d-flex py-2 px-3">
+                  <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                    <div class="widget-title w-25">Ditolak</div>
+                    <h3 style="color: inherit;">20</h3>
+                  </div>
+                </div>
+                <div class="widget-indicator"></div>
+              </div>
+            </div>
+
+            <div class="card dashboard-card">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="filter-group d-flex">
+                    <button class="btn btn-pill dropdown-toggle me-3" type="button" id="dropdownMenuStatus"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Pilih Status
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="dropdownMenuStatus">
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="semua">
+                          <label class="form-check-label" for="semua">
+                            Semua
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="disetujui">
+                          <label class="form-check-label" for="disetujui">
+                            Disetujui
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="menungguParaf">
+                          <label class="form-check-label" for="menungguParaf">
+                            Menunggu Paraf
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="menungguPersetujuan">
+                          <label class="form-check-label" for="menungguPersetujuan">
+                            Mengunggu Persetujuan
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ditolak">
+                          <label class="form-check-label" for="ditolak">
+                            Ditolak
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="me-3">
+                      <input type="date" class="form-control" id="startDate" placeholder="DD-MM-YY">
+                    </div>
+                    <div class="me-3">
+                      <input type="date" class="form-control" id="endDate" placeholder="DD-MM-YY">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Informasi dokumen</th>
+                        <th scope="col">Status</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Minggu, 17 Maret 12:02:21</td>
+                        <td>
+                          <a href="detail-persetujuan-dokumen.html">
+                            <p>Pengadaan mobile app kerjasaa dengan digital agency</p>
+                            <span>Oleh <b>Bagus Setiadi</b></span>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="badge bg-success">Disetujui</div>
+                        </td>
+                        <td class="align-item-vertical">
+                          <i class="bi bi-chevron-right"></i>
+                        </td>
+                      </tr>
+                      <tr class="row-muted">
+                        <td>Minggu, 17 Maret 12:02:21</td>
+                        <td>
+                          <a href="detail-fs-persetujuan-dokumen.html">
+                            <p>Pengadaan mobile app kerjasaa dengan digital agency</p>
+                            <span>Oleh <b>Bagus Setiadi DEMO-FULLSCREEN</b></span>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="badge bg-secondary">Ditolak</div>
+                        </td>
+                        <td class="align-item-vertical">
+                          <i class="bi bi-chevron-right"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // MAIN CONTENT // -->
+
+    </div>
+  </section>
+  <script src="../../js/utility.js" type="text/javascript"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
