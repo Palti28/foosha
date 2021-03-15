@@ -1364,6 +1364,9 @@ label {
   border: 0;
   border-radius: 10px;
   box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  position: fixed;
+  
 
   .toast-header {
     border-top-left-radius: 10px;
@@ -1394,9 +1397,9 @@ label {
 
 
   &.toast--top--right {
-    position: absolute;
+    // position: absolute;
     top: 6rem;
-    right: 4.5rem;
+    right: 27rem;
   }
 
   &.toast--success {
