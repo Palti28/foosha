@@ -23,12 +23,14 @@ $black-heading: #3a3e40;
 $placeholder-dark-input-search : #AFAFAF;
 $placeholder-light-input-search: #ffffff;
 $background-color: #F4F7FB;
+$light-gray: #F8F8F8;
 
 $mysapk-colors: ("primary": #3085ff,
   "black-body": #686b6d,
   "black-heading": #3a3e40,
   "placeholder-dark-input-search" : #AFAFAF,
   "placeholder-light-input-search": #ffffff,
+  "lightgray": #F8F8F8
 );
 
 $theme-colors: map-merge($theme-colors, $mysapk-colors);
@@ -359,4 +361,8 @@ h6 {
     transition: height 0.1s ease-out;
   }
 
+}
+
+.bg-lightgray{
+  background-color: $light-gray;
 }

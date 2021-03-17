@@ -41,6 +41,7 @@
   --bs-black-heading: #3a3e40;
   --bs-placeholder-dark-input-search: #AFAFAF;
   --bs-placeholder-light-input-search: #ffffff;
+  --bs-lightgray: #F8F8F8;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3233,6 +3234,36 @@ textarea.form-control-lg {
   border-color: #ffffff;
 }
 
+.btn-lightgray {
+  color: #000;
+  background-color: #F8F8F8;
+  border-color: #F8F8F8;
+}
+.btn-lightgray:hover {
+  color: #000;
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+}
+.btn-check:focus + .btn-lightgray, .btn-lightgray:focus {
+  color: #000;
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  box-shadow: 0 0 0 0.25rem rgba(211, 211, 211, 0.5);
+}
+.btn-check:checked + .btn-lightgray, .btn-check:active + .btn-lightgray, .btn-lightgray:active, .btn-lightgray.active, .show > .btn-lightgray.dropdown-toggle {
+  color: #000;
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+}
+.btn-check:checked + .btn-lightgray:focus, .btn-check:active + .btn-lightgray:focus, .btn-lightgray:active:focus, .btn-lightgray.active:focus, .show > .btn-lightgray.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(211, 211, 211, 0.5);
+}
+.btn-lightgray:disabled, .btn-lightgray.disabled {
+  color: #000;
+  background-color: #F8F8F8;
+  border-color: #F8F8F8;
+}
+
 .btn-outline-primary {
   color: #3085ff;
   border-color: #3085ff;
@@ -3530,6 +3561,31 @@ textarea.form-control-lg {
 }
 .btn-outline-placeholder-light-input-search:disabled, .btn-outline-placeholder-light-input-search.disabled {
   color: #ffffff;
+  background-color: transparent;
+}
+
+.btn-outline-lightgray {
+  color: #F8F8F8;
+  border-color: #F8F8F8;
+}
+.btn-outline-lightgray:hover {
+  color: #000;
+  background-color: #F8F8F8;
+  border-color: #F8F8F8;
+}
+.btn-check:focus + .btn-outline-lightgray, .btn-outline-lightgray:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 248, 248, 0.5);
+}
+.btn-check:checked + .btn-outline-lightgray, .btn-check:active + .btn-outline-lightgray, .btn-outline-lightgray:active, .btn-outline-lightgray.active, .btn-outline-lightgray.dropdown-toggle.show {
+  color: #000;
+  background-color: #F8F8F8;
+  border-color: #F8F8F8;
+}
+.btn-check:checked + .btn-outline-lightgray:focus, .btn-check:active + .btn-outline-lightgray:focus, .btn-outline-lightgray:active:focus, .btn-outline-lightgray.active:focus, .btn-outline-lightgray.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 248, 248, 0.5);
+}
+.btn-outline-lightgray:disabled, .btn-outline-lightgray.disabled {
+  color: #F8F8F8;
   background-color: transparent;
 }
 
@@ -4927,6 +4983,15 @@ textarea.form-control-lg {
   color: #525252;
 }
 
+.alert-lightgray {
+  color: #636363;
+  background-color: #fefefe;
+  border-color: #fdfdfd;
+}
+.alert-lightgray .alert-link {
+  color: #4f4f4f;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5350,6 +5415,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #666666;
   border-color: #666666;
+}
+
+.list-group-item-lightgray {
+  color: #636363;
+  background-color: #fefefe;
+}
+.list-group-item-lightgray.list-group-item-action:hover, .list-group-item-lightgray.list-group-item-action:focus {
+  color: #636363;
+  background-color: #e5e5e5;
+}
+.list-group-item-lightgray.list-group-item-action.active {
+  color: #fff;
+  background-color: #636363;
+  border-color: #636363;
 }
 
 .btn-close {
@@ -6305,6 +6384,13 @@ textarea.form-control-lg {
 }
 .link-placeholder-light-input-search:hover, .link-placeholder-light-input-search:focus {
   color: white;
+}
+
+.link-lightgray {
+  color: #F8F8F8;
+}
+.link-lightgray:hover, .link-lightgray:focus {
+  color: #f9f9f9;
 }
 
 .ratio {
@@ -11553,6 +11639,9 @@ input[type=radio].btn-check.btn-check--light:checked + label.btn {
 .card-info.bg-yellow {
   background-color: #FFFAE0;
 }
+.card-info.bg-blue {
+  background-color: #EDF4FF;
+}
 
 ul.form-step {
   counter-reset: my-counter;
@@ -11623,6 +11712,14 @@ ul.form-step li.done .form-step-dec {
   position: absolute;
   top: 8px;
   right: 14px;
+}
+
+#pin-input input {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #DFE2E4;
+  text-align: center;
 }
 
 .custom-file-upload input[type=file] {
@@ -12192,6 +12289,10 @@ h6,
 #accent-background.active {
   height: 350px;
   transition: height 0.1s ease-out;
+}
+
+.bg-lightgray {
+  background-color: #F8F8F8;
 }
 
 /*# sourceMappingURL=main.css.map */

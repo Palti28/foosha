@@ -40,7 +40,6 @@
   span {
     cursor: pointer;
   }
-
 }
 
 //button
@@ -65,7 +64,7 @@
   }
 
   &.btn-gray {
-    background-color: #F8F8F8;
+    background-color: $light-gray;
   }
 
   .btn-icon {
@@ -494,7 +493,7 @@
     &:hover {
       .widget-body {
         color: #3A3E40;
-        background-color: #F8F8F8;
+        background-color: $light-gray;
       }
     }
 
@@ -700,7 +699,7 @@ input[type="radio"].btn-check {
     }
 
     &:hover {
-      background-color: #F8F8F8;
+      background-color: $light-gray;
       cursor: pointer;
     }
   }
@@ -710,20 +709,21 @@ input[type="radio"].btn-check {
 //FORM - SELECT
 .form-select {
   color: $black-body;
-  
+
   &.form-select-rounded {
     min-width: 190px;
     border-radius: 35px;
   }
 }
 
-.form-control{
-  &:disabled{
+.form-control {
+  &:disabled {
     color: #AFAFAF;
-    background: #F8F8F8;
+    background: $light-gray;
     border: 0;
   }
 }
+
 // FORM, FORM-CONTROL
 
 
@@ -762,7 +762,7 @@ input[type="radio"].btn-check {
 // CARD FORM //
 .card-form {
   .card-form-left {
-    background-color: #F8F8F8;
+    background-color: $light-gray;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding: 32px 16px;
@@ -790,6 +790,10 @@ input[type="radio"].btn-check {
 
   &.bg-yellow {
     background-color: #FFFAE0;
+  }
+
+  &.bg-blue {
+    background-color: #EDF4FF;
   }
 }
 
@@ -860,7 +864,6 @@ ul.form-step {
     }
   }
 }
-
 // FORM- STEP//
 
 
@@ -889,6 +892,19 @@ ul.form-step {
 }
 
 // INPUT-ICON
+// INPUT PIN
+#pin-input {
+  input {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #DFE2E4;
+    text-align: center;
+  }
+}
+// INPUT PIN
+
+// INPUT //
 
 
 //FILE UPLOAD//
@@ -970,7 +986,7 @@ label {
 .table {
   thead {
     tr {
-      background-color: #F8F8F8;
+      background-color: $light-gray;
       border-radius: 4px;
       color: #AAAAAA;
       font-weight: bolder;
@@ -1366,7 +1382,7 @@ label {
   box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.2);
   z-index: 9999;
   position: fixed;
-  
+
 
   .toast-header {
     border-top-left-radius: 10px;
