@@ -1,4 +1,3 @@
-
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/mixins";
 @import "../bootstrap/scss/variables";
@@ -8,11 +7,10 @@
   @include make-container();
   width: 1000px;
 }
-$theme-colors: map-merge( (
-  "black-body": #686b6d,
-  "black-heading": #3a3e40,
-  "cyan": rgba(29, 186, 212, 1)
-)) !default;
+
+$theme-colors: map-merge(("black-body": #686b6d,
+    "black-heading": #3a3e40,
+    "cyan": rgba(29, 186, 212, 1))) !default;
 $light: #ffffff42;
 $text-muted: #AFAFAF;
 
@@ -114,14 +112,16 @@ h6 {
 .bg-cyan {
   background-color: $cyan;
 }
+
 .bg-purple {
   background-color: $purple;
 }
 
-.text-cyan{
+.text-cyan {
   color: $cyan;
 }
-.text-purple{
+
+.text-purple {
   color: $purple;
 }
 
@@ -374,13 +374,12 @@ h6 {
   top: 0;
   width: 100%;
   z-index: -1;
-  transition: height 0.1s ease-out;
-  height: 0;
-
+  transition: height 0.3s ease-out;
+  height: 0px;
 
   &.active {
     height: 350px;
-    transition: height 0.1s ease-out;
+    transition: height 0.3s ease-out;
   }
 
 }

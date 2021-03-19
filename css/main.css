@@ -12352,12 +12352,12 @@ h6,
   top: 0;
   width: 100%;
   z-index: -1;
-  transition: height 0.1s ease-out;
-  height: 0;
+  transition: height 0.3s ease-out;
+  height: 0px;
 }
 #accent-background.active {
   height: 350px;
-  transition: height 0.1s ease-out;
+  transition: height 0.3s ease-out;
 }
 
 .content-header-light {
