@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="../../../css/main.css">
+  <title>Kompetensi dan Performa</title>
+  <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
   <header id="header" class="dashboard-header fixed-top">
     <div class="bg-accent">
-      <img src="../../../assets/images/bg_login_circle.svg" alt="">
+      <img src="../../assets/images/bg_login_circle.svg" alt="">
     </div>
     <div class="container">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
-          <img src="../../../assets/images/logogram_login.svg" alt="">
+          <img src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
         <div class="ms-auto d-flex ">
@@ -78,7 +78,7 @@
                 <li class="mb-2">
                   <a href="" class="dropdown-item ">
                     <div class="d-flex">
-                      <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
+                      <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
                       <div>
                         <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
                         <small class="text-muted">Lihat profil Anda</small>
@@ -88,22 +88,22 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/edit-profile.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/edit-profile.svg" alt="">
                     Ubah Profile</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/change-pw.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/change-pw.svg" alt="">
                     Ubah Password</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/about.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/about.svg" alt="">
                     Tentang Aplikasi</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/logout.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/logout.svg" alt="">
                     Keluar</a>
                 </li>
               </ul>
@@ -122,7 +122,7 @@
         <div class="aside">
           <!-- PROFILE CONTAINER -->
           <div id="profile-box-container" class="profile-box d-flex">
-            <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
+            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
             <div>
               <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
               <div id="NIK">NIK 12345678987654</div>
@@ -148,17 +148,17 @@
                 </div>
                 <div id="flush-collapseOne" class="collapse collapse show" aria-labelledby="flush-headingOne">
                   <div class="accordion-body">
-                    <a class="nav-item">
+                    <a href="../dashboard/" class="nav-item">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Dashboard
                     </a>
-                    <a class="nav-item active">
+                    <a href="../UDM/all-kategori-list.html" class="nav-item">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Update Data Mandiri
                     </a>
-                    <a class="nav-item">
+                    <a href="../persetujuan-dokumen/list-persetujuan-dokumen.html" class="nav-item">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Persetujuan Dokumen
@@ -175,15 +175,15 @@
                 </div>
                 <div id="flush-collapseTwo" class="collapse collapse show" aria-labelledby="flush-headingTwo">
                   <div class="accordion-body">
-                    <a class="nav-item">
+                    <a href="../dokumen-saya/list-dokumen-saya.html" class="nav-item">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Dokumen Saya
                     </a>
-                    <a class="nav-item">
+                    <a class="nav-item active">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
-                      Perfoma
+                      Kompetensi & Performa
                     </a>
                     <a class="nav-item">
                       <div class="nav-icon"></div>
@@ -194,11 +194,6 @@
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Cari Pegawai
-                    </a>
-                    <a class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Kompetensi
                     </a>
                     <a class="nav-item">
                       <div class="nav-icon"></div>
@@ -223,136 +218,119 @@
       <!-- MAIN CONTENT -->
       <div class="col-9 content">
 
-        <div class="row p-0 mt-3">
-          <div id="content-header" class="content-header-light">
-            <div class="col-12">
-              <h2 class="page-title">Tambah Data Riwayat Jabatan</h2>
-              <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="row p-0">
+          <div class="col-12">
+            <div id="content-header" class="content-header-light">
+              <h2 class="page-title">Kompetensi & Performa</h2>
+              <div class="mb-2">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Update Data Mandiri</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Tambah Data Riwayat Jabatan</li>
+                    <li class="breadcrumb-item active" aria-current="page">Kompetensi & Performa</li>
                   </ol>
                 </nav>
+              </div>
+
+            </div>
+
+            <div class="card dashboard-card p-0 mb-3">
+              <div class="card-form">
+                <div class="row mx-0 card-form-container">
+                  <div class="col-6 card-form-left">
+                    <h5>Kompetensi Saya</h5>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                  </div>
+
+                  <div class="col-6 card-form-right bg-lightgray">
+                    <h5>Detail Pencapaian</h5>
+                    <table class="table table-sm table-list">
+                      <tr>
+                        <th>Integritas</th>
+                        <td style="vertical-align: middle; width: 40%;">
+                          <div class="progress mb-2" style="height:3px ;">
+                            <div class="progress-bar bg-cyan" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="progress" style="height:3px ;">
+                            <div class="progress-bar bg-purple" role="progressbar" style="width: 75%;"
+                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td style="vertical-align: middle; width: 30%;">
+                          <span class="fw-bold text-cyan me-3">4,5</span>
+                          <span class="fw-bold text-purple">3</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Kerjasama</th>
+                        <td style="vertical-align: middle; width: 40%;">
+                          <div class="progress mb-2" style="height:3px ;">
+                            <div class="progress-bar bg-cyan" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="progress" style="height:3px ;">
+                            <div class="progress-bar bg-purple" role="progressbar" style="width: 75%;"
+                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td style="vertical-align: middle; width: 30%;">
+                          <span class="fw-bold text-cyan me-3">4,5</span>
+                          <span class="fw-bold text-purple">3</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="card dashboard-card p-0">
               <div class="card-form">
                 <div class="row mx-0 card-form-container">
-                  <div class="col-4 card-form-left bg-lightgray">
-                    <ul class="form-step">
-                      <li class="done">
-                        <div class="form-step-title">Masukkan data utama</div>
-                        <span class="form-step-desc">Silahkan masukkan data utama untuk riwayat jabatan Anda</span>
-                      </li>
-                      <li class="done">
-                        <div class="form-step-title">Upload Data Pendukung</div>
-                        <span class="form-step-desc">Upload data pendukung yang akan digunakan sebagai verifikasi</span>
-                      </li>
-                      <li class="active">
-                        <div class="form-step-title">Ringkasan</div>
-                        <span class="form-step-desc">Periksa kembali data Anda, pastikan untuk memasukkan informasi yang
-                          masih berlaku</span>
-                      </li>
-                    </ul>
+                  <div class="col-6 card-form-left">
+                    <h5>Performa Saya</h5>
+                    <div class="text-center mt-4">
+                      <img src="../../assets/images/performacexpotential.png" class="w-75 m-auto" alt="">
+                    </div>
                   </div>
-                  <div class="col-8 card-form-right">
-                    <h5 class="mb-3">3. Ringkasan</h5>
-                    <div class="mb2">
-                      <p>Periksa kembali data Anda, pastikan untuk memasukkan informasi yang masih berlaku</p>
-                    </div>
 
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="fs-12 fw-bold ">DATA UTAMA</span>
-                      <button class="btn btn-link">Ubah <i class="bi bi-pencil-fill"></i></button>
-                    </div>
+                  <div class="col-6 card-form-right bg-lightgray">
+                    <h5 class="mb-4">Detail Pencapaian</h5>
+                    <h5>Kinerja Anda sesuai ekspektasi</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lobortis tortor. Maecenas porta, mauris eget euismod tempor, leo leo commodo felis.
+                    </p>
 
-                    <table class="table table table-sm table-list">
-                      <tr>
-                        <th>Jabatan</th>
-                        <td>Pranata Komputer Pertama</td>
-                      </tr>
-                      <tr>
-                        <th>Jenis Jabatan</th>
-                        <td>Fungsional Tertentu</td>
-                      </tr>
-                      <tr>
-                        <th>MK Jabatan</th>
-                        <td>09-04-2021</td>
-                      </tr>
-                      <tr>
-                        <th>TMT Eselon</th>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th>No. SK</th>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th>TMT SK</th>
-                        <td>-</td>
-                      </tr>
-                    </table>
-
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="fs-12 fw-bold ">DATA Pendukung</span>
-                      <button class="btn btn-link">Ubah <i class="bi bi-pencil-fill"></i></button>
-                    </div>
-                    <label class="custom-file-upload btn btn-small text-center mb-3">
-                      <input type="file" name="files1" multiple="">
-                      <div class="d-content w-100">
-                        <div class="img-preview me-2">
-                          <img class="rounded" src="../../../assets/images/160219-student-stock.png" alt="">
+                    <div class="card rounded">
+                      <div class="d-flex flex-row w-100 text-center">
+                        <div class="border-end w-50 py-3">
+                          <h1>3,9</h1>
+                          <span>Potential</span>
                         </div>
-                        <div class="text-start">
-                          <b>SK_jabatan.pdf</b> <br>
-                          <span class="text-muted">Tap disini untuk mengubah file</span>
+                        <div class="w-50 py-3">
+                          <h1>78</h1>
+                          <span>Performance</span>
                         </div>
                       </div>
-                    </label>
-
-                    <div class="d-flex mt-3">
-                      <a href="add-riwayat-jabatan-2.html" class="btn btn-link">Kembali</a>
-                      <button class="btn btn-primary btn-overlay ms-auto me-2">Simpan Sebagai Draft</button>
-                      <a data-bs-toggle="modal" data-bs-target="#addDataModal" class="btn btn-primary">Simpan</a>
                     </div>
                   </div>
-
-
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- // MAIN CONTENT // -->
 
-    <!-- MODAL -->
-    <div class="modal fade" id="addDataModal" tabindex="-1" aria-labelledby="addDataModal" aria-hidden="true">
-      <div class="modal-dialog modal-sm modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <img src="../../../assets/images/icon/ico_modal_success.svg" class="mb-3" style="height: 84px; width: 84px;"
-              alt="">
-            <h5>Penambahan data berhasil diajukan</h5>
-            <p>Permintaan penambahan data telah dikirim. Anda dapat mengecek status pengajuan penambahan data di menu
-              History pengajuan UDM</p>
-            <a href="../riwayat-jabatan/list-riwayat-jabatan.html" class="btn btn-primary">Lihat History Pengajuan</a>
-            <a href="../all-kategori-list.html" class="btn btn-link mt-1">Kembali ke list UDM</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     </div>
   </section>
-  <script src="../../../js/utility.js" type="text/javascript"></script>
-  <script src="../../../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+    integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+    crossorigin="anonymous"></script>
+  <script src="../../js/chart.js"></script>
+  <script src="../../js/utility.js" type="text/javascript"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

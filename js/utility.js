@@ -3,23 +3,38 @@ const accentBackground = document.getElementById("accent-background");
 const profileBox = document.getElementById("profile-box-container");
 const asideNavigation = document.getElementById("asideNavigation");
 const header = document.getElementById("header");
+
+const contentHeader = document.getElementById("content-header");
+// const contentHeaderNavButton = contentHeader.querySelector(".btn");
+
+
 if (document.body.contains(accentBackground && header)) {
   window.onload = function () {
     document.onscroll = scrollFunction;
   }
 
   function scrollFunction() {
+    //document scrolled
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       accentBackground.classList.remove("active");
       profileBox.classList.add("profile-box--small");
       asideNavigation.style.marginTop = "1rem"
       header.classList.add("header-light");
+
+      if(document.body.contains(contentHeader)){
+        contentHeader.classList.remove("content-header-light");
+        contentHeader.classList.add("content-header-dark");
+      }
+    //document on very top
     } else {
       accentBackground.classList.add("active");
       profileBox.classList.remove("profile-box--small");
       asideNavigation.style.marginTop = "3.5rem"
       header.classList.remove("header-light");
-
+      if(document.body.contains(contentHeader)){
+        contentHeader.classList.add("content-header-light");
+        contentHeader.classList.remove("content-header-dark");
+      }
     }
   }
 }
@@ -60,12 +75,12 @@ if (document.body.contains(container)) {
         }
       }
     }
-    if(keyDel == 8 || keyDel == 46){
+    if (keyDel == 8 || keyDel == 46) {
       var previous = target;
-      while (previous = previous.previousElementSibling){
-        if(previous == null)
+      while (previous = previous.previousElementSibling) {
+        if (previous == null)
           break;
-        if(previous.tagName.toLowerCase() == "input"){
+        if (previous.tagName.toLowerCase() == "input") {
           previous.focus();
           break
         }

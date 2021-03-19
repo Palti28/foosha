@@ -636,11 +636,11 @@
 .breadcrumb {
   a {
     text-decoration: none;
-    color: #fff;
+    // color: inherit;
   }
 
   .breadcrumb-item.active {
-    color: rgb(255 255 255 / 67%);
+    color: inherit
   }
 
   margin-bottom: 0;
@@ -653,7 +653,7 @@
 
 .breadcrumb-item+.breadcrumb-item::before {
   content: "\003E";
-  color: #fff;
+  color: inherit;
 }
 
 // TAB - PILL //
@@ -753,6 +753,9 @@ input[type="radio"].btn-check {
   .modal-content {
     border-radius: 16px;
   }
+  .btn{
+    min-width: 80px;
+  }
 }
 
 // MODAL //
@@ -762,13 +765,15 @@ input[type="radio"].btn-check {
 // CARD FORM //
 .card-form {
   .card-form-left {
-    background-color: $light-gray;
+    // background-color: $light-gray;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding: 32px 16px;
   }
 
   .card-form-right {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
     padding: 32px 24px 32px 16px;
   }
 }
@@ -796,8 +801,31 @@ input[type="radio"].btn-check {
     background-color: #EDF4FF;
   }
 }
-
 // CARD INFO
+
+//CARD THUMBNAIL
+.card.file-thumbnail{
+  // cursor: pointer;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  img{
+    height: 140px;
+  }
+
+  .icon-thumbnail{
+    min-height: 140px;
+    text-align: center;
+    background-color: $light-gray;
+    img{
+      width: 40px;
+      // height: auto;
+    }
+  }
+}
+//CARD THUMBNAIL
+
 // CARD
 
 // FORM- STEP//
@@ -1029,6 +1057,13 @@ label {
       color: #AFAFAF !important;
     }
   }
+
+  .img-preview{
+    img{
+      height: 32px;
+      width: auto;
+    }
+  }
 }
 
 .table-list {
@@ -1225,11 +1260,6 @@ label {
         .description {
           color: #AFAFAF;
           // border-left-color: $gray-100;
-
-
-          .desc_time {
-            // color: $gray-100;
-          }
         }
       }
     }
@@ -1432,3 +1462,41 @@ label {
 }
 
 // TOAST //
+
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
+}
+
+// NAV
+.nav.nav-button{
+  margin: 24px 0 24px;
+}
+
+.nav{
+  &.nav-dark{
+    .nav-item{
+      a.nav-link{
+        color: inherit;
+        padding: 16px 8px;
+        border-radius: 8px;
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.096);
+        }
+        &.active{
+          background-color: rgba(0, 0, 0, 0.096);
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+// NAV

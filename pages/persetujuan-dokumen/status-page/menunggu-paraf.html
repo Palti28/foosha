@@ -238,7 +238,7 @@
               <div class="card-body p-4">
                 <div class="d-flex justify-content-between mb-5">
                   <div class="w-100 d-flex justify-content-between">
-                    <a href="./list-persetujuan-dokumen.html" class="btn btn-link ps-0">
+                    <a href="../list-persetujuan-dokumen.html" class="btn btn-link ps-0">
                       <i class="bi bi-chevron-left me-2"></i>
                       Kembali ke list
                     </a>
@@ -258,7 +258,7 @@
                     <div class="text-muted mb-2">Minggu, 17 Maret - 12:02:21</div>
                     <h6>Pengadaan mobile app kerjasama dengan digital agency</h6>
                     <span>Oleh <b>Bagus Setiadi</b></span> <br>
-                    <div class=" badge bg-warning mt-3">Menunggu Paraf</div>
+                    <div class=" badge bg-danger mt-3">Menunggu Paraf</div>
 
                     <div class="mt-4">
                       <h6 class="text-primary mb-3">HISTORI DOKUMEN</h6>
@@ -285,7 +285,7 @@
                         </ul>
                       </div>
                       <div class="">
-                        <button class="btn btn-primary btn-overlay ms-auto me-2">Tolak</button>
+                        <a href="../list-persetujuan-dokumen.html" class="btn btn-primary btn-overlay ms-auto me-2">Tolak</a>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passPhrase">Beri
                           Paraf</button>
 
@@ -338,6 +338,7 @@
     </div>
   </section>
 
+  //modal input pass phrase
   <div class="modal fade" id="passPhrase" tabindex="-1" aria-labelledby="passPhrase" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content">
@@ -367,14 +368,15 @@
           </div> -->
           <div class="text-center">
             <button class="btn btn-primary btn-overlay me-3" data-bs-dismiss="modal">Batal</a>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#docApproved">Konfirmasi</a>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signDoc">Konfirmasi</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="docApproved" tabindex="-1" aria-labelledby="docApproved" aria-hidden="true">
+  //modal success confirmation
+  <div class="modal fade" id="signDoc" tabindex="-1" aria-labelledby="signDoc" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -382,7 +384,7 @@
             <img src="../../../assets/images/icon/ico_modal_success.svg" class="mb-3" style="height: 84px; width: 84px;"
               alt="">
           </div>
-          <h5 class="text-center">Dokumen telah berhasil disetujui</h5>
+          <h5 class="text-center">Dokumen telah berhasil diparaf</h5>
           <p>Anda telah berhasil menyetujui dokumen</p>
 
           <div class="card border-0 mb-3">

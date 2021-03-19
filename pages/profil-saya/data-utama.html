@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="../../../css/main.css">
+  <title>Dokumen Saya</title>
+  <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
   <header id="header" class="dashboard-header fixed-top">
     <div class="bg-accent">
-      <img src="../../../assets/images/bg_login_circle.svg" alt="">
+      <img src="../../assets/images/bg_login_circle.svg" alt="">
     </div>
     <div class="container">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
-          <img src="../../../assets/images/logogram_login.svg" alt="">
+          <img src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
         <div class="ms-auto d-flex ">
@@ -78,7 +78,7 @@
                 <li class="mb-2">
                   <a href="" class="dropdown-item ">
                     <div class="d-flex">
-                      <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
+                      <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
                       <div>
                         <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
                         <small class="text-muted">Lihat profil Anda</small>
@@ -88,22 +88,22 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/edit-profile.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/edit-profile.svg" alt="">
                     Ubah Profile</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/change-pw.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/change-pw.svg" alt="">
                     Ubah Password</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/about.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/about.svg" alt="">
                     Tentang Aplikasi</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <img src="../../../assets/images/dropdown-profile/logout.svg" alt="">
+                    <img src="../../assets/images/dropdown-profile/logout.svg" alt="">
                     Keluar</a>
                 </li>
               </ul>
@@ -122,7 +122,7 @@
         <div class="aside">
           <!-- PROFILE CONTAINER -->
           <div id="profile-box-container" class="profile-box d-flex">
-            <img class="avatar" src="../../../assets/images/160219-student-stock.png" alt="">
+            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
             <div>
               <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
               <div id="NIK">NIK 12345678987654</div>
@@ -153,12 +153,12 @@
                       <i class="bi bi-columns-gap me-4"></i>
                       Dashboard
                     </a>
-                    <a class="nav-item active">
+                    <a class="nav-item">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Update Data Mandiri
                     </a>
-                    <a class="nav-item">
+                    <a class="nav-item active">
                       <div class="nav-icon"></div>
                       <i class="bi bi-columns-gap me-4"></i>
                       Persetujuan Dokumen
@@ -223,136 +223,144 @@
       <!-- MAIN CONTENT -->
       <div class="col-9 content">
 
-        <div class="row p-0 mt-3">
-          <div id="content-header" class="content-header-light">
-            <div class="col-12">
-              <h2 class="page-title">Tambah Data Riwayat Jabatan</h2>
-              <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="row p-0">
+          <div class="col-12">
+            <div id="content-header">
+              <h2 class="page-title">Persetujuan Dokumen</h2>
+              <div class="mb-2">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Update Data Mandiri</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Tambah Data Riwayat Jabatan</li>
+                    <li class="breadcrumb-item active" aria-current="page">Profil Saya</li>
                   </ol>
                 </nav>
               </div>
+              <ul class="nav nav-pills my-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Data Utama</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Golongan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jabatan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Posisi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pendidikan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pribadi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Keluarga</a>
+                </li>
+              </ul>
+              <p class="mb-3">Menampilkan semua dokumen</p>
+
             </div>
-
-            <div class="card dashboard-card p-0">
-              <div class="card-form">
-                <div class="row mx-0 card-form-container">
-                  <div class="col-4 card-form-left bg-lightgray">
-                    <ul class="form-step">
-                      <li class="done">
-                        <div class="form-step-title">Masukkan data utama</div>
-                        <span class="form-step-desc">Silahkan masukkan data utama untuk riwayat jabatan Anda</span>
-                      </li>
-                      <li class="done">
-                        <div class="form-step-title">Upload Data Pendukung</div>
-                        <span class="form-step-desc">Upload data pendukung yang akan digunakan sebagai verifikasi</span>
-                      </li>
-                      <li class="active">
-                        <div class="form-step-title">Ringkasan</div>
-                        <span class="form-step-desc">Periksa kembali data Anda, pastikan untuk memasukkan informasi yang
-                          masih berlaku</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-8 card-form-right">
-                    <h5 class="mb-3">3. Ringkasan</h5>
-                    <div class="mb2">
-                      <p>Periksa kembali data Anda, pastikan untuk memasukkan informasi yang masih berlaku</p>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="fs-12 fw-bold ">DATA UTAMA</span>
-                      <button class="btn btn-link">Ubah <i class="bi bi-pencil-fill"></i></button>
-                    </div>
-
-                    <table class="table table table-sm table-list">
-                      <tr>
-                        <th>Jabatan</th>
-                        <td>Pranata Komputer Pertama</td>
-                      </tr>
-                      <tr>
-                        <th>Jenis Jabatan</th>
-                        <td>Fungsional Tertentu</td>
-                      </tr>
-                      <tr>
-                        <th>MK Jabatan</th>
-                        <td>09-04-2021</td>
-                      </tr>
-                      <tr>
-                        <th>TMT Eselon</th>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th>No. SK</th>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th>TMT SK</th>
-                        <td>-</td>
-                      </tr>
-                    </table>
-
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="fs-12 fw-bold ">DATA Pendukung</span>
-                      <button class="btn btn-link">Ubah <i class="bi bi-pencil-fill"></i></button>
-                    </div>
-                    <label class="custom-file-upload btn btn-small text-center mb-3">
-                      <input type="file" name="files1" multiple="">
-                      <div class="d-content w-100">
-                        <div class="img-preview me-2">
-                          <img class="rounded" src="../../../assets/images/160219-student-stock.png" alt="">
-                        </div>
-                        <div class="text-start">
-                          <b>SK_jabatan.pdf</b> <br>
-                          <span class="text-muted">Tap disini untuk mengubah file</span>
-                        </div>
-                      </div>
-                    </label>
-
-                    <div class="d-flex mt-3">
-                      <a href="add-riwayat-jabatan-2.html" class="btn btn-link">Kembali</a>
-                      <button class="btn btn-primary btn-overlay ms-auto me-2">Simpan Sebagai Draft</button>
-                      <a data-bs-toggle="modal" data-bs-target="#addDataModal" class="btn btn-primary">Simpan</a>
-                    </div>
-                  </div>
-
-
+            <!-- <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between">
+                  <h5>Informasi Dasar</h5>
+                  <a href="" class="btn btn-link">Ubah <i class="bi bi-pencil-fill ms-2"></i></a>
                 </div>
+                <table class="table table table-sm table-list">
+                  <tr>
+                    <th>Golongan</th>
+                    <td>III/a</td>
+                  </tr>
+                  <tr>
+                    <th>Nama Pangkat</th>
+                    <td>Penata Mda</td>
+                  </tr>
+                  <tr>
+                    <th>TMT Golongan Awal</th>
+                    <td>09-04-2021</td>
+                  </tr>
+                </table>
+              </div>
+              </a>
+            </div> -->
+            <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between">
+                  <h5>Ubah Informasi Dasar</h5>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="golongan">Golongan</label>
+                    <select class="form-select" id="golongan" aria-label="Default select example">
+                      <option selected>III/a</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="golongan">Nama Pangkat</label>
+                    <select class="form-select" id="namaPangkat" aria-label="Default select example">
+                      <option selected>Penata Muda</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-4">
+                    <label for="tmtGolAwal">TMT Golongan Awal</label>
+                    <input type="date" class="form-control" id="tmtGolAwal" placeholder="DD-MM-YY">
+                  </div>
+                </div>
+
+                <button class="btn btn-primary m3-4">Simpan</button>
+                <button class="btn btn-link">Batal</button>
+
               </div>
             </div>
-
+            <div class="card dashboard-card">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between">
+                  <h5>Kepegawaian</h5>
+                  <a href="" class="btn btn-link">Ubah <i class="bi bi-pencil-fill ms-2"></i></a>
+                </div>
+                <table class="table table table-sm table-list">
+                  <tr>
+                    <th>Kependudukan PNS</th>
+                    <td>Pranata Komputer Pertama</td>
+                  </tr>
+                  <tr>
+                    <th>Status Pegawai</th>
+                    <td>Fungsional Tertentu</td>
+                  </tr>
+                  <tr>
+                    <th>TMT CPNS</th>
+                    <td>09-04-2021</td>
+                  </tr>
+                  <tr>
+                    <th>No. TMT CPNS</th>
+                    <td>UP.3/2/2008</td>
+                  </tr>
+                  <tr>
+                    <th>Tgl SK CPNS</th>
+                    <td>28-11-2008</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- // MAIN CONTENT // -->
 
-    <!-- MODAL -->
-    <div class="modal fade" id="addDataModal" tabindex="-1" aria-labelledby="addDataModal" aria-hidden="true">
-      <div class="modal-dialog modal-sm modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <img src="../../../assets/images/icon/ico_modal_success.svg" class="mb-3" style="height: 84px; width: 84px;"
-              alt="">
-            <h5>Penambahan data berhasil diajukan</h5>
-            <p>Permintaan penambahan data telah dikirim. Anda dapat mengecek status pengajuan penambahan data di menu
-              History pengajuan UDM</p>
-            <a href="../riwayat-jabatan/list-riwayat-jabatan.html" class="btn btn-primary">Lihat History Pengajuan</a>
-            <a href="../all-kategori-list.html" class="btn btn-link mt-1">Kembali ke list UDM</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     </div>
   </section>
-  <script src="../../../js/utility.js" type="text/javascript"></script>
-  <script src="../../../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../../js/utility.js" type="text/javascript"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
