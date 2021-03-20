@@ -11634,6 +11634,7 @@ input[type=radio].btn-check.btn-check--light:checked + label.btn {
   display: flex;
   align-items: center;
   font-size: 12px;
+  align-items: start;
 }
 .card-info i {
   font-size: 1rem;
@@ -12067,6 +12068,18 @@ label {
   font-weight: bolder;
 }
 
+.badge {
+  height: fit-content;
+}
+
+.badge.round-badge {
+  display: inline-block;
+  padding: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+}
+
 @font-face {
   font-family: "proxima";
   src: url("../fonts/ProximaNova-Regular.otf");
@@ -12407,6 +12420,11 @@ h6,
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.btn-ghost {
+  border: none;
+  background: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
+  <title>Dokumen Saya</title>
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+  <header id="header" class="dashboard-header fixed-top">
+    <div class="bg-accent">
+      <img src="../../assets/images/bg_login_circle.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="header-item-container d-flex justify-content-between">
+        <div class="brand-logo">
+          <img src="../../assets/images/logogram_login.svg" alt="">
+          <span>MySAPK BKN</span>
+        </div>
+        <div class="ms-auto d-flex ">
+          <div class="header-item">
+            <div class="input-group rounded-input-search input-search-light">
+              <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+            </div>
+          </div>
+          <div class="header-item">
+            <div class="dropdown notification-dropdown">
+              <div class="btn btn-pill btn-pill--light dropdown-toggle" type="button" id="dropdownMenuNotification"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="notify-badge"></div>
+                <i class="bi bi-bell-fill"></i>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuNotification">
+                <li class="dropdown-item dropdown-item--title">
+                  <h6>Notifikasi</h6>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Permintaan hapus data untuk riwayat jabatan telah disetujui</div>
+                    <div class="text-muted">Minggu, 27 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="dropdown-item new">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Selamat Ulang tahun uang ke-30 Agus Surachman</div>
+                    <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="">
+                    <div class="badge bg-primary">Pribadi</div>
+                    <div class="body">Selamat Ulang tahun uang ke-30 Agus Surachman</div>
+                    <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
+                  </a>
+                </li>
+                <li class="text-center"><a class="text-center" href="#">LIHAT SEMUA</a></li>
+              </ul>
+              <div class="dropdown-menu-charet"></div>
+            </div>
+          </div>
+          <div class="header-item">
+            <div class="btn btn-pill btn-pill--light"><i class="bi bi-question-circle-fill"></i></div>
+          </div>
+          <div class="header-item">
+            <div class="dropdown profile-dropdown">
+              <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuProfile" aria-expanded="false"
+                class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                <div class="profile-name text-ellipsis">Muhammadd asd jlkj</div>
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                <li class="mb-2">
+                  <a href="" class="dropdown-item ">
+                    <div class="d-flex">
+                      <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+                      <div>
+                        <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
+                        <small class="text-muted">Lihat profil Anda</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/edit-profile.svg" alt="">
+                    Ubah Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/change-pw.svg" alt="">
+                    Ubah Password</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/about.svg" alt="">
+                    Tentang Aplikasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../../assets/images/dropdown-profile/logout.svg" alt="">
+                    Keluar</a>
+                </li>
+              </ul>
+              <div class="dropdown-menu-charet"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="accent-background" class="active"></section>
+  <section class="container content-wrapper pb-5">
+    <div class="row">
+      <!-- ASIDE -->
+      <div class="col-3">
+        <div class="aside">
+          <!-- PROFILE CONTAINER -->
+          <div id="profile-box-container" class="profile-box d-flex">
+            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+            <div>
+              <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
+              <div id="NIK">NIK 12345678987654</div>
+              <small id="department">Departemen Ketenagakerjaan</small>
+              <div class="d-flex align-items-center action">
+                <!-- <button class="btn me-3">Lihat Profil</button> -->
+                <a href="" class="btn btn-white me-3">Lihat Profil Anda</a>
+                <a href="" class="btn btn-link">Edit Profil</a>
+              </div>
+            </div>
+          </div>
+          <!-- // PROFILE CONTAINER // -->
+
+          <!-- ASIDE NAVIGATION -->
+          <div id="asideNavigation" class="aside-navigation" style="margin-top: 3.5rem;">
+            <div class="" id="">
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingOne">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                    MENU UTAMA
+                  </div>
+                </div>
+                <div id="flush-collapseOne" class="collapse collapse show" aria-labelledby="flush-headingOne">
+                  <div class="accordion-body">
+                    <a href="../dashboard/" class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dashboard
+                    </a>
+                    <a href="../UDM/all-kategori-list.html" class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Update Data Mandiri
+                    </a>
+                    <a href="../persetujuan-dokumen/list-persetujuan-dokumen.html" class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Persetujuan Dokumen
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="nav-header" id="flush-headingTwo">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                    LAYANAN LAINNYA
+                  </div>
+                </div>
+                <div id="flush-collapseTwo" class="collapse collapse show" aria-labelledby="flush-headingTwo">
+                  <div class="accordion-body">
+                    <a href="../dokumen-saya/list-dokumen-saya.html" class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Dokumen Saya
+                    </a>
+                    <a href="../kompetensi-performa/kompetensi-saya.html" class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Kompetensi & Performa
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Otentikasi SL
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      Cari Pegawai
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      MyKPE
+                    </a>
+                    <a class="nav-item">
+                      <div class="nav-icon"></div>
+                      <i class="bi bi-columns-gap me-4"></i>
+                      e-Lapkin
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // ASIDE NAVIGATION // -->
+        </div>
+      </div>
+      <!-- // ASIDE // -->
+
+      <!-- MAIN CONTENT -->
+      <div class="col-9 content">
+        <div class="row p-0">
+          <div class="col-12">
+            <div id="content-header" class="content-header-light">
+              <h2 class="page-title">MyKPE - Kartu PNS Elektronik</h2>
+              <div class="mb-2">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">MYKPE - Kartu PNS Elektronik</li>
+                  </ol>
+                </nav>
+              </div>
+              <p class="mb-3">Menampilkan semua dokumen</p>
+            </div>
+
+            <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="../../assets/images/KPE-bg.png" alt="">
+                  </div>
+                  <div class="col-6">
+                    <div class="card-info bg-blue">
+                      <i class="bi bi-info-circle-fill text-primary"></i>
+                      <div>
+                        <h5 class="d-block">Apa itu MyKPE ?</h5>
+                        <p>Kartu identitas elektronik bagi PNS untuk memudahkan berbagai pelayanan PNS, penerima pensiun
+                          PNS dan keluarganya.</p>
+                      </div>
+                    </div>
+                    <div class="card rounded mt-3">
+                      <div class="d-flex flex-row w-100 text-center">
+                        <button class="btn-ghost border-end w-50 py-3">
+                          <h4><i class="bi bi-download text-primary"></i></h4>
+                          <span class="fw-bolder">Download</span>
+                        </button>
+                        <button class="btn-ghost w-50 py-3" data-bs-toggle="modal" data-bs-target="#ubahFoto">
+                          <h4><i class="bi bi-person-bounding-box text-primary"></i></h4>
+                          <span class="fw-bolder">Ubah Foto</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <h5 class="mb-4">Riwayat MyKPE</h5>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">Informasi dokumen</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Minggu, 17 Maret 12:02:21</td>
+                      <td>
+                        <a href="detail-persetujuan-dokumen.html">
+                          <p>Mengajukan perubahan foto myKPE</p>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="badge bg-success">Disetujui</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Minggu, 17 Maret 12:02:21</td>
+                      <td>
+                        <a href="detail-persetujuan-dokumen.html">
+                          <p>Mengajukan perubahan foto myKPE</p>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="badge bg-warning">Menunggu</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Minggu, 17 Maret 12:02:21</td>
+                      <td>
+                        <a href="detail-persetujuan-dokumen.html">
+                          <p>Mengajukan perubahan foto myKPE</p>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="badge bg-secondary">Ditolak</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // MAIN CONTENT // -->
+    </div>
+
+    <!-- Modal ubah foto -->
+    <div class="modal fade" id="ubahFoto" tabindex="-1" aria-labelledby="ubahFoto" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="ubahFoto">Ubah Foto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Upload</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Kamera</button>
+              </li>
+            </ul>
+            <!-- Upload -->
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="bg-lightgray rounded p-5">
+                  <div class="m-auto text-center py-4">
+                    <h6>Upload Foto Anda</h6>
+                    <p>Lampirkan foto ukuran 200x293 dengan format
+                      JPG atau PNG</p>
+                    <button class="btn btn-primary">Browse</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Kamera -->
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="bg-lightgray rounded p-5">
+                  <div class="m-auto text-center py-4">
+                    <h1><i class="bi bi-camera-video"></i></h1>
+                    <h6>Beri akses kamera</h6>
+                    <p>Ijinkan browser untuk mengakses kamera Anda</p>
+
+                    <!-- kamera tidak diizinkan -->
+                    <!-- <h1><i class="bi bi-camera-video-off"></i></h1>
+                    <h6>Tidak dapat menemukan kamera</h6>
+                    <p>Pastikan kamera/webcam yang digunakan dalam keadaan menyala dan anda telah memberikan akses browser untuk mengaktifkan kamera</p>
+                  -->
+
+                    <!-- <video id="video" width="640" height="480" autoplay></video>
+                    <button id="snap">Snap Photo</button>
+                    <canvas id="canvas" width="640" height="480"></canvas> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../../js/camera.js"></script>
+  <script src="../../js/utility.js" type="text/javascript"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

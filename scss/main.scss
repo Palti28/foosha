@@ -453,3 +453,9 @@ h6 {
 .cursor-pointer {
   cursor: pointer;
 }
+
+//remove button style
+.btn-ghost{
+  border: none;
+  background: transparent;
+}
