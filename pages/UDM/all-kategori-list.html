@@ -4,30 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
   <header id="header" class="dashboard-header fixed-top">
-    <div class="bg-accent">
+    <!-- <div class="bg-accent">
       <img src="../../assets/images/bg_login_circle.svg" alt="">
-    </div>
-    <div class="container">
+    </div> -->
+    <div class="container header-content">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
           <img src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
-        <div class="ms-auto d-flex ">
-          <div class="header-item">
+        <!-- this line -->
+        <div class="ms-auto d-flex"> 
+          <!-- <div class="header-item">
             <div class="input-group rounded-input-search input-search-light">
               <input type="text" class="form-control" placeholder="Recipient's username"
                 aria-label="Recipient's username" aria-describedby="basic-addon2">
               <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
             </div>
-          </div>
+          </div> -->
           <div class="header-item">
             <div class="dropdown notification-dropdown">
               <div class="btn btn-pill btn-pill--light dropdown-toggle" type="button" id="dropdownMenuNotification"
@@ -53,7 +54,7 @@
                     <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
                   </a>
                 </li>
-                <li class="text-center"><a class="text-center" href="#">LIHAT SEMUA</a></li>
+                <li class="text-center"><a class="text-center" href="../notifikasi/list-notifikasi.html">LIHAT SEMUA</a></li>
               </ul>
               <div class="dropdown-menu-charet"></div>
             </div>
@@ -64,7 +65,8 @@
           <div class="header-item">
             <div class="dropdown profile-dropdown">
               <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuProfile" aria-expanded="false"
-                class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                class="btn dropdown-toggle btn-pill--light btn--tp--light ">
+                <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
                 <div class="profile-name text-ellipsis">Muhammadd asd jlkj</div>
               </div>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
@@ -72,7 +74,7 @@
                   <a href="" class="dropdown-item ">
                     <div class="d-flex">
                       <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
-                      <div>
+                      <div class="">
                         <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
                         <small class="text-muted">Lihat profil Anda</small>
                       </div>
@@ -111,7 +113,7 @@
   <section class="container content-wrapper pb-5">
     <div class="row">
       <!-- ASIDE -->
-      <div class="col-3">
+      <div class="col-lg-3 d-none d-lg-block">
         <div class="aside">
           <!-- PROFILE CONTAINER -->
           <div id="profile-box-container" class="profile-box d-flex">
@@ -209,21 +211,20 @@
       <!-- // ASIDE // -->
 
       <!-- MAIN CONTENT -->
-      <div class="col-9 content">
+      <div class="col-lg-9 col-12 content">
 
         <div class="row p-0 mt-3">
           <div class="col-12">
             <div id="content-header" class="content-header-light">
-
               <h2 class="page-title">Update Data Mandiri</h2>
-              <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="d-flex flex-column flex-lg-row justify-content-between mb-4">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Library</li>
                   </ol>
                 </nav>
-                <div class="d-inline-block ms-auto">
+                <div class="d-inline-block ms-lg-auto mt-3 mt-lg-0">
                   <ul class="nav nav-pills">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page"
@@ -241,7 +242,7 @@
               <div class="card-body p-4">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                   <div class="">
-                    <span>Menampilkan semua kategori update data mandiri</span>
+                    <span class="d-none d-lg-block">Menampilkan semua kategori update data mandiri</span>
                   </div>
                   <div>
                     <input type="radio" class="btn-check btn-check--light" name="options" id="option1"
@@ -252,7 +253,7 @@
                       autocomplete="off">
                     <label class="btn btn-icon btn--check-light" for="option2"><i class="bi bi-list-ul"></i></label>
                     <div class="d-inline-block">
-                      <div class="input-group rounded-input-search">
+                      <div class="input-group rounded-input-search" style="min-width: 13rem;">
                         <input type="text" class="form-control" placeholder="Recipient's username"
                           aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>

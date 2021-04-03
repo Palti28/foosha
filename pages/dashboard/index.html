@@ -7,27 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../css/main.css">
+  <!-- <link rel="stylesheet" href="../../css/mobile.css"> -->
 </head>
 
 <body>
   <header id="header" class="dashboard-header fixed-top">
-    <div class="bg-accent">
+    <!-- <div class="bg-accent">
       <img src="../../assets/images/bg_login_circle.svg" alt="">
-    </div>
-    <div class="container">
+    </div> -->
+    <div class="container header-content">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
           <img src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
-        <div class="ms-auto d-flex ">
-          <div class="header-item">
+        <!-- this line -->
+        <div class="ms-auto d-flex"> 
+          <!-- <div class="header-item">
             <div class="input-group rounded-input-search input-search-light">
               <input type="text" class="form-control" placeholder="Recipient's username"
                 aria-label="Recipient's username" aria-describedby="basic-addon2">
               <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
             </div>
-          </div>
+          </div> -->
           <div class="header-item">
             <div class="dropdown notification-dropdown">
               <div class="btn btn-pill btn-pill--light dropdown-toggle" type="button" id="dropdownMenuNotification"
@@ -64,7 +66,8 @@
           <div class="header-item">
             <div class="dropdown profile-dropdown">
               <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuProfile" aria-expanded="false"
-                class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                class="btn dropdown-toggle btn-pill--light btn--tp--light ">
+                <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
                 <div class="profile-name text-ellipsis">Muhammadd asd jlkj</div>
               </div>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
@@ -72,7 +75,7 @@
                   <a href="" class="dropdown-item ">
                     <div class="d-flex">
                       <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
-                      <div>
+                      <div class="">
                         <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
                         <small class="text-muted">Lihat profil Anda</small>
                       </div>
@@ -103,9 +106,6 @@
               <div class="dropdown-menu-charet"></div>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
@@ -114,7 +114,7 @@
   <section class="container content-wrapper pb-5">
     <div class="row">
       <!-- ASIDE -->
-      <div class="col-3">
+      <div class="col-lg-3 d-none d-lg-block">
         <div class="aside">
           <!-- PROFILE CONTAINER -->
           <div id="profile-box-container" class="profile-box d-flex">
@@ -218,18 +218,18 @@
       <!-- // ASIDE // -->
 
       <!-- MAIN CONTENT -->
-      <div class="col-9 content">
+      <div class="col-lg-9 col-12 content">
         <div class="row p-0">
           <div class="col-12">
             <div class="card dashboard-card border-0" style="background-color: #2477EF;">
               <div class="card-body p-4">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-12 col-lg-4">
                     <h5 style="color: #fff">Persetujuan Dokumen</h5>
                     <small class="text-light">Lihat permintaan untuk persetujuan dokumen</small> <br>
                     <button class="btn btn-white mt-2">Lihat detail</button>
                   </div>
-                  <div class="col-8 d-flex flex-column">
+                  <div class="col-12 col-lg-8 d-flex flex-column">
                     <a class="nav-link dropdown-toggle d-inline-block ms-auto text-light" href="#"
                       id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       7 hari terakhir
@@ -239,7 +239,7 @@
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    <div class="d-flex flex-gap justify-content-between">
+                    <div class="d-flex flex-gap justify-content-between overflow-sm-auto">
                       <div class="widget widget-dark">
                         <div class="widget-body py-2 px-3">
                           <div class="widget-title">Menunggu Paraf</div>
@@ -280,7 +280,7 @@
           <div class="col-12">
             <div class="card dashboard-card">
               <div class="card-body p-4">
-                <div class="d-flex justify-content-between mb-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                   <div class="mb-2">
                     <h5 class="mb-0">Update Data Mandiri</h5>
                     <span>Lihat dan update kategori riwayat data secara mandiri</span>
@@ -289,7 +289,7 @@
                     <a href="../UDM/riwayat-jabatan/list-riwayat-jabatan.html" class="btn btn-primary">Riwayat Pengajuan</a>
                   </div>
                 </div>
-                <div class="d-grid grid-gap">
+                <div class="widget-grid-container d-grid grid-2-sm grid-gap">
                   <div class="widget widget-light">
                     <div class="widget-body">
                       <div class="widget-icon">
@@ -366,7 +366,7 @@
         </div>
 
         <div class="row p-0 mt-3">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-lg-0">
             <div class="card dashboard-card">
               <div class="card-body d-flex flex-row p-4">
                 <div class="rc">
@@ -383,7 +383,7 @@
 
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-lg-0">
             <div class="card dashboard-card">
               <div class="card-body d-flex flex-row p-4">
                 <div class="rc">
@@ -402,7 +402,7 @@
         </div>
 
         <div class="row p-0 mt-3">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-lg-0">
             <div class="card dashboard-card">
               <div class="card-body p-4">
                 <h5 class="mb-4">Berita Terbaru</h5>
@@ -430,7 +430,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-3 mb-lg-0">
             <div class="card dashboard-card h-100">
               <div class="card-body d-flex flex-column p-4">
                 <h5 class="mb-3">Data Penunjang Lainnya</h5>
