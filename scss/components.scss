@@ -1549,3 +1549,35 @@ label {
 }
 
 //Badge
+
+.kpe-card-container{
+  position: relative;
+    height: 253px;
+    width: 451px;
+
+  .kpe-card-base-img{
+    position: absolute;
+  }
+  .kpe-card-portrait-img{
+    height: 100px;
+    position: absolute;
+    right: 23px;
+    bottom: 64px;
+    
+  }
+  .kpe-card-qr-code{
+    position: absolute;
+    width: 50px;
+    bottom: 23px;
+    left: 14px;
+    outline: 3px solid #fff;
+    
+  }
+  .kpe-card-id-name{
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    left: 34px;
+    top: 70px;
+  }
+}
