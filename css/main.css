@@ -12102,30 +12102,73 @@ label {
 .kpe-card-container {
   position: relative;
   height: 253px;
-  width: 451px;
+  width: auto;
 }
 .kpe-card-container .kpe-card-base-img {
   position: absolute;
+  width: 100%;
 }
 .kpe-card-container .kpe-card-portrait-img {
   height: 100px;
   position: absolute;
   right: 23px;
-  bottom: 64px;
+  bottom: 75px;
+}
+@media (min-width: 992px) {
+  .kpe-card-container .kpe-card-portrait-img {
+    height: 70px;
+    right: 15px;
+    bottom: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .kpe-card-container .kpe-card-portrait-img {
+    height: 81px;
+    right: 22px;
+    bottom: 96px;
+  }
 }
 .kpe-card-container .kpe-card-qr-code {
   position: absolute;
   width: 50px;
-  bottom: 23px;
+  bottom: 13%;
   left: 14px;
   outline: 3px solid #fff;
+}
+@media (min-width: 992px) {
+  .kpe-card-container .kpe-card-qr-code {
+    width: 36px;
+    bottom: 93px;
+    left: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .kpe-card-container .kpe-card-qr-code {
+    width: 43px;
+    bottom: 58px;
+    left: 11px;
+  }
 }
 .kpe-card-container .kpe-card-id-name {
   position: absolute;
   font-weight: bold;
   color: #fff;
   left: 34px;
-  top: 70px;
+  top: 66px;
+}
+@media (min-width: 992px) {
+  .kpe-card-container .kpe-card-id-name {
+    font-size: 10px;
+    left: 24px;
+    top: 49px;
+  }
+}
+@media (min-width: 1200px) {
+  .kpe-card-container .kpe-card-id-name {
+    font-size: 10px;
+    left: 29px;
+    top: 61px;
+  }
 }
 
 @font-face {

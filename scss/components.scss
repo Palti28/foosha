@@ -275,66 +275,67 @@
 
 
 // ------- dropdown profile -------  //
-  .dropdown-menu {
-    border-radius: 8px;
-    border: 0;
-    box-shadow: 0px 15px 18px rgb(0 0 0 / 20%);
-    margin-top: 7px !important;
+.dropdown-menu {
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0px 15px 18px rgb(0 0 0 / 20%);
+  margin-top: 7px !important;
 
+
+  .dropdown-item {
+    padding: 8px 20px;
+  }
+}
+
+.profile-dropdown {
+  .dropdown-toggle {
+    .avatar {
+      margin: 0;
+    }
+  }
+
+  .dropdown-toggle,
+  .btn.btn-pill.btn-pill--light {
+    padding: 0;
+  }
+
+  .dropdown-menu {
+    &.show {
+      @include media-breakpoint-down(lg) {
+        width: 100vw;
+        height: calc(100vh - 60px);
+      }
+
+      +.dropdown-menu-charet {
+        display: block;
+      }
+    }
 
     .dropdown-item {
-      padding: 8px 20px;
+      padding: 0.25rem 2rem 0.25rem 1rem;
     }
   }
 
-  .profile-dropdown {
-    .dropdown-toggle {
-      .avatar {
-        margin: 0;
-      }
-    }
-
-    .dropdown-toggle,
-    .btn.btn-pill.btn-pill--light {
-      padding: 0;
-    }
-
-    .dropdown-menu {
-      &.show {
-        @include media-breakpoint-down(lg) {
-          width: 100vw;
-          height: calc(100vh - 60px);
-        }
-        +.dropdown-menu-charet {
-          display: block;
-        }
-      }
-
-      .dropdown-item {
-        padding: 0.25rem 2rem 0.25rem 1rem;
-      }
-    }
-
-    h6 {
-      white-space: break-spaces;
-      margin-bottom: 0;
-    }
-
-    img.avatar {
-      border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      margin-right: 10px;
-    }
-
-    img:not(.avatar) {
-      // border-radius: 50%;
-      height: 28px;
-      width: 28px;
-      margin-right: 9px;
-      margin-left: 9px;
-    }
+  h6 {
+    white-space: break-spaces;
+    margin-bottom: 0;
   }
+
+  img.avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  img:not(.avatar) {
+    // border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    margin-right: 9px;
+    margin-left: 9px;
+  }
+}
 
 // ------- dropdown profile -------  //
 
@@ -1550,34 +1551,74 @@ label {
 
 //Badge
 
-.kpe-card-container{
+.kpe-card-container {
   position: relative;
-    height: 253px;
-    width: 451px;
+  height: 253px;
+  // width: 451px;
+  width: auto;
 
-  .kpe-card-base-img{
+  .kpe-card-base-img {
     position: absolute;
+    width: 100%;
   }
-  .kpe-card-portrait-img{
+
+  .kpe-card-portrait-img {
     height: 100px;
     position: absolute;
     right: 23px;
-    bottom: 64px;
-    
+    bottom: 75px;
+
+    @media (min-width: 992px) {
+      height: 70px;
+      right: 15px;
+      bottom: 120px;
+    }
+
+    @media (min-width: 1200px) {
+      height: 81px;
+      right: 22px;
+      bottom: 96px;
+    }
   }
-  .kpe-card-qr-code{
+
+  .kpe-card-qr-code {
     position: absolute;
     width: 50px;
-    bottom: 23px;
+    bottom: 13%;
     left: 14px;
     outline: 3px solid #fff;
-    
+
+    @media (min-width: 992px) {
+      width: 36px;
+      bottom: 93px;
+      left: 10px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 43px;
+      bottom: 58px;
+      left: 11px;
+    }
+
   }
-  .kpe-card-id-name{
+
+  .kpe-card-id-name {
     position: absolute;
     font-weight: bold;
     color: #fff;
     left: 34px;
-    top: 70px;
+    top: 66px;
+
+    @media (min-width: 992px) {
+      font-size: 10px;
+      left: 24px;
+      top: 49px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 10px;
+      left: 29px;
+      top: 61px;
+    }
   }
 }
