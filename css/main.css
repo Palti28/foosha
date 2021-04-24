@@ -11859,9 +11859,12 @@ label {
 
 .table-list th {
   font-weight: normal;
-  padding-left: 0px;
+  padding-left: 8px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+.table-list tr {
+  border-bottom-color: #dee2e6 !important;
 }
 .table-list td {
   font-weight: bolder;
@@ -12097,6 +12100,31 @@ label {
   height: 10px;
   width: 10px;
   border-radius: 10px;
+}
+
+.badge-score {
+  border-radius: 10px;
+  padding: 6px 16px;
+}
+.badge-score.bg-welldone {
+  background: #B7EFA3;
+  color: #67A300;
+}
+.badge-score.bg-good {
+  background: #D7EFA3;
+  color: #8CAA4D;
+}
+.badge-score.bg-enough {
+  background: #FAEA99;
+  color: #BD8F4C;
+}
+.badge-score.bg-bad {
+  background: #F9D7A5;
+  color: #BA8F50;
+}
+.badge-score.bg-verybad {
+  background: #F5A785;
+  color: #B8603B;
 }
 
 .kpe-card-container {
