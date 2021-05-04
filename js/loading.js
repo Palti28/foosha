@@ -12,10 +12,14 @@ if (document.body.classList.contains("loading")) {
   loadingComponent.style.overflow="hidden";
   document.body.style.overflow="hidden";
 
+  document.getElementById("loading").onclick = () => {
+    loadingComponent.remove();
+    document.body.style="auto";
+  }
+
+
 } else {
   loadingComponent.remove();
   document.body.style.overflow="auto";
-
-
 
 }
