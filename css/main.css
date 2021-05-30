@@ -11479,14 +11479,6 @@ textarea.form-control-lg {
   color: #AFAFAF;
 }
 
-.aside {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: 8rem;
-  bottom: 0;
-}
-
 .aside-navigation {
   overflow-y: auto;
 }
@@ -12231,6 +12223,51 @@ body {
   font-family: "proxima";
   background-color: #F4F7FB;
 }
+body.mobile.aside-show {
+  overflow: hidden;
+}
+body.mobile .content-wrapper {
+  padding-top: 0;
+}
+@media (max-width: 991.98px) {
+  body.mobile .content-wrapper {
+    max-width: 500px;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  body.mobile .content-wrapper #aside-container.hide {
+    display: none;
+    position: fixed;
+    transition: transform 1s ease-in-out;
+  }
+  body.mobile .content-wrapper #aside-container.show {
+    position: fixed;
+    top: 64px;
+    width: 300px;
+    margin-left: -13px;
+    bottom: 0;
+    z-index: 999;
+    padding: 1rem 1rem;
+    box-shadow: 0px 1px 9px -3px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+    transition: transform 1s ease-in-out;
+  }
+  body.mobile .content-wrapper #aside-container.show .profile-box {
+    color: inherit;
+  }
+  body.mobile .content-wrapper #aside-container.show .profile-box .btn.btn-link {
+    color: unset;
+  }
+}
+body.mobile .content-wrapper #aside-container {
+  bottom: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+body .content-wrapper {
+  padding-top: 8rem;
+}
 
 #loading {
   width: 100%;
@@ -12478,16 +12515,6 @@ h6,
   padding: 8px;
 }
 
-.content-wrapper {
-  margin-top: 8rem;
-}
-@media (max-width: 991.98px) {
-  .content-wrapper {
-    max-width: 500px;
-    margin-top: 5rem;
-  }
-}
-
 .profile-box {
   color: #fff;
   flex-direction: column;
@@ -12602,16 +12629,22 @@ h6,
   background: transparent;
 }
 
-@media (max-width: 991.98px) {
-  .aside {
-    display: none;
-  }
-}
-
 @media (max-width: 767.98px) {
   .overflow-sm-auto {
     overflow: auto;
   }
+}
+
+#aside-backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
