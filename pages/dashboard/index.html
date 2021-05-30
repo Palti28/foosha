@@ -10,7 +10,7 @@
   <!-- <link rel="stylesheet" href="../../css/mobile.css"> -->
 </head>
 
-<body class="mobile">
+<body class="">
   <header id="header" class="dashboard-header fixed-top">
     <!-- <div class="bg-accent">
       <img src="../../assets/images/bg_login_circle.svg" alt="">
@@ -18,9 +18,11 @@
     <div class="container header-content">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
-          <img src="../../assets/images/logogram_login.svg" alt="">
+          <button class="btn btn-primary btn-toggle-sidebar me-2" onclick="toggleSidebar()">
+            <i class="bi bi-list"></i>
+           </button>
+          <img class="brand-logo-img" src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
-          <button class="btn btn-primary" onclick="toggleSidebar()">ss</button>
         </div>
         <!-- this line -->
         <div class="ms-auto d-flex">

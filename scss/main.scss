@@ -60,8 +60,13 @@ body {
   background-color: $background-color;
 
   //handle responsive aside toggle when mobile screen
-
+  .btn-toggle-sidebar{
+    display: none;
+  }
   &.mobile {
+    .btn-toggle-sidebar{
+      display: block;
+    }
     &.aside-show {
       overflow: hidden;
     }
@@ -416,6 +421,10 @@ header {
         margin-right: 1rem;
         border-radius: 50%;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.0963542);
+
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
       }
     }
 
@@ -587,12 +596,6 @@ header {
 .btn-ghost {
   border: none;
   background: transparent;
-}
-
-.aside {
-  @include media-breakpoint-down(lg) {
-    // display: none;
-  }
 }
 
 .overflow-sm-auto {

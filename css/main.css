@@ -12223,6 +12223,12 @@ body {
   font-family: "proxima";
   background-color: #F4F7FB;
 }
+body .btn-toggle-sidebar {
+  display: none;
+}
+body.mobile .btn-toggle-sidebar {
+  display: block;
+}
 body.mobile.aside-show {
   overflow: hidden;
 }
@@ -12506,6 +12512,11 @@ h6,
   margin-right: 1rem;
   border-radius: 50%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.0963542);
+}
+@media (max-width: 991.98px) {
+  .dashboard-header .header-item-container .brand-logo img {
+    display: none;
+  }
 }
 .dashboard-header .header-item-container .support-logo img {
   height: 24px;
