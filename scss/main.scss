@@ -82,24 +82,30 @@ body {
 
       @include media-breakpoint-down(lg) {
         #aside-container {
+          padding: 1rem 1rem;
+          top: 64px;
+          border-top-right-radius: 16px;
+          border-bottom-right-radius: 16px;
+
           &.hide {
-            display: none;
+            // display: none;
             // width: 0;
+            left: -300px;
             position: fixed;
-            transition: transform 1s ease-in-out;
+            transition: left .3s ease-in-out;
           }
 
           &.show {
             position: fixed;
             top: 64px;
+            left: 0;
             width: 300px;
-            margin-left: -13px;
+            // margin-left: -13px;
             bottom: 0;
             z-index: 999;
-            padding: 1rem 1rem;
             box-shadow: 0px 1px 9px -3px rgb(0 0 0 / 25%);
             overflow-y: scroll;
-            transition: transform 1s ease-in-out;
+            transition: left .3s ease-in-out;
             .profile-box {
               color: inherit;
 

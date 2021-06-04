@@ -119,7 +119,7 @@
     <div class="row">
 
       <!-- ASIDE -->
-      <div class="col-lg-3 " id="">
+      <div class="col-lg-3">
         <div class="" id="aside-container">
           <div class="aside">
             <!-- PROFILE CONTAINER -->
@@ -489,52 +489,7 @@
   <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
   <!-- <script src="../../js/loading.js"></script> -->
   <script>
-    var body = document.body;
-    var aside = document.getElementById("aside-container");
-    var asideShow = aside.classList.contains("show");
-
-    function toggleSidebar() {
-      var asideBackdrop = document.createElement("div");
-        asideBackdrop.id = 'aside-backdrop';
-      if (aside.classList.contains("show")) {
-       
-        //  hide aside
-        aside.classList.remove("show");
-        aside.classList.add("hide");
-        //  hide aside
-        
-        //enable body scroll
-        body.classList.remove("aside-show")
-
-        var asideBackdrop =  document.getElementById("aside-backdrop");
-        asideBackdrop.remove();
-
-        
-      } else {
-        // show aside
-        aside.classList.remove("hide");
-        aside.classList.add("show");
-        
-        // show aside
-        
-        //enable body scroll
-        body.classList.add("aside-show")
-        body.append(asideBackdrop);
-
-
-      }
-    }
-
-    window.addEventListener('resize', function (e) {
-      var newWidth = window.innerWidth
-      console.log('newW,', newWidth)
-      if(newWidth < 992){
-        body.classList.add("mobile");
-      }else{
-        body.classList.remove("mobile")
-      }
-
-    })
+    
 
     // const aside = document.getElementById("aside-container");
   </script>

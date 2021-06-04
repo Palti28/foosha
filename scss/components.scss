@@ -744,6 +744,7 @@ input[type="radio"].btn-check {
 
 // FILTER-GROUP //
 .filter-group {
+  display: block;
   .dropdown {
     width: 180px;
 
@@ -785,6 +786,11 @@ input[type="radio"].btn-check {
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding: 32px 16px;
+    @include media-breakpoint-down(lg){
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+
+    }
   }
 
   .card-form-right {
@@ -1640,6 +1646,17 @@ label {
       font-size: 10px;
       left: 29px;
       top: 61px;
+    }
+  }
+}
+
+//button-action-responsive
+.button-action-responsive{
+  display: flex;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    a,button{
+      margin: 0 0 8px 0 !important;
     }
   }
 }

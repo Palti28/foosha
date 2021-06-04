@@ -5,14 +5,35 @@ const asideNavigation = document.getElementById("asideNavigation");
 const header = document.getElementById("header");
 
 const contentHeader = document.getElementById("content-header");
+// var screenMobile = false
+//mobile-sidebar
+var body = document.body;
+
 // const contentHeaderNavButton = contentHeader.querySelector(".btn");
 
 
 if (document.body.contains(accentBackground && header)) {
+  // onload function
+  if(screen.width < 992){
+    var aside = document.getElementById("aside-container");
+    var asideShow = aside.classList.contains("show");
+  }
   window.onload = function () {
     document.onscroll = scrollFunction;
+
+    // checkScreenSize;
+    if (screen.width < 992) {
+      body.classList.add("mobile");
+      aside.classList.add("hide")
+    } else {
+      body.classList.remove("mobile")
+    }
   }
 
+
+ 
+
+  // scroll animation
   function scrollFunction() {
     //document scrolled
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -21,23 +42,24 @@ if (document.body.contains(accentBackground && header)) {
       asideNavigation.style.marginTop = "1rem"
       header.classList.add("header-light");
 
-      if(document.body.contains(contentHeader)){
+      if (document.body.contains(contentHeader)) {
         contentHeader.classList.remove("content-header-light");
         contentHeader.classList.add("content-header-dark");
       }
-    //document on very top
+      //document on very top
     } else {
       accentBackground.classList.add("active");
       profileBox.classList.remove("profile-box--small");
       asideNavigation.style.marginTop = "3.5rem"
       header.classList.remove("header-light");
-      if(document.body.contains(contentHeader)){
+      if (document.body.contains(contentHeader)) {
         contentHeader.classList.add("content-header-light");
         contentHeader.classList.remove("content-header-dark");
       }
     }
   }
 }
+
 
 
 //toggle password
@@ -88,3 +110,47 @@ if (document.body.contains(container)) {
     }
   }
 }
+
+
+// toggle sidebar
+function toggleSidebar() {
+  var asideBackdrop = document.createElement("div");
+  asideBackdrop.id = 'aside-backdrop';
+  if (aside.classList.contains("show")) {
+
+    //  hide aside
+    aside.classList.remove("show");
+    aside.classList.add("hide");
+    //  hide aside
+
+    //enable body scroll
+    body.classList.remove("aside-show")
+
+    var asideBackdrop = document.getElementById("aside-backdrop");
+    asideBackdrop.remove();
+
+
+  } else {
+    // show aside
+    aside.classList.remove("hide");
+    aside.classList.add("show");
+    // show aside
+
+    //disbale body scroll when sidebar open
+    body.classList.add("aside-show")
+    //append backdrop
+    body.append(asideBackdrop);
+
+
+  }
+}
+
+// check screen size change after load
+window.addEventListener('resize', function (e) {
+  var newWidth = window.innerWidth
+  if (newWidth < 992) {
+    body.classList.add("mobile");
+  } else {
+    body.classList.remove("mobile")
+  }
+})
