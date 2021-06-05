@@ -4,30 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
   <header id="header" class="dashboard-header fixed-top">
-    <div class="bg-accent">
+    <!-- <div class="bg-accent">
       <img src="../../assets/images/bg_login_circle.svg" alt="">
-    </div>
-    <div class="container">
+    </div> -->
+    <div class="container header-content">
       <div class="header-item-container d-flex justify-content-between">
         <div class="brand-logo">
-          <img src="../../assets/images/logogram_login.svg" alt="">
+          <button class="btn btn-primary btn-toggle-sidebar me-2" onclick="toggleSidebar()">
+            <i class="bi bi-list"></i>
+          </button>
+          <img class="brand-logo-img" src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
-        <div class="ms-auto d-flex ">
-          <div class="header-item">
+        <!-- this line -->
+        <div class="ms-auto d-flex">
+          <!-- <div class="header-item">
             <div class="input-group rounded-input-search input-search-light">
               <input type="text" class="form-control" placeholder="Recipient's username"
                 aria-label="Recipient's username" aria-describedby="basic-addon2">
               <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
             </div>
-          </div>
+          </div> -->
           <div class="header-item">
             <div class="dropdown notification-dropdown">
               <div class="btn btn-pill btn-pill--light dropdown-toggle" type="button" id="dropdownMenuNotification"
@@ -38,13 +42,6 @@
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuNotification">
                 <li class="dropdown-item dropdown-item--title">
                   <h6>Notifikasi</h6>
-                </li>
-                <li class="dropdown-item new">
-                  <a href="">
-                    <div class="badge bg-primary">Pribadi</div>
-                    <div class="body">Permintaan hapus data untuk riwayat jabatan telah disetujui</div>
-                    <div class="text-muted">Minggu, 27 Maret 2019 - 12:02:03</div>
-                  </a>
                 </li>
                 <li class="dropdown-item new">
                   <a href="">
@@ -60,7 +57,8 @@
                     <div class="text-muted">Minggu, 17 Maret 2019 - 12:02:03</div>
                   </a>
                 </li>
-                <li class="text-center"><a class="text-center" href="#">LIHAT SEMUA</a></li>
+                <li class="text-center"><a class="text-center" href="../notifikasi/list-notifikasi.html">LIHAT SEMUA</a>
+                </li>
               </ul>
               <div class="dropdown-menu-charet"></div>
             </div>
@@ -71,7 +69,8 @@
           <div class="header-item">
             <div class="dropdown profile-dropdown">
               <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuProfile" aria-expanded="false"
-                class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                class="btn dropdown-toggle btn-pill--light btn--tp--light ">
+                <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
                 <div class="profile-name text-ellipsis">Muhammadd asd jlkj</div>
               </div>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
@@ -79,7 +78,7 @@
                   <a href="" class="dropdown-item ">
                     <div class="d-flex">
                       <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
-                      <div>
+                      <div class="">
                         <h6 class="font-weight-bolder">Muhammad Riza Abdillah</h6>
                         <small class="text-muted">Lihat profil Anda</small>
                       </div>
@@ -117,106 +116,109 @@
   <section id="accent-background" class="active"></section>
   <section class="container content-wrapper pb-5">
     <div class="row">
-      <!-- ASIDE -->
-      <div class="col-3">
-        <div class="aside">
-          <!-- PROFILE CONTAINER -->
-          <div id="profile-box-container" class="profile-box d-flex">
-            <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
-            <div>
-              <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
-              <div id="NIK">NIK 12345678987654</div>
-              <small id="department">Departemen Ketenagakerjaan</small>
-              <div class="d-flex align-items-center action">
-                <!-- <button class="btn me-3">Lihat Profil</button> -->
-                <a href="" class="btn btn-white me-3">Lihat Profil Anda</a>
-                <a href="" class="btn btn-link">Edit Profil</a>
-              </div>
-            </div>
-          </div>
-          <!-- // PROFILE CONTAINER // -->
 
-          <!-- ASIDE NAVIGATION -->
-          <div id="asideNavigation" class="aside-navigation" style="margin-top: 3.5rem;">
-            <div class="" id="">
-              <div class="accordion-item">
-                <div class="nav-header" id="flush-headingOne">
-                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                    MENU UTAMA
-                  </div>
-                </div>
-                <div id="flush-collapseOne" class="collapse collapse show" aria-labelledby="flush-headingOne">
-                  <div class="accordion-body">
-                    <a href="../dashboard/index.html" class="nav-item active">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Dashboard
-                    </a>
-                    <a href="../UDM/all-kategori-list.html" class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Update Data Mandiri
-                    </a>
-                    <a href="#" class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Persetujuan Dokumen
-                    </a>
-                  </div>
+      <!-- ASIDE -->
+      <div class="col-lg-3">
+        <div class="" id="aside-container">
+          <div class="aside">
+            <!-- PROFILE CONTAINER -->
+            <div id="profile-box-container" class="profile-box d-flex">
+              <img class="avatar" src="../../assets/images/160219-student-stock.png" alt="">
+              <div>
+                <h6 style="color: inherit;">Muhammad Riza Abdillah</h6>
+                <div id="NIK">NIK 12345678987654</div>
+                <small id="department">Departemen Ketenagakerjaan</small>
+                <div class="d-flex align-items-center action">
+                  <!-- <button class="btn me-3">Lihat Profil</button> -->
+                  <a href="../profil-saya/data-utama.html" class="btn btn-white me-3">Lihat Profil Anda</a>
+                  <a href="" class="btn btn-link">Edit Profil</a>
                 </div>
               </div>
-              <div class="accordion-item">
-                <div class="nav-header" id="flush-headingTwo">
-                  <div class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
-                    LAYANAN LAINNYA
+            </div>
+            <!-- // PROFILE CONTAINER // -->
+
+            <!-- ASIDE NAVIGATION -->
+            <div id="asideNavigation" class="aside-navigation" style="margin-top: 3.5rem;">
+              <div class="" id="">
+                <div class="accordion-item">
+                  <div class="nav-header" id="flush-headingOne">
+                    <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                      MENU UTAMA
+                    </div>
+                  </div>
+                  <div id="flush-collapseOne" class="collapse collapse show" aria-labelledby="flush-headingOne">
+                    <div class="accordion-body">
+                      <a class="nav-item ">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/general.png" style="width: 24px;" class="me-4" alt="">
+                        Dashboard
+                      </a>
+                      <a class="nav-item " href="../UDM/all-kategori-list.html">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/general.png" style="width: 24px;" class="me-4" alt="">
+                        Update Data Mandiri
+                      </a>
+                      <a href="../persetujuan-dokumen/list-persetujuan-dokumen.html" class="nav-item">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/general.png" style="width: 24px;" class="me-4" alt="">
+                        Persetujuan Dokumen
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div id="flush-collapseTwo" class="collapse collapse show" aria-labelledby="flush-headingTwo">
-                  <div class="accordion-body">
-                    <a href="../dokumen-saya/list-dokumen-saya.html" class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Dokumen Saya
-                    </a>
-                    <a href="../kompetensi-performa/kompetensi-saya.html" class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Kompetensi & Performa
-                    </a>
-                    <a class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Otentikasi SL
-                    </a>
-                    <a class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      Cari Pegawai
-                    </a>
-                    <a class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      MyKPE
-                    </a>
-                    <a class="nav-item">
-                      <div class="nav-icon"></div>
-                      <i class="bi bi-columns-gap me-4"></i>
-                      e-Lapkin
-                    </a>
+                <div class="accordion-item">
+                  <div class="nav-header" id="flush-headingTwo">
+                    <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                      LAYANAN LAINNYA
+                    </div>
+                  </div>
+                  <div id="flush-collapseTwo" class="collapse collapse show" aria-labelledby="flush-headingTwo">
+                    <div class="accordion-body">
+                      <a href="../dokumen-saya/list-dokumen-saya.html" class="nav-item active">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/dokumen.png" style="width: 24px;" class="me-4" alt="">
+                        Dokumen Saya
+                      </a>
+                      <a href="../kompetensi-performa/kompetensi-saya.html" class="nav-item">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/performa.png" style="width: 24px;" class="me-4" alt="">
+                        Kompetensi & Performa
+                      </a>
+                      <a class="nav-item">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/otentikasisk.png" style="width: 24px;" class="me-4" alt="">
+                        Otentikasi SL
+                      </a>
+                      <a class="nav-item">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/kompetensi.png" style="width: 24px;" class="me-4" alt="">
+                        Cari Pegawai
+                      </a>
+                      <a href="../my-KPE/KPE-saya.html" class="nav-item">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/mykpe.png" style="width: 24px;" class="me-4" alt="">
+                        MyKPE
+                      </a>
+                      <a href="../e-lapkin/e-lapkin-saya.html" class="nav-item">
+                        <div class="nav-icon"></div>
+                        <img src="../../assets/images/icon/e-lapkin.png" style="width: 24px;" class="me-4" alt="">
+                        e-Lapkin
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- // ASIDE NAVIGATION // -->
           </div>
-          <!-- // ASIDE NAVIGATION // -->
         </div>
       </div>
-      <!-- // ASIDE // -->
+      <!--  ASIDE -->
 
       <!-- MAIN CONTENT -->
-      <div class="col-9 content">
+      <div class="col-lg-9 col-12 content">
         <div class="row p-0 mt-3">
           <div class="col-12">
             <div id="content-header" class="content-header-light">

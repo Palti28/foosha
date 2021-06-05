@@ -12368,6 +12368,11 @@ h6,
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
 }
+@media (max-width: 991.98px) {
+  .d-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);

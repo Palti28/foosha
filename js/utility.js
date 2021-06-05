@@ -12,10 +12,10 @@ var body = document.body;
 // const contentHeaderNavButton = contentHeader.querySelector(".btn");
 
 
+var aside = document.getElementById("aside-container");
 if (document.body.contains(accentBackground && header)) {
   // onload function
   if(screen.width < 992){
-    var aside = document.getElementById("aside-container");
     var asideShow = aside.classList.contains("show");
   }
   window.onload = function () {
@@ -150,6 +150,7 @@ window.addEventListener('resize', function (e) {
   var newWidth = window.innerWidth
   if (newWidth < 992) {
     body.classList.add("mobile");
+    aside.classList.add("hide")
   } else {
     body.classList.remove("mobile")
   }
