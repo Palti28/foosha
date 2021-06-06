@@ -745,6 +745,7 @@ input[type="radio"].btn-check {
 // FILTER-GROUP //
 .filter-group {
   display: block;
+
   .dropdown {
     width: 180px;
 
@@ -786,9 +787,10 @@ input[type="radio"].btn-check {
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding: 32px 16px;
-    @include media-breakpoint-down(lg){
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0px;
+
+    @include media-breakpoint-down(lg) {
+      border-top-right-radius: 16px;
+      border-bottom-left-radius: 0px;
 
     }
   }
@@ -1103,7 +1105,8 @@ label {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  tr{
+
+  tr {
     border-bottom-color: #dee2e6 !important;
   }
 
@@ -1551,26 +1554,31 @@ label {
   border-radius: 10px;
 }
 
-.badge-score{
+.badge-score {
   border-radius: 10px;
   padding: 6px 16px;
-  &.bg-welldone{
+
+  &.bg-welldone {
     background: #B7EFA3;
     color: #67A300;
   }
-  &.bg-good{
+
+  &.bg-good {
     background: #D7EFA3;
     color: #8CAA4D;
   }
-  &.bg-enough{
+
+  &.bg-enough {
     background: #FAEA99;
     color: #BD8F4C;
   }
-  &.bg-bad{
+
+  &.bg-bad {
     background: #F9D7A5;
     color: #BA8F50;
   }
-  &.bg-verybad{
+
+  &.bg-verybad {
     background: #F5A785;
     color: #B8603B;
   }
@@ -1581,7 +1589,6 @@ label {
 .kpe-card-container {
   position: relative;
   height: 253px;
-  // width: 451px;
   width: auto;
 
   .kpe-card-base-img {
@@ -1590,10 +1597,22 @@ label {
   }
 
   .kpe-card-portrait-img {
-    height: 100px;
+    height: clamp(39px, 18vw, 100px);
     position: absolute;
-    right: 23px;
+    right: 19px;
     bottom: 75px;
+
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      height: clamp(80px, 6vw, 100px);
+      right: 22px;
+      bottom: 96px;
+    }
+
+    @media (min-width: 1200px) {
+      height: clamp(100px, 10vw, 100px);
+      right: 22px;
+      bottom: 67px;
+    }
 
     @media (min-width: 992px) {
       height: 70px;
@@ -1601,10 +1620,12 @@ label {
       bottom: 120px;
     }
 
-    @media (min-width: 1200px) {
-      height: 81px;
-      right: 22px;
-      bottom: 96px;
+    @media (max-width: 425px) {
+      bottom: 107px;
+    }
+
+    @media (max-width: 376px) {
+      bottom: 127px;
     }
   }
 
@@ -1615,18 +1636,36 @@ label {
     left: 14px;
     outline: 3px solid #fff;
 
-    @media (min-width: 992px) {
-      width: 36px;
-      bottom: 93px;
-      left: 10px;
-    }
-
     @media (min-width: 1200px) {
       width: 43px;
       bottom: 58px;
       left: 11px;
     }
 
+    @media (min-width: 992px) {
+      width: 36px;
+      bottom: 93px;
+      left: 10px;
+    }
+
+    @media(max-width: 376px) {
+      position: absolute;
+      width: 37px;
+      bottom: 38%;
+      left: 11px;
+      outline: 3px solid #fff;
+    }
+
+    @media (max-width: 425px) {
+      width: 43px;
+      bottom: 28%;
+      left: 10px;
+    }
+
+    @media(max-width: 376px) {
+      width: 33px;
+      bottom: 39%;
+    }
   }
 
   .kpe-card-id-name {
@@ -1636,10 +1675,10 @@ label {
     left: 34px;
     top: 66px;
 
-    @media (min-width: 992px) {
-      font-size: 10px;
-      left: 24px;
-      top: 49px;
+    @media(min-width: 1399px) {
+      font-size: 13px;
+      left: 35px;
+      top: 72px;
     }
 
     @media (min-width: 1200px) {
@@ -1647,15 +1686,38 @@ label {
       left: 29px;
       top: 61px;
     }
+
+    @media (min-width: 992px) {
+      font-size: 10px;
+      left: 24px;
+      top: 49px;
+    }
+
+    @media(max-width: 425px) {
+      font-size: 12px;
+      left: 26px;
+      top: 53px;
+    }
+
+    @media(max-width: 376px) {
+      font-size: 10px;
+      left: 24px;
+      top: 47px;
+    }
+
+
   }
 }
 
 //button-action-responsive
-.button-action-responsive{
+.button-action-responsive {
   display: flex;
+
   @include media-breakpoint-down(lg) {
     flex-direction: column;
-    a,button{
+
+    a,
+    button {
       margin: 0 0 8px 0 !important;
     }
   }
