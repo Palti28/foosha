@@ -1722,3 +1722,15 @@ label {
     }
   }
 }
+
+.input-group.input-group-badge{
+  .form-control{
+    border-right-width: 0;
+    border-right-color: unset;
+  }
+  .input-group-text{
+    background: transparent;
+    border-left: 0;
+  }
+
+}
