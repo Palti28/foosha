@@ -12472,12 +12472,20 @@ h6,
   background-color: #F8F8F8;
 }
 
+.bg-lightgreen {
+  background-color: #A9DFBF;
+}
+
 .bg-cyan {
   background-color: #1dbad4;
 }
 
 .bg-purple {
   background-color: #b367ff;
+}
+
+.bg-orange {
+  background-color: #FFE399;
 }
 
 .text-cyan {

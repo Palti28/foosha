@@ -19,7 +19,7 @@
         <div class="brand-logo">
           <button class="btn btn-primary btn-toggle-sidebar me-2" onclick="toggleSidebar()">
             <i class="bi bi-list"></i>
-           </button>
+          </button>
           <img class="brand-logo-img" src="../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
@@ -234,8 +234,7 @@
                 <div class="d-inline-block ms-lg-auto mt-3 mt-lg-0">
                   <ul class="nav nav-pills">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page"
-                        href="./all-kategori-list.html">Kategori</a>
+                      <a class="nav-link active" aria-current="page" href="./all-kategori-list.html">Kategori</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="./history-pengajuan.html">History Pengajuan</a>
@@ -247,7 +246,7 @@
 
             <div class="card dashboard-card">
               <div class="card-body p-4">
-                <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
                   <div class="">
                     <span class="d-none d-lg-block">Menampilkan semua kategori update data mandiri</span>
                   </div>
@@ -269,8 +268,46 @@
                   </div>
                 </div>
 
+                <div class="row d-flex justify-content-between align-items-end mb-4">
+                  <div class="col-12 col-lg-5">
+                    <label class="form-label">Pilih unit verifikasi</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>PPSIASN</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <button type="button" class="btn btn-primary ms-auto w-100 mt-lg-0 mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Selesaikan Data Mandiri
+                    untuk mencetak Bukti">
+                      Cetak Bukti
+                    </button>
+                  </div>
+                </div>
+
                 <div class="list-group">
-                  <div class="" id="loopHere"></div>
+                  <!-- <div class="" id="loopHere"></div> -->
+                  <a class="list-item" href="'+link+'">
+                    <div class="d-flex align-items-center w-100">
+                      <div class="me-3"> <i class="bi bi-grid-3x3-gap-fill"></i> </div>
+                      <div class="d-flex w-100 align-items-center">
+                        <div class="d-inline-block ">Riwayat Peninjauan Masa Kerja</div>
+                        <badge class="badge bg-success ms-auto me-2">Selesai</badge>
+                      </div>
+                      <div class="ms-auto"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                  </a>
+                  <a class="list-item" href="'+link+'">
+                    <div class="d-flex align-items-center w-100">
+                      <div class="me-3"> <i class="bi bi-grid-3x3-gap-fill"></i> </div>
+                      <div class="d-flex w-100 align-items-center">
+                        <div class="d-inline-block ">Riwayat Peninjauan Masa Kerja</div>
+                        <badge class="badge bg-danger ms-auto me-2"> Belum Selesai</badge>
+                      </div>
+                      <div class="ms-auto"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

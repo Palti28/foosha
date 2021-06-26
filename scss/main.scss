@@ -25,6 +25,7 @@ $light-gray: #F8F8F8;
 // for chart
 $cyan: rgba(29, 186, 212, 1);
 $purple: rgba(179, 103, 255, 1);
+$light-orange:#FFE399 !default;
 $mysapk-colors: ("primary": #3085ff,
   "black-body": #686b6d,
   "black-heading": #3a3e40,
@@ -237,12 +238,20 @@ h6 {
   background-color: $light-gray;
 }
 
+.bg-lightgreen {
+  background-color: #A9DFBF;
+}
+
 .bg-cyan {
   background-color: $cyan;
 }
 
 .bg-purple {
   background-color: $purple;
+}
+
+.bg-orange{
+  background-color: $light-orange;
 }
 
 .text-cyan {
