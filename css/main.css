@@ -12282,6 +12282,21 @@ label {
   border-left: 0;
 }
 
+.edit-profile-img-holder img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.edit-profile-img-holder button {
+  border-radius: 50%;
+  position: absolute;
+  left: 120px;
+  top: 120px;
+  border: 0;
+  background-color: white;
+}
+
 @font-face {
   font-family: "proxima";
   src: url("../fonts/ProximaNova-Regular.otf");
@@ -12679,6 +12694,10 @@ h6,
   border-radius: 16px;
   border: 0;
   box-shadow: 0px 11px 71px -18px rgba(0, 0, 0, 0.111041);
+}
+.dashboard-card .card-footer {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 #accent-background {

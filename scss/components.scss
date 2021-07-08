@@ -1732,5 +1732,22 @@ label {
     background: transparent;
     border-left: 0;
   }
-
 }
+
+.edit-profile-img-holder{
+  img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  button{
+    border-radius: 50%;
+position: absolute;
+left: 120px;
+top: 120px;
+border: 0;
+background-color: white;
+  }
+}
+
