@@ -19,7 +19,7 @@
         <div class="brand-logo">
           <button class="btn btn-primary btn-toggle-sidebar me-2" onclick="toggleSidebar()">
             <i class="bi bi-list"></i>
-           </button>
+          </button>
           <img class="brand-logo-img" src="../../../assets/images/logogram_login.svg" alt="">
           <span>MySAPK BKN</span>
         </div>
@@ -188,7 +188,8 @@
                       </a>
                       <a class="nav-item">
                         <div class="nav-icon"></div>
-                        <img src="../../../assets/images/icon/otentikasisk.png" style="width: 24px;" class="me-4" alt="">
+                        <img src="../../../assets/images/icon/otentikasisk.png" style="width: 24px;" class="me-4"
+                          alt="">
                         Otentikasi SL
                       </a>
                       <a class="nav-item">
@@ -223,41 +224,43 @@
         <div class="row p-0 mt-3">
           <div class="col-12">
             <div id="content-header" class="content-header-light">
-            <h2 class="page-title">Riwayat Jabatan</h2>
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <nav aria-label="breadcrumb" class="d-inline-block">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Update Data Mandiri</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Riwayat Jabatan</li>
-                </ol>
-              </nav>
-              <div class="d-inline-block ms-auto">
-                <div class="dropdown">
-                  <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuUDMCategory"
-                    aria-expanded="false" class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
-                    <div class="profile-name text-ellipsis">
-                      Kategori
-                      <h6 class="d-inline-block text-white">Jabatan</h6>
+              <h2 class="page-title">Riwayat Jabatan</h2>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Update Data Mandiri</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Riwayat Jabatan</li>
+                  </ol>
+                </nav>
+                <div class="d-inline-block ms-auto">
+                  <div class="dropdown">
+                    <div href="" data-bs-toggle="dropdown" type="button" id="dropdownMenuUDMCategory"
+                      aria-expanded="false" class="btn dropdown-toggle btn-pill btn-pill--light btn--tp--light ">
+                      <div class="profile-name text-ellipsis">
+                        Kategori
+                        <h6 class="d-inline-block text-white">Jabatan</h6>
+                      </div>
                     </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuUDMCategory">
+                      <li><a class="dropdown-item" href="#">Riwayat Golongan</a></li>
+                      <li><a class="dropdown-item" href="#">Riwayat Keluarga</a></li>
+                      <li><a class="dropdown-item" href="#">Riwayat Peninjauan Masa Kerja</a></li>
+                    </ul>
                   </div>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuUDMCategory">
-                    <li><a class="dropdown-item" href="#">Riwayat Golongan</a></li>
-                    <li><a class="dropdown-item" href="#">Riwayat Keluarga</a></li>
-                    <li><a class="dropdown-item" href="#">Riwayat Peninjauan Masa Kerja</a></li>
-                  </ul>
                 </div>
               </div>
             </div>
-            </div>
 
-            <div class="card dashboard-card">
+            <div class="card dashboard-card mb-4">
               <div class="card-body p-4">
                 <div class="d-flex flex-wrap mb-4">
                   <div class="">
-                    <span>Menampilkan 4 data untuk Riwayat Jabatan</span>
+                    <span>Tekan tombol <b>Tambah Baru</b> jika ingin menambah data baru atau </span> <br>
+                    <span>tekan tombol <b>Simpan</b> jika tidak ada update atau data baru lagi</span>
                   </div>
                   <div class="filter-group ms-0 ms-md-auto ">
+                    <button class="btn btn-outline-primary">Simpan</button>
                     <a href="add-riwayat-jabatan.html" class="btn btn-primary ">
                       <i class="bi bi-plus"></i>
                       Tambah Baru
@@ -308,6 +311,29 @@
                                 class="bi bi-trash me-2"></i> Hapus Data</a></li>
                         </ul>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <!-- //Data kosong -->
+            <div class="card dashboard-card">
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <img src="../../../assets/images/empty-box.svg" alt="">
+                  <br>
+                  <div class="mt-2">
+                    <h5 class="mb-3">Tidak ada data yang ditampilkan</h5>
+
+                    <p>
+                      Tekan tombol <b>Tambah Baru</b> jika ingin menambah data baru atau <br>
+                      tekan tombol <b>Saya tidak memiliki data</b> jika tidak ada data baru yang ingin diinput
+                    </p>
+                    <div class="">
+                      <button class="btn btn-primary"><i class="bi bi-plus me-2"></i> Tambah Baru</button> <br>
+                      <button class="btn btn-outline-primary mt-2"><i class="bi bi-plus me-2"></i> Saya tidak memiliki data</button>
                     </div>
                   </div>
                 </div>

@@ -12459,6 +12459,10 @@ h6,
   }
 }
 
+.d-grid-1 {
+  display: grid;
+}
+
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -12501,6 +12505,10 @@ h6,
 
 .bg-orange {
   background-color: #FFE399;
+}
+
+.bg-light-yellow {
+  background-color: #FFF8DA;
 }
 
 .text-cyan {

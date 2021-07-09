@@ -244,11 +244,49 @@
               </div>
             </div>
 
+
+            <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex">
+                  <div class="w-100">
+                    <p>Anda masih memiliki <b>11 kategori</b> data yang belum dilengkapi</p>
+                    <div class="d-flex justify-content-between">
+                      <span>Progres Anda </span>
+                      <span>1 dari 12</span>
+                    </div>
+                    <div class="progress " style="height: 8px;">
+                      <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer px-4 py-3 bg-light-yellow border-0">
+                <div class="row">
+                  <div class="col-12 d-flex align-items-center">
+                    <i class="bi bi-clock" style="color: #B79233; font-size: 24px;"></i>
+                    <div class="ms-3">
+                      <span style="color: #A6913A; display: block;">Batas waktu
+                        <b class="m-0" style="color: #795F1B">1 Juli 2021 - 24 Juli 2021 (20 hari lagi)</b>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
             <div class="card dashboard-card">
               <div class="card-body p-4">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <div class="">
-                    <span class="d-none d-lg-block">Menampilkan semua kategori update data mandiri</span>
+                    <div class="d-none d-lg-block">
+                      <b>Unit verifikasi Anda</b>
+                      <a href="" style="text-decoration: none;">Ubah</a>
+                    </div>
+                    <div>
+                      <div class="text-muted">Direktorat Infrastruktur Teknologi Informasi</div>
+                    </div>
                   </div>
                   <div>
                     <input type="radio" class="btn-check btn-check--light" name="options" id="option1"
@@ -268,23 +306,7 @@
                   </div>
                 </div>
 
-                <div class="row d-flex justify-content-between align-items-end mb-4">
-                  <div class="col-12 col-lg-5">
-                    <label class="form-label">Pilih unit verifikasi</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>PPSIASN</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-lg-3">
-                    <button type="button" class="btn btn-primary ms-auto w-100 mt-lg-0 mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Selesaikan Data Mandiri
-                    untuk mencetak Bukti">
-                      Cetak Bukti
-                    </button>
-                  </div>
-                </div>
+
 
                 <div class="list-group">
                   <!-- <div class="" id="loopHere"></div> -->
@@ -293,17 +315,8 @@
                       <div class="me-3"> <i class="bi bi-grid-3x3-gap-fill"></i> </div>
                       <div class="d-flex w-100 align-items-center">
                         <div class="d-inline-block ">Riwayat Peninjauan Masa Kerja</div>
-                        <badge class="badge bg-success ms-auto me-2">Selesai</badge>
-                      </div>
-                      <div class="ms-auto"><i class="bi bi-chevron-right"></i></div>
-                    </div>
-                  </a>
-                  <a class="list-item" href="'+link+'">
-                    <div class="d-flex align-items-center w-100">
-                      <div class="me-3"> <i class="bi bi-grid-3x3-gap-fill"></i> </div>
-                      <div class="d-flex w-100 align-items-center">
-                        <div class="d-inline-block ">Riwayat Peninjauan Masa Kerja</div>
-                        <badge class="badge bg-danger ms-auto me-2"> Belum Selesai</badge>
+                        <badge class="badge badge-score bg-welldone rounded ms-auto me-2"><i
+                            class="bi bi-check2 me-2 fw-bolder"></i>Selesai</badge>
                       </div>
                       <div class="ms-auto"><i class="bi bi-chevron-right"></i></div>
                     </div>

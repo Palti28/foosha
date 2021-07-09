@@ -244,11 +244,68 @@
               </div>
             </div>
 
+            <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex">
+                  <div class="w-100">
+                    <p>Anda masih memiliki <b>11 kategori</b>  data yang belum dilengkapi</p>
+                    <div class="d-flex justify-content-between">
+                      <span>Progres Anda </span>
+                      <span>1 dari 12</span>
+                    </div>
+                    <div class="progress " style="height: 8px;">
+                      <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer px-4 py-3 bg-light-yellow border-0">
+                <div class="row">
+                  <div class="col-12 d-flex align-items-center">
+                    <i class="bi bi-clock" style="color: #B79233; font-size: 24px;"></i>
+                    <div class="ms-3">
+                      <span style="color: #A6913A; display: block;">Batas waktu 
+                      <b class="m-0" style="color: #795F1B">1 Juli 2021 - 24 Juli 2021 (20 hari lagi)</b>
+                    </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card dashboard-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex">
+                  <div class="">
+                    <img class="w-100" src="../../assets/images/personal-data 1.svg" alt="">
+                  </div>
+                  <div class="ms-3 w-100">
+                    <h5 class="mb-3">Selamat, Anda telah menyelesaikan pemutakhiran data mandiri</h5>
+                    <p>Silahkan cetak bukti pemutakhiran data mandiri Anda dengan klik tombol <b>Cetak bukti</b> </p>
+
+                    <div>
+                      <div class="d-grid-1 gap-2 d-md-block">
+                        <button class="btn btn-primary" type="button">Cetak Bukti</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card dashboard-card">
               <div class="card-body p-4">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                   <div class="">
-                    <span class="d-none d-lg-block">Menampilkan semua kategori update data mandiri</span>
+                    <div class="d-none d-lg-block">
+                      <b>Unit verifikasi Anda</b> 
+                      <a href="" style="text-decoration: none;">Ubah</a>
+                    </div>
+                    <div>
+                      <div class="text-muted">Direktorat Infrastruktur Teknologi Informasi</div>
+                    </div>
                   </div>
                   <div>
                     <input type="radio" class="btn-check btn-check--light" name="options" id="option1"
@@ -268,41 +325,16 @@
                   </div>
                 </div>
 
-                <div class="row d-flex justify-content-between align-items-end mb-4">
-                  <div class="col-12 col-lg-5">
-                    <label class="form-label">Pilih unit verifikasi</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>PPSIASN</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-lg-3">
-                    <button type="button" class="btn btn-primary ms-auto w-100 mt-lg-0 mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Selesaikan Data Mandiri
-                    untuk mencetak Bukti">
-                      Cetak Bukti
-                    </button>
-                  </div>
-                </div>
-
                 <!-- <div class="d-grid grid-2-sm grid-gap" id="loopGridHere"></div> -->
                 <div class="d-grid grid-2-sm grid-gap">
                   <div class="widget widget-light">
-                    <div class="widget-body">
+                    <div class="widget-body p-2">
                       <div class="widget-icon"><i class="bi bi-archive"></i></div>
                       <div class="pb-3">'+title+'</div>
-                      <div class="bg-success text-white rounded-bottom">Selesai</div>
+                      <badge class="badge badge-score bg-welldone rounded ms-auto w-100 me-2"><i
+                        class="bi bi-check2 me-2 fw-bolder"></i>Selesai</badge>
                     </div>
                   </div>
-                  <div class="widget widget-light">
-                    <div class="widget-body">
-                      <div class="widget-icon"><i class="bi bi-archive"></i></div>
-                      <div class="pb-3">'+title+'</div>
-                      <div class="bg-danger text-white rounded-bottom">Belum Selesai</div>
-                    </div>
-                  </div>
-
                 </div>
 
               </div>
