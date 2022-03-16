@@ -259,6 +259,7 @@
                     <h6>Pengadaan mobile app kerjasama dengan digital agency</h6>
                     <span>Oleh <b>Bagus Setiadi</b></span> <br>
                     <div class=" badge bg-danger mt-3">Menunggu Paraf</div>
+                    <div class=" badge bg-success mt-3">Disetujui</div>
 
                     <div class="mt-4">
                       <h6 class="text-primary mb-3">HISTORI DOKUMEN</h6>
@@ -270,22 +271,38 @@
                               <div class="desc_title"> <b>Bagus Setiadi</b> mengajukan dokumen</div>
                             </div>
                           </li>
+                          <li>
+                            <div class="description">
+                              <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div>
+                              <div class="desc_title"> <b>Kholid Nur Wahid</b> memberikan paraf pada dokumen</div>
+                            </div>
+                          </li>
                           <li class="is-active">
                             <div class="description">
                               <!-- <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div> -->
-                              <div class="desc_title"> Menunggu paraf <b>Anda</b></div>
+                              <div class="desc_title"> Menunggu persetujuan akhir <b>Anda</b></div>
                             </div>
                           </li>
                           <li class="">
                             <div class="description">
                               <!-- <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div> -->
-                              <div class="desc_title">Persetujuan akhir oleh atasan</div>
+                              <div class="desc_title"><b>Anda </b>telah menyetujui dokumen ini</div>
+                            </div>
+                          </li>
+                          <li class="">
+                            <div class="description">
+                              <!-- <div class="desc_time"> Minggu 17 Maret 2019 - 12:02:02 </div> -->
+                              <div class="desc_title"><b>Anda </b>telah menolak paraf dokumen</div>
                             </div>
                           </li>
                         </ul>
                       </div>
+                      <h6 class="text-primary mb-3">HISTORI DOKUMEN</h6>
+            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" placeholder="Berikan alasan penolakan dokumen" rows="3" disabled></textarea>
+
+                      
                       <div class="">
-                        <a href="../list-persetujuan-dokumen.html" class="btn btn-primary btn-overlay ms-auto me-2">Tolak</a>
+                        <button class="btn btn-primary btn-overlay ms-auto me-2" data-bs-toggle="modal" data-bs-target="#tolakDokumen">Tolak</button>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passPhrase">Beri
                           Paraf</button>
 
@@ -338,9 +355,9 @@
     </div>
   </section>
 
-  //modal input pass phrase
+  <!-- //modal input pass phrase -->
   <div class="modal fade" id="passPhrase" tabindex="-1" aria-labelledby="passPhrase" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-dialog modal-md modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
           <div class="text-center">
@@ -360,6 +377,12 @@
               <input type="password" maxlength="1">
             </div>
             <a class="btn btn-link" href="#">Lupa pass phrase</a>
+            <div class="card-info bg-blue">
+              <i class="bi bi-info-circle-fill text-primary"></i>
+              <div>
+                <p class="text-start">Pass phrase adalah kata sandi yang berfungsi sebagai pengaman file Sertifikat Digital yang bisa digunakan oleh akun yang memiliki wewenang untuk menyetujui permohonan </p>
+              </div>
+            </div>
           </div>
           <!-- <div class="card-info bg-pimary mt-5">
             <i class="bi bi-info-circle-fill text-success"></i>
@@ -375,7 +398,33 @@
     </div>
   </div>
 
-  //modal success confirmation
+  <!-- //modal Tolak dokumen -->
+  <div class="modal fade" id="tolakDokumen" tabindex="-1" aria-labelledby="tolakDokumen" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="../../../assets/images/icon/ico_modal_waring.svg" class="mb-3 m-auto"
+              style="height: 84px; width: 84px;" alt="">
+          </div>
+          <div class="text-center mb-3">
+            <h5 class="m-auto">Apakah Anda yakin akan menolak dokumen ini?</h5>
+            <p>Anda akan menolak dokumen
+             <b> Pengadaan mobile app kerjasama dengan digital agency </b> </p>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Berikan alasan penolakan dokumen" rows="3"></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary btn-overlay me-3" data-bs-dismiss="modal">Batal</a>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#docDitolak">Ya, Tolak</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- //modal success confirmation -->
   <div class="modal fade" id="signDoc" tabindex="-1" aria-labelledby="signDoc" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content">
@@ -395,6 +444,41 @@
               <p class="mb-3">Minggu 71 Maret 2019 - 12:02:02</p>
               <span class="fw-bolder">Metode</span>
               <p class="mb-3">Digital signature - Pass Phrase</p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button data-bs-dismiss="modal" class="btn btn-primary">OK</button> <br>
+            <a href="../list-persetujuan-dokumen.html" class="btn btn-link mt-1">Kembali ke list dokumen</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- //modal dokumen ditolak confirmation -->
+  <div class="modal fade" id="docDitolak" tabindex="-1" aria-labelledby="docDitolak" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="../../../assets/images/icon/ico_modal_waring.svg" class="mb-3" style="height: 84px; width: 84px;"
+              alt="">
+          </div>
+          <h5 class="text-center">Dokumen telah ditolak</h5>
+          <p>Anda telah menolak paraf dokumen</p>
+
+          <div class="card border-0 mb-3">
+            <div class="card-body bg-lightgray border-0">
+              <span class="fw-bolder">Nama dokumen</span>
+              <p class="mb-3">Pengadaan mobile app kerjasama dengan digital agency</p>
+              <span class="fw-bolder">Tanggal persetujuan</span>
+              <p class="mb-3">Minggu 71 Maret 2019 - 12:02:02</p>
+              <span class="fw-bolder">Metode</span>
+              <p class="mb-3">Digital signature - Pass Phrase</p>
+              <span class="fw-bolder">Alasan Penolakan</span>
+              <p class="mb-3">Tanggal dan budget salah, mohon direvisi</p>
             </div>
           </div>
 
