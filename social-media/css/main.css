@@ -13090,8 +13090,69 @@ header {
 .form-control {
   background-color: #f4f4f4;
   padding: 11px 18px;
-  border-radius: 100px;
+  border-radius: 20px;
   border: none;
+}
+
+.modal .modal-content {
+  border: 0;
+  border-radius: 16px;
+}
+.modal .modal-content .modal-header .modal-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3a3e40;
+}
+.modal .modal-content .modal-body {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.modal .modal-content .modal-footer {
+  border: 0;
+}
+
+#newPostFeedModal textarea {
+  background: none;
+  border: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+#newPostFeedModal textarea:focus {
+  box-shadow: none;
+}
+
+.form-check.form-check-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-left: 0;
+}
+.form-check.form-check-list-item .form-check-label {
+  padding: 10px 1.5rem;
+  width: 100%;
+}
+.form-check.form-check-list-item .form-check-label span.check-icon {
+  background-color: #f4f4f4;
+  color: #323232;
+  padding: 10px;
+  border-radius: 100%;
+}
+.form-check.form-check-list-item .form-check-label:hover {
+  cursor: pointer;
+  background-color: rgba(48, 133, 255, 0.1);
+}
+.form-check.form-check-list-item .form-check-input {
+  position: relative;
+  right: 24px;
+}
+.form-check.form-check-list-item .form-check-input:checked[type=radio] + .form-check-label {
+  background-color: rgba(48, 133, 255, 0.1);
+}
+.form-check.form-check-list-item .form-check-input:checked[type=radio] + .form-check-label span.check-icon {
+  background-color: #3085ff;
+  color: #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -13327,7 +13388,7 @@ header {
   color: inherit;
 }
 #content-header.content-header-dark .nav.nav-pills .nav-item a.nav-link {
-  color: #3a3e4086;
+  color: #3a3e40;
 }
 #content-header.content-header-dark .nav.nav-pills .nav-item a.nav-link.active {
   color: #fff;

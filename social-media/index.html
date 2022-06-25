@@ -6,6 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Timeline</title>
 		<link rel="stylesheet" href="./css/main.css" />
+		<!-- <link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/> -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|"
+		rel="stylesheet">
+		<!-- <style>
+			.material-symbols-outlined {
+				font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+			} -->
+		</style>
 	</head>
 	<body>
 		<main class="d-flex flex-nowrap">
@@ -178,7 +189,7 @@
 				<!-- content -->
 				<section class="content mx-auto" style="width: 70%">
 					<div class="card mb-3">
-						<div class="d-flex flex-row align-items-center">
+						<div class="d-flex flex-row align-items-start">
 							<img
 								src="../assets/images/160219-student-stock.png"
 								class="rounded-circle me-3"
@@ -188,41 +199,17 @@
 							<input
 								type="text"
 								class="form-control me-3"
-								id="newPost"
 								placeholder="Tulis atau bagikan sesuatu"
+								id="postFeedInput"
+								onclick="newPostFeedModal.toggle()"
 							/>
-							<button class="rounded-circle border-0">
+							<button class="rounded-circle bg-transparent border-0">
 								<img src="../assets/icon/picture.svg" alt="" />
 							</button>
-							<button class="rounded-circle border-0">
+							<button class="rounded-circle bg-transparent border-0">
 								<img src="../assets/icon/calendar-alt.svg" alt="" />
 							</button>
-							<button class="rounded-circle border-0">
-								<img src="../assets/icon/file.svg" alt="" />
-							</button>
-						</div>
-					</div>
-					<div class="card">
-						<div class="d-flex flex-row align-items-center">
-							<img
-								src="../assets/images/160219-student-stock.png"
-								class="rounded-circle me-3"
-								style="width: 30px; height: 30px"
-								alt=""
-							/>
-							<input
-								type="text"
-								class="form-control me-3"
-								id="newPost"
-								placeholder="Tulis atau bagikan sesuatu"
-							/>
-							<button class="rounded-circle border-0">
-								<img src="../assets/icon/picture.svg" alt="" />
-							</button>
-							<button class="rounded-circle border-0">
-								<img src="../assets/icon/calendar-alt.svg" alt="" />
-							</button>
-							<button class="rounded-circle border-0">
+							<button class="rounded-circle bg-transparent border-0">
 								<img src="../assets/icon/file.svg" alt="" />
 							</button>
 						</div>
@@ -230,6 +217,146 @@
 				</section>
 			</section>
 		</main>
+
+		<!-- Modal -->
+		<!-- Modal new feed -->
+		<div
+			class="modal fade"
+			id="newPostFeedModal"
+			tabindex="-1"
+			aria-labelledby="newPostFeedModal"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="modal-title" id="newPostFeedModal"
+							>Buat Postingan</span
+						>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="d-flex flex-row">
+							<img
+								src="../assets/images/160219-student-stock.png"
+								class="rounded-circle me-2"
+								alt=""
+								style="height: 50px; width: 50px"
+							/>
+							<div class="d-flex flex-column">
+								<span class="fw-bold">Palti Sinaga</span>
+								<button
+									class="btn d-flex align-items-center fw-bold bg-primary text-primary bg-opacity-25"
+									data-bs-toggle="modal"
+									data-bs-target="#audienceModal"
+								>
+									<img src="../assets/icon/globe.svg" class="me-2" alt="" />
+									Semua Orang
+									<i class="material-icons-round">
+										expand_more
+									</i>
+								</button>
+							</div>
+						</div>
+						<textarea
+							class="form-control mt-3"
+							id="exampleFormControlTextarea1"
+							rows="5"
+							placeholder="Apa yang ingin Anda bagikan atau bicarakan"
+						></textarea>
+					</div>
+					<div class="modal-footer d-flex justify-content-between">
+						<div>
+							<button class="rounded-circle bg-transparent border-0">
+								<img src="../assets/icon/picture.svg" alt="" />
+							</button>
+							<button class="rounded-circle bg-transparent border-0">
+								<img src="../assets/icon/calendar-alt.svg" alt="" />
+							</button>
+							<button class="rounded-circle bg-transparent border-0">
+								<img src="../assets/icon/file.svg" alt="" />
+							</button>
+						</div>
+						<button type="button" class="btn btn-primary px-5">Post</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Audience -->
+		<div
+			class="modal fade"
+			id="audienceModal"
+			tabindex="-1"
+			aria-labelledby="audienceModal"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header align-items-center justify-content-start">
+						<button
+							class="border-0 bg-transparent d-flex justify-content-center me-2"
+							data-bs-target="#newPostFeedModal"
+							data-bs-toggle="modal"
+						>
+							<span class="material-icons-round"> arrow_back </span>
+						</button>
+						<span class="modal-title" id="audienceModal"
+							>Siapa yang bisa melihat postingan Anda?</span
+						>
+					</div>
+					<div class="modal-body px-0">
+						<p class="px-4">
+							Posting Anda akan terlihat di feed aktivitas, di profil Anda,
+							serta hasil pencarian
+						</p>
+						<div class="d-flex flex-column">
+							<div class="form-check form-check-list-item" >
+								<input class="form-check-input" type="radio"  name="exampleRadios" id="chckListitem1" value="chckListitem1">
+
+								<label class="form-check-label" for="chckListitem1">
+
+									<div class="d-flex flex-row align-items-center">
+											<span class="material-icons-round check-icon">
+												language
+												</span>
+										<div class="d-flex flex-column ms-3">
+											<div class="fw-bold">Semua Orang</div>
+											<span>Semua rekan kerja yang telah terhubung pertemanan</span>
+										</div>
+									</div>
+
+								</label>
+							</div>
+							<div class="form-check form-check-list-item" >
+								<input class="form-check-input" type="radio"  name="exampleRadios" id="chckListitem2" value="chckListitem2">
+
+								<label class="form-check-label" for="chckListitem2">
+
+									<div class="d-flex flex-row align-items-center">
+											<span class="material-icons-round check-icon">
+												groups
+												</span>
+										<div class="d-flex flex-column ms-3">
+											<div class="fw-bold">Hanya rekan kerja terhubung</div>
+											<span>Semua rekan kerja yang telah terhubung pertemanan</span>
+										</div>
+									</div>
+
+								</label>
+							</div>
+
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="../bootstrap/js/bootstrap.bundle.js"></script>
 		<script src="../js/utility.js"></script>

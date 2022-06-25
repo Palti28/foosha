@@ -151,3 +151,24 @@ function toggleSidebarLg() {
 		sidebarLg.classList.add("collapse");
 	}
 }
+
+//open new post feed modal
+var newPostFeedModal = new bootstrap.Modal(
+	document.getElementById("newPostFeedModal"),
+	{
+		keyboard: false,
+	}
+);
+
+// function autoGrowTxtArea() {
+// 	var scroll_height = document.getElementById("postFeedInput").scrollHeight;
+// 	document.getElementById("postFeedInput").style.height = scroll_height + "px";
+// 	// element.style.height = "10px";
+// 	// element.style.height = element.scrollHeight + "px";
+// }
+
+// $("#message-box").on('input', function() {
+// 	var scroll_height = $("#message-box").get(0).scrollHeight;
+
+// 	$("#message-box").css('height', scroll_height + 'px');
+// });
