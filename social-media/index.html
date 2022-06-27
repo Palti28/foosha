@@ -6,16 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Timeline</title>
 		<link rel="stylesheet" href="./css/main.css" />
-		<!-- <link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-		/> -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|"
-		rel="stylesheet">
-		<!-- <style>
-			.material-symbols-outlined {
-				font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-			} -->
+		<script src="https://kit.fontawesome.com/ae6c557cac.js" crossorigin="anonymous"></script>
 		</style>
 	</head>
 	<body>
@@ -42,7 +33,7 @@
 							data-bs-toggle="tooltip"
 							data-bs-placement="right"
 						>
-							<img src="../assets/icon/home.png" alt="" />
+						<i class="fa-solid fa-house"></i>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -53,7 +44,7 @@
 							data-bs-toggle="tooltip"
 							data-bs-placement="right"
 						>
-							<img src="../assets/icon/comment-dots.png" alt="" />
+						<i class="fa-solid fa-comment-dots"></i>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -64,7 +55,7 @@
 							data-bs-toggle="tooltip"
 							data-bs-placement="right"
 						>
-							<img src="../assets/icon/user-alt.png" alt="" />
+						<i class="fa-solid fa-user"></i>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -75,7 +66,7 @@
 							data-bs-toggle="tooltip"
 							data-bs-placement="right"
 						>
-							<img src="../assets/icon/calendar-alt.png" alt="" />
+						<i class="fa-solid fa-calendar-days"></i>
 						</a>
 					</li>
 				</ul>
@@ -88,7 +79,7 @@
 							data-bs-toggle="tooltip"
 							data-bs-placement="right"
 						>
-							<img src="../assets/icon/bell.png" alt="" />
+						<i class="fa-solid fa-bell"></i>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -99,7 +90,7 @@
 							data-bs-toggle="tooltip"
 							data-bs-placement="right"
 						>
-							<img src="../assets/icon/question-circle.png" alt="" />
+						<i class="fa-solid fa-circle-question"></i>
 						</a>
 					</li>
 					<li>
@@ -112,38 +103,11 @@
 								class="rounded-circle mt-2"
 							/>
 						</div>
-						<!-- <div class="dropdown">
-							<a
-								href="#"
-								class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
-								id="dropdownUser3"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								<img
-									src="https://github.com/mdo.png"
-									alt="mdo"
-									width="24"
-									height="24"
-									class="rounded-circle"
-								/>
-							</a>
-							<ul
-								class="dropdown-menu text-small shadow"
-								aria-labelledby="dropdownUser3"
-							>
-								<li><a class="dropdown-item" href="#">New project...</a></li>
-								<li><a class="dropdown-item" href="#">Settings</a></li>
-								<li><a class="dropdown-item" href="#">Profile</a></li>
-								<li><hr class="dropdown-divider" /></li>
-								<li><a class="dropdown-item" href="#">Sign out</a></li>
-							</ul>
-						</div> -->
 					</li>
 
 					<li>
-						<button class="toggle-sidebar mt-3" onclick="toggleSidebarLg()">
-							<img src="../assets/icon/arrow-left.svg" alt="" />
+						<button class="toggle-sidebar mt-3" id="toggleSidebarLg" onclick="toggleSidebarLg()">
+							<i class="fa-solid fa-arrow-left" id="toggleSidebarLgIcon"></i>
 						</button>
 					</li>
 				</ul>
@@ -162,8 +126,7 @@
 							font-size: 30px;
 							color: #3a3e40;
 						"
-						>Home</span
-					>
+						>Home</span>
 					<div class="d-flex">
 						<div>
 							<img
@@ -179,6 +142,40 @@
 							<small class="fw-bolder">12128695273</small>
 						</div>
 					</div>
+					<div class="main-button d-flex flex-row my-3">
+						<button class="btn bg-white me-2">
+							<img class="me-1" src="../assets/icon/ico_edit_profil.svg" alt="">
+							Data Pribadi
+						</button>
+						<button class="btn bg-white">
+							<img class="me-1" src="../assets/icon/ico_doc_approval.svg" alt="">
+							Data Pribadi
+						</button>
+						
+					</div>
+					<div class="main-button d-flex flex-row">
+						<button class="btn bg-white me-2">
+							<img class="me-1" src="../assets/icon/ico_skill_chart.svg" alt="">
+							Kompetensi
+						</button>
+						<button class="btn bg-white">
+							<img class="me-1" src="../assets/icon/ico_skill_ninebox.svg" alt="">
+							Performa
+						</button>
+					</div>
+
+					<section class="mt-4">
+						<span
+							style="
+								margin-bottom: 36px;
+								font-weight: 700;
+								font-size: 18px;
+								color: #3A3A3A;
+							"
+							>Social</span>
+
+					</section>
+
 				</div>
 			</section>
 
@@ -187,34 +184,48 @@
 				<header>Timeline</header>
 
 				<!-- content -->
-				<section class="content mx-auto" style="width: 70%">
-					<div class="card mb-3">
-						<div class="d-flex flex-row align-items-start">
-							<img
-								src="../assets/images/160219-student-stock.png"
-								class="rounded-circle me-3"
-								style="width: 30px; height: 30px"
-								alt=""
-							/>
-							<input
-								type="text"
-								class="form-control me-3"
-								placeholder="Tulis atau bagikan sesuatu"
-								id="postFeedInput"
-								onclick="newPostFeedModal.toggle()"
-							/>
-							<button class="rounded-circle bg-transparent border-0">
-								<img src="../assets/icon/picture.svg" alt="" />
-							</button>
-							<button class="rounded-circle bg-transparent border-0">
-								<img src="../assets/icon/calendar-alt.svg" alt="" />
-							</button>
-							<button class="rounded-circle bg-transparent border-0">
-								<img src="../assets/icon/file.svg" alt="" />
-							</button>
+				<main class="row mx-3">
+
+					<section class="content mx-auto" style="width: 60%">
+						<div class="card mb-3">
+							<div class="d-flex flex-row align-items-center">
+								<img
+									src="../assets/images/160219-student-stock.png"
+									class="rounded-circle me-3"
+									style="width: 30px; height: 30px"
+									alt=""
+								/>
+								<input
+									type="text"
+									class="form-control me-3"
+									placeholder="Tulis atau bagikan sesuatu"
+									id="postFeedInput"
+									onclick="newPostFeedModal.toggle()"
+								/>
+								<button class="rounded-circle bg-transparent border-0">
+									<i class="fa-solid fa-image"></i>
+								</button>
+								<button class="rounded-circle bg-transparent border-0">
+									<i class="fa-solid fa-calendar-week"></i>
+								</button>
+								<button class="rounded-circle bg-transparent border-0">
+									<i class="fa-solid fa-file"></i>
+								</button>
+							</div>
 						</div>
+					</section>
+					<section class="content " style="width: 30%">
+					<div class="d-flex flex-row align-items-center w-100 justify-content-between">
+						<div class="d-flex flex-column">
+							<h5>Kalender</h5>
+							<span>Jumat, 3 Juni 2022</span>
+						</div>
+						<button class="btn btn-primary rounded-circle">
+							<i class="fa-solid fa-plus"></i>
+						</button>
 					</div>
-				</section>
+					</section>
+				</main>
 			</section>
 		</main>
 
@@ -257,9 +268,7 @@
 								>
 									<img src="../assets/icon/globe.svg" class="me-2" alt="" />
 									Semua Orang
-									<i class="material-icons-round">
-										expand_more
-									</i>
+									<i class="fa-solid fa-chevron-down ms-2"></i>
 								</button>
 							</div>
 						</div>
@@ -273,13 +282,13 @@
 					<div class="modal-footer d-flex justify-content-between">
 						<div>
 							<button class="rounded-circle bg-transparent border-0">
-								<img src="../assets/icon/picture.svg" alt="" />
+								<i class="fa-solid fa-image"></i>
 							</button>
 							<button class="rounded-circle bg-transparent border-0">
-								<img src="../assets/icon/calendar-alt.svg" alt="" />
+								<i class="fa-solid fa-calendar-week"></i>
 							</button>
 							<button class="rounded-circle bg-transparent border-0">
-								<img src="../assets/icon/file.svg" alt="" />
+								<i class="fa-solid fa-file"></i>
 							</button>
 						</div>
 						<button type="button" class="btn btn-primary px-5">Post</button>
@@ -304,7 +313,7 @@
 							data-bs-target="#newPostFeedModal"
 							data-bs-toggle="modal"
 						>
-							<span class="material-icons-round"> arrow_back </span>
+						<i class="fa-solid fa-arrow-left"></i>
 						</button>
 						<span class="modal-title" id="audienceModal"
 							>Siapa yang bisa melihat postingan Anda?</span
@@ -322,9 +331,7 @@
 								<label class="form-check-label" for="chckListitem1">
 
 									<div class="d-flex flex-row align-items-center">
-											<span class="material-icons-round check-icon">
-												language
-												</span>
+										<i class="fa-solid fa-globe check-icon"></i> 
 										<div class="d-flex flex-column ms-3">
 											<div class="fw-bold">Semua Orang</div>
 											<span>Semua rekan kerja yang telah terhubung pertemanan</span>
@@ -335,13 +342,9 @@
 							</div>
 							<div class="form-check form-check-list-item" >
 								<input class="form-check-input" type="radio"  name="exampleRadios" id="chckListitem2" value="chckListitem2">
-
 								<label class="form-check-label" for="chckListitem2">
-
 									<div class="d-flex flex-row align-items-center">
-											<span class="material-icons-round check-icon">
-												groups
-												</span>
+										<i class="fa-solid fa-user-group check-icon"></i>
 										<div class="d-flex flex-column ms-3">
 											<div class="fw-bold">Hanya rekan kerja terhubung</div>
 											<span>Semua rekan kerja yang telah terhubung pertemanan</span>

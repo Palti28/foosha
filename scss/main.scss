@@ -58,6 +58,33 @@ html {
 	font-family: "proxima";
 }
 
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #b0b0b0;
+}
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #b0b0b0;
+	opacity: 1;
+}
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #b0b0b0;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #b0b0b0;
+}
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #b0b0b0;
+}
+::placeholder {
+	/* Most modern browsers support this now. */
+	color: #b0b0b0;
+}
+
 body {
 	font-size: 14px;
 	color: $black-body;
@@ -289,9 +316,12 @@ h6 {
 
 				.nav-link {
 					border-radius: 8px;
+					color: #879397;
+					font-size: 18px;
 					&.active,
 					&:hover {
 						background-color: #ecf4ff;
+						color: $primary;
 					}
 				}
 			}
@@ -300,9 +330,9 @@ h6 {
 	button.toggle-sidebar {
 		border: 0;
 		border-radius: 100%;
-		background-color: #f4f7fb;
 		width: 35px;
 		height: 35px;
+		color: #879397;
 	}
 }
 
@@ -315,10 +345,19 @@ h6 {
 	transition: 0.3s;
 	.sidebar-content {
 		padding: 32px;
+		.main-button {
+			button {
+				box-shadow: 0px 6px 6px 0px #0000000a;
+				border-radius: 8px;
+				height: 46px;
+				padding-left: 0;
+				width: 100%;
+			}
+		}
 	}
 
 	&.collapse {
-		width: 300px;
+		width: 350px;
 		transition: 0.3s;
 	}
 }
@@ -343,6 +382,9 @@ header {
 		border-radius: 20px;
 		padding: 16px;
 		border: 0;
+		i {
+			color: #879397;
+		}
 
 		&.post-feed-card {
 			button {
@@ -393,6 +435,9 @@ header {
 		&:focus {
 			box-shadow: none;
 		}
+		i {
+			color: #879397;
+		}
 	}
 }
 
@@ -402,12 +447,9 @@ header {
 	justify-content: space-between;
 	flex-direction: row-reverse;
 	padding-left: 0;
-	// &:hover {
-	// 	cursor: pointer;
-	// 	background-color: rgba($primary, 0.1);
-	// }
+
 	.form-check-label {
-		span.check-icon {
+		i.check-icon {
 			background-color: #f4f4f4;
 			color: #323232;
 			padding: 10px;
@@ -427,7 +469,7 @@ header {
 		&:checked[type="radio"] {
 			& + .form-check-label {
 				background-color: rgba($primary, 0.1);
-				span.check-icon {
+				i.check-icon {
 					background-color: $primary;
 					color: #fff;
 				}

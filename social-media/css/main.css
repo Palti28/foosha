@@ -12815,6 +12815,38 @@ html {
   font-family: "proxima";
 }
 
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #b0b0b0;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b0b0b0;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b0b0b0;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b0b0b0;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b0b0b0;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #b0b0b0;
+}
+
 body {
   font-size: 14px;
   color: #686b6d;
@@ -13031,16 +13063,19 @@ h6,
 }
 .sidebar-sm .nav.nav-pills .nav-item .nav-link {
   border-radius: 8px;
+  color: #879397;
+  font-size: 18px;
 }
 .sidebar-sm .nav.nav-pills .nav-item .nav-link.active, .sidebar-sm .nav.nav-pills .nav-item .nav-link:hover {
   background-color: #ecf4ff;
+  color: #3085ff;
 }
 .sidebar-sm button.toggle-sidebar {
   border: 0;
   border-radius: 100%;
-  background-color: #f4f7fb;
   width: 35px;
   height: 35px;
+  color: #879397;
 }
 
 .sidebar-lg {
@@ -13053,8 +13088,15 @@ h6,
 .sidebar-lg .sidebar-content {
   padding: 32px;
 }
+.sidebar-lg .sidebar-content .main-button button {
+  box-shadow: 0px 6px 6px 0px #0000000a;
+  border-radius: 8px;
+  height: 46px;
+  padding-left: 0;
+  width: 100%;
+}
 .sidebar-lg.collapse {
-  width: 300px;
+  width: 350px;
   transition: 0.3s;
 }
 
@@ -13077,6 +13119,9 @@ header {
   border-radius: 20px;
   padding: 16px;
   border: 0;
+}
+.content .card i {
+  color: #879397;
 }
 .content .card.post-feed-card button {
   background-color: transparent;
@@ -13121,6 +13166,9 @@ header {
 #newPostFeedModal textarea:focus {
   box-shadow: none;
 }
+#newPostFeedModal textarea i {
+  color: #879397;
+}
 
 .form-check.form-check-list-item {
   display: flex;
@@ -13133,7 +13181,7 @@ header {
   padding: 10px 1.5rem;
   width: 100%;
 }
-.form-check.form-check-list-item .form-check-label span.check-icon {
+.form-check.form-check-list-item .form-check-label i.check-icon {
   background-color: #f4f4f4;
   color: #323232;
   padding: 10px;
@@ -13150,7 +13198,7 @@ header {
 .form-check.form-check-list-item .form-check-input:checked[type=radio] + .form-check-label {
   background-color: rgba(48, 133, 255, 0.1);
 }
-.form-check.form-check-list-item .form-check-input:checked[type=radio] + .form-check-label span.check-icon {
+.form-check.form-check-list-item .form-check-input:checked[type=radio] + .form-check-label i.check-icon {
   background-color: #3085ff;
   color: #fff;
 }

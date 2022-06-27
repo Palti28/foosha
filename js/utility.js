@@ -145,10 +145,21 @@ window.addEventListener("resize", function (e) {
 
 function toggleSidebarLg() {
 	var sidebarLg = document.getElementById("sidebar-lg");
+	var sidebarLgTrigger = document.getElementById("toggleSidebarLg");
+	var sidebarLgTriggerIcon = document.getElementById("toggleSidebarLgIcon");
+	console.log(sidebarLgTriggerIcon);
 	if (sidebarLg.classList.contains("collapse")) {
 		sidebarLg.classList.remove("collapse");
+		sidebarLgTrigger.style.backgroundColor = "#3085ff";
+		sidebarLgTrigger.style.color = "#ffffff";
+		sidebarLgTriggerIcon.classList.add("fa-arrow-right");
+		sidebarLgTriggerIcon.classList.remove("fa-arrow-left");
 	} else {
 		sidebarLg.classList.add("collapse");
+		sidebarLgTrigger.style.backgroundColor = "#f4f7fb";
+		sidebarLgTrigger.style.color = "#879397";
+		sidebarLgTriggerIcon.classList.remove("fa-arrow-right");
+		sidebarLgTriggerIcon.classList.add("fa-arrow-left");
 	}
 }
 
