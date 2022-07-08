@@ -12801,4 +12801,13 @@ h6,
   width: 49%;
 }
 
+#img-banner-kav {
+  display: block;
+}
+@media (max-width: 991.98px) {
+  #img-banner-kav {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -627,3 +627,9 @@ header {
 		width: 49%;
 	}
 }
+#img-banner-kav {
+	display: block;
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
