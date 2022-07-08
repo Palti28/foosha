@@ -627,9 +627,18 @@ header {
 		width: 49%;
 	}
 }
-#img-banner-kav {
+
+.banner-img-container {
+	width: 177px;
+	min-width: 177px;
 	display: block;
 	@include media-breakpoint-down(lg) {
-		display: none;
+		min-width: 115px;
 	}
+}
+#img-banner-kav {
+	height: auto;
+	object-fit: cover;
+	position: absolute;
+	top: -20px;
 }
