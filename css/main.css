@@ -12818,5 +12818,76 @@ h6,
   position: absolute;
   top: -20px;
 }
+@media (max-width: 991.98px) {
+  #img-banner-kav {
+    top: -3px;
+  }
+}
+
+.bg-gradient-magenta {
+  background: linear-gradient(87.69deg, #94306c 12.55%, #6a3a81 82.53%);
+}
+
+header.header-verifikasi-kartu {
+  height: 300px;
+  background-color: #ffffff;
+  background: linear-gradient(62.34deg, #ffffff 43.53%, #edfdff 122.38%);
+  border-radius: 0px 0px 16px 16px;
+  overflow: hidden;
+}
+header.header-verifikasi-kartu .content {
+  padding: 24px;
+}
+header.header-verifikasi-kartu .logo-bkn {
+  height: 25px;
+}
+header.header-verifikasi-kartu .avatar-holder {
+  width: 187px;
+  height: 245px;
+  z-index: 1;
+}
+header.header-verifikasi-kartu .bg-blue {
+  position: relative;
+  top: 5vh;
+  left: -5rem;
+}
+header.header-verifikasi-kartu .bg-red {
+  position: absolute;
+  top: -1rem;
+  right: -3rem;
+}
+
+footer.footer-verifikasi-kartu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+footer.footer-verifikasi-kartu img {
+  width: 100%;
+}
+
+.profile-information {
+  margin-top: -5rem;
+}
+.profile-information .card {
+  box-shadow: 0px -8px 8px rgba(0, 0, 0, 0.04);
+  z-index: 99;
+}
+.profile-information table {
+  width: 100%;
+}
+.profile-information table tr td {
+  padding: 6px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.profile-information table tr td:first-child {
+  color: #afafaf;
+  width: 137px;
+}
+.profile-information table tr:last-child td {
+  border-bottom: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
