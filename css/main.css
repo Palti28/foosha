@@ -12890,4 +12890,24 @@ footer.footer-verifikasi-kartu img {
   border-bottom: 0;
 }
 
+#kartuASNVirtual {
+  background-color: #1b375c;
+}
+#kartuASNVirtual header {
+  color: #ffffff;
+}
+#kartuASNVirtual header h6, #kartuASNVirtual header .h6 {
+  color: #ffffff;
+}
+#kartuASNVirtual .card-display-section {
+  color: rgba(255, 255, 255, 0.6);
+}
+#kartuASNVirtual .upload-container {
+  width: 272px;
+  height: 436px;
+  background: #112949;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1.0"
+		/>
+		<title>Kartu ASN Virtual</title>
+		<script
+			src="https://kit.fontawesome.com/ae6c557cac.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../../css/main.css" />
+	</head>
+
+	<body id="kartuASNVirtual" class="pb-4">
+		<header class="d-flex justify-content-start p-3">
+			<i class="fa-solid fa-arrow-left"></i>
+			<h6 class="m-auto">Kartu ASN Virtual</h6>
+		</header>
+		<main>
+			<section>
+				<div class="d-flex p-3">
+					<button class="btn btn-warning rounded-pill w-100 me-2">
+						Upload Foto
+					</button>
+					<button
+						class="btn rounded-pill w-100 ms-2"
+						style="background: #2a4568"
+					>
+						Contoh
+					</button>
+				</div>
+			</section>
+
+			<!-- <section class="p-3 text-center card-display-section">
+				<div
+					class="upload-container m-auto d-flex flex-column align-items-center justify-content-center text-light px-3"
+				>
+					<div class="mt-auto">
+						<b class="mb-2">Upload foto Anda</b>
+						<span
+							>Lampirkan foto ukuran 720x1155 dengan format JPG atau PNG</span
+						>
+						<br />
+						<button class="btn btn-primary mt-3">Browse</button> <br />
+						<span
+							class="mt-2"
+							style="font-size: 10px; color: rgba(255, 255, 255, 0.5)"
+						>
+							Klik <b>browse</b> untuk mengambil foto dari komputer atau
+							perangkat Anda
+						</span>
+					</div>
+					<div
+						class="d-flex flex-column text-left p-3 mt-auto mb-3"
+						style="background: rgba(0, 0, 0, 0.4); border-radius: 8px"
+					>
+						<div class="d-flex">
+							<img
+								src="../../assets/images/icon/bulb-icon.png"
+								alt=""
+								class="me-2"
+								style="height: 16px"
+							/>
+							<b>TIPS</b>
+						</div>
+						<span style="text-align: left; font-size: 10px"
+							>Gunakan foto tanpa background dalam format PNG untuk hasil yang
+							maksimal</span
+						>
+					</div>
+				</div>
+				<div><b>Tap</b> pada gambar untuk melihat lebih detail</div>
+				<div><b>Swipe</b> pada gambar untuk melihat sisi belakang</div>
+			</section> -->
+
+			<!-- loading -->
+
+			<section class="p-3 text-center card-display-section">
+				<div
+					class="upload-container m-auto d-flex flex-column align-items-center justify-content-center text-light px-3"
+				>
+					<div class="spinner-border mb-3" role="status">
+						<span class="visually-hidden">Loading...</span>
+					</div>
+					Memproses foto Anda <br />
+					Silahkan tunggu
+				</div>
+			</section>
+			<!-- loading -->
+
+			<section class="px-3">
+				<div class="card rounded mt-3">
+					<div class="d-flex flex-row w-100 text-center">
+						<button class="btn-ghost border-end w-50 py-3">
+							<h4><i class="bi bi-download text-primary"></i></h4>
+							<span class="fw-bolder">Download</span>
+						</button>
+						<button
+							class="btn-ghost border-end w-50 py-3"
+							data-bs-toggle="modal"
+							data-bs-target="#ubahFoto"
+						>
+							<h4><i class="bi bi-download text-primary"></i></h4>
+							<span class="fw-bolder">Print</span>
+						</button>
+						<button
+							class="btn-ghost w-50 py-3"
+							data-bs-toggle="modal"
+							data-bs-target="#ubahFoto"
+						>
+							<h4><i class="bi bi-person-bounding-box text-primary"></i></h4>
+							<span class="fw-bolder">Ubah Foto</span>
+						</button>
+					</div>
+				</div>
+
+				<div
+					class="d-flex justify-content-between align-items-center p-3 bg-primary text-light mt-3"
+					style="border-radius: 8px"
+				>
+					<div class="d-flex align-items-center">
+						<i class="fa-solid fa-circle-info me-3"></i>
+						<div class="fw-bold">
+							Apa saja kegunaan <br />
+							Kartu Virtual ASN ini?
+						</div>
+					</div>
+					<div>
+						<span>Cari tahu</span>
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>
+				</div>
+
+				<div
+					class="d-flex p-3 text-light mt-3"
+					style="border-radius: 8px; background: rgba(0, 0, 0, 0.3)"
+				>
+					<i class="fa-solid fa-circle-info me-3 mt-1"></i>
+					<div>
+						<div class="fw-bold">Apa itu Kartu ASN Virtual ?</div>
+						<span
+							>Kartu ASN Virtual adalah Kartu identitas elektronik bagi ASN
+							untuk memudahkan berbagai pelayanan ASN, penerima pensiun ASN dan
+							keluarganya.</span
+						>
+					</div>
+				</div>
+			</section>
+			<section class="p-3">
+				<div class="card card-body">
+					<div>
+						<h6>Panduan update foto Kartu ASN</h6>
+						<ul class="form-step">
+							<li class="active">
+								<span class="form-step-desc"
+									>Gunakan foto potrait dengan background putih dan pose badan
+									sedikit condong ke bagian kanan</span
+								>
+							</li>
+							<li class="active">
+								<span class="form-step-desc"
+									>Pastikan pencahayaan dan kualitas foto baik, gambar tidak
+									blur</span
+								>
+							</li>
+							<li class="active">
+								<span class="form-step-desc"
+									>Sisakan <b>20% area kosong</b> di bagian atas foto Anda</span
+								>
+							</li>
+							<li class="active">
+								<span class="form-step-desc"
+									>Gunakan resolusi <b>720x1155</b> untuk foto yang Anda
+									upload</span
+								>
+							</li>
+							<li class="active">
+								<span class="form-step-desc"
+									>Gunakan format <b>JPG</b> atau <b>PNG</b> dengan ukuran file
+									maksimum <b>2MB</b></span
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<a
+				data-bs-toggle="modal"
+				data-bs-target="#uploadSuccess"
+				class="btn btn-danger"
+				>Mock modal sukses upload gambar</a
+			>
+		</main>
+
+		<!-- modal -->
+		<div
+			class="modal fade"
+			id="uploadSuccess"
+			tabindex="-1"
+			aria-labelledby="uploadSuccess"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-sm modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<img
+							src="../../../assets/images/icon/ico_modal_success.svg"
+							class="mb-3"
+							style="height: 84px; width: 84px"
+							alt=""
+						/>
+						<h6>Perubahan foto Kartu ASN Virtual telah berhasil dilakukan</h6>
+						<p>
+							Anda dapat mengubahnya kembali sewaktu-waktu melalui di menu Kartu
+							ASN Virtual
+						</p>
+						<button class="btn btn-primary" data-bs-dismiss="modal">
+							Lihat Kartu Saya
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+			integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+			crossorigin="anonymous"
+		></script>
+		<script src="../../js/chart.js"></script>
+		<script src="../../js/utility.js" type="text/javascript"></script>
+		<script src="../../bootstrap/js/bootstrap.bundle.js"></script>
+	</body>
+</html>
