@@ -12797,8 +12797,11 @@ h6,
   overflow: hidden;
 }
 
-.kartu-asn-virtual-container img {
+.kartu-asn-virtual-container.kav-potrait img {
   width: 49%;
+}
+.kartu-asn-virtual-container.kav-landscape img {
+  width: 100%;
 }
 
 .banner-img-container {

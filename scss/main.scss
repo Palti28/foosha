@@ -623,8 +623,15 @@ header {
 }
 
 .kartu-asn-virtual-container {
-	img {
-		width: 49%;
+	&.kav-potrait {
+		img {
+			width: 49%;
+		}
+	}
+	&.kav-landscape {
+		img {
+			width: 100%;
+		}
 	}
 }
 
